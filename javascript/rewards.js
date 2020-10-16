@@ -1,1729 +1,1354 @@
-var rewardArray = [{
-	rewardType: 'Abilities',
-	reward: 'Guard',
-	rewardAddress: '0052',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Upper Slash',
-	rewardAddress: '0089',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Horizontal Slash',
-	rewardAddress: '010F',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Finishing Leap',
-	rewardAddress: '010B',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Retaliating Slash',
-	rewardAddress: '0111',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Slapshot',
-	rewardAddress: '0106',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Dodge Slash',
-	rewardAddress: '0107',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Flash Step',
-	rewardAddress: '022F',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Slide Dash',
-	rewardAddress: '0108',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Vicinity Break',
-	rewardAddress: '0232',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Guard Break',
-	rewardAddress: '0109',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Explosion',
-	rewardAddress: '010A',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Aerial Sweep',
-	rewardAddress: '010D',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Aerial Dive',
-	rewardAddress: '0230',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Aerial Spiral',
-	rewardAddress: '010E',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Aerial Finish',
-	rewardAddress: '0110',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Magnet Burst',
-	rewardAddress: '0231',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Counterguard',
-	rewardAddress: '010C',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Valor',
-	rewardAddress: '0181',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Wisdom',
-	rewardAddress: '0182',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Limit',
-	rewardAddress: '0238',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Master',
-	rewardAddress: '0183',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Final',
-	rewardAddress: '0184',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Summon',
-	rewardAddress: '0185',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Trinity Limit',
-	rewardAddress: '00C6',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Donald Fire',
-	rewardAddress: '00A5',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Donald Blizzard',
-	rewardAddress: '00A6',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Donald Thunder',
-	rewardAddress: '00A7',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Donald Cure',
-	rewardAddress: '00A8',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Fantasia (Comet)',
-	rewardAddress: '00C7',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Flare Force (Duck Flare)',
-	rewardAddress: '00C8',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Goofy Tornado',
-	rewardAddress: '01A7',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Goofy Bash',
-	rewardAddress: '01AD',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Goofy Turbo',
-	rewardAddress: '01A9',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Tornado Fusion (Whirli-Goof)',
-	rewardAddress: '00C9',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Teamwork (Knocksmash)',
-	rewardAddress: '00CA',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Scan',
-	rewardAddress: '008A',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Aerial Recovery',
-	rewardAddress: '009E',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Combo Master',
-	rewardAddress: '021B',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Combo Plus',
-	rewardAddress: '00A2',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Air Combo Plus',
-	rewardAddress: '00A3',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Combo Boost',
-	rewardAddress: '0186',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Air Combo Boost',
-	rewardAddress: '0187',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Reaction Boost',
-	rewardAddress: '0188',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Finishing Plus',
-	rewardAddress: '0189',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Negative Combo',
-	rewardAddress: '018A',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Berserk Charge',
-	rewardAddress: '018B',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Damage Drive',
-	rewardAddress: '018C',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Drive Boost',
-	rewardAddress: '018D',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Form Boost',
-	rewardAddress: '018E',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Summon Boost',
-	rewardAddress: '018F',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Combination Boost',
-	rewardAddress: '0190',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Experience Boost',
-	rewardAddress: '0191',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Leaf Bracer',
-	rewardAddress: '0192',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Magic Lock-On',
-	rewardAddress: '0193',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Light & Darkness',
-	rewardAddress: '021D',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Draw',
-	rewardAddress: '0195',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Jackpot',
-	rewardAddress: '0196',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Lucky Lucky',
-	rewardAddress: '0197',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Drive Converter',
-	rewardAddress: '021C',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Fire Boost',
-	rewardAddress: '0198',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Blizzard Boost',
-	rewardAddress: '0199',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Thunder Boost',
-	rewardAddress: '019A',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Item Boost',
-	rewardAddress: '019B',
-	},{
-	rewardType: 'Abilities',
-	reward: 'MP Rage',
-	rewardAddress: '019C',
-	},{
-	rewardType: 'Abilities',
-	reward: 'MP Haste',
-	rewardAddress: '019D',
-	},{
-	rewardType: 'Abilities',
-	reward: 'MP Hastera',
-	rewardAddress: '01A5',
-	},{
-	rewardType: 'Abilities',
-	reward: 'MP Hastega',
-	rewardAddress: '01A6',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Defender',
-	rewardAddress: '019E',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Damage Control',
-	rewardAddress: '021E',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Second Chance',
-	rewardAddress: '019F',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Once More',
-	rewardAddress: '01A0',
-	},{
-	rewardType: 'Abilities',
-	reward: 'No Experience',
-	rewardAddress: '0194',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Limit',
-	rewardAddress: '01A1',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Change',
-	rewardAddress: '01A2',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Hyper Healing',
-	rewardAddress: '01A3',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Auto Healing',
-	rewardAddress: '01A4',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Protect',
-	rewardAddress: '0254',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Protectra',
-	rewardAddress: '0255',
-	},{
-	rewardType: 'Abilities',
-	reward: 'Protectga',
-	rewardAddress: '0256',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Ability Ring',
-	rewardAddress: '0008',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Engineer\'s Ring',
-	rewardAddress: '0009',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Technician\'s Ring',
-	rewardAddress: '000A',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Skill Ring',
-	rewardAddress: '0026',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Skillful Ring',
-	rewardAddress: '0027',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Expert\'s Ring',
-	rewardAddress: '000B',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Master\'s Ring',
-	rewardAddress: '0022',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Cosmic Ring',
-	rewardAddress: '0034',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Executive\'s Ring',
-	rewardAddress: '0257',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Sardonyx Ring',
-	rewardAddress: '000C',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Tourmaline Ring',
-	rewardAddress: '000D',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Aquamarine Ring',
-	rewardAddress: '000E',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Garnet Ring',
-	rewardAddress: '0F10',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Diamond Ring',
-	rewardAddress: '0010',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Silver Ring',
-	rewardAddress: '0011',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Gold Ring',
-	rewardAddress: '0012',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Platinum Ring',
-	rewardAddress: '0013',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Mythril Ring',
-	rewardAddress: '0014',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Orichalcum Ring',
-	rewardAddress: '001C',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Soldier Earring',
-	rewardAddress: '0028',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Fencer Earring',
-	rewardAddress: '002E',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Mage Earring',
-	rewardAddress: '002F',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Slayer Earring',
-	rewardAddress: '0030',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Medal',
-	rewardAddress: '0035',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Moon Amulet',
-	rewardAddress: '0023',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Star Charm',
-	rewardAddress: '0024',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Cosmic Arts',
-	rewardAddress: '0038',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Shadow Archive',
-	rewardAddress: '0039',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Shadow Archive+',
-	rewardAddress: '003A',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Full Bloom',
-	rewardAddress: '0040',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Full Bloom+',
-	rewardAddress: '0042',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Draw Ring',
-	rewardAddress: '0041',
-	},{
-	rewardType: 'Accessories',
-	reward: 'Lucky Ring',
-	rewardAddress: '003F',
-	},{
-	rewardType: 'Armor',
-	reward: 'Elven Bandana',
-	rewardAddress: '0043',
-	},{
-	rewardType: 'Armor',
-	reward: 'Divine Bandana',
-	rewardAddress: '0044',
-	},{
-	rewardType: 'Armor',
-	reward: 'Protect Belt',
-	rewardAddress: '004E',
-	},{
-	rewardType: 'Armor',
-	reward: 'Gaia Belt',
-	rewardAddress: '004F',
-	},{
-	rewardType: 'Armor',
-	reward: 'Power Band',
-	rewardAddress: '0045',
-	},{
-	rewardType: 'Armor',
-	reward: 'Buster Band',
-	rewardAddress: '0046',
-	},{
-	rewardType: 'Armor',
-	reward: 'Cosmic Belt',
-	rewardAddress: '006F',
-	},{
-	rewardType: 'Armor',
-	reward: 'Fire Bangle',
-	rewardAddress: '00AD',
-	},{
-	rewardType: 'Armor',
-	reward: 'Fira Bangle',
-	rewardAddress: '00AE',
-	},{
-	rewardType: 'Armor',
-	reward: 'Firaga Bangle',
-	rewardAddress: '00C5',
-	},{
-	rewardType: 'Armor',
-	reward: 'Firagun Bangle',
-	rewardAddress: '011C',
-	},{
-	rewardType: 'Armor',
-	reward: 'Blizzard Armlet',
-	rewardAddress: '011E',
-	},{
-	rewardType: 'Armor',
-	reward: 'Blizzara Armlet',
-	rewardAddress: '011F',
-	},{
-	rewardType: 'Armor',
-	reward: 'Blizzaga Armlet',
-	rewardAddress: '0120',
-	},{
-	rewardType: 'Armor',
-	reward: 'Blizzagun Armlet',
-	rewardAddress: '0121',
-	},{
-	rewardType: 'Armor',
-	reward: 'Thunder Trinket',
-	rewardAddress: '0123',
-	},{
-	rewardType: 'Armor',
-	reward: 'Thundara Trinket',
-	rewardAddress: '0124',
-	},{
-	rewardType: 'Armor',
-	reward: 'Thundaga Trinket',
-	rewardAddress: '0125',
-	},{
-	rewardType: 'Armor',
-	reward: 'Thundagun Trinket',
-	rewardAddress: '0126',
-	},{
-	rewardType: 'Armor',
-	reward: 'Shock Charm',
-	rewardAddress: '0084',
-	},{
-	rewardType: 'Armor',
-	reward: 'Shock Charm+',
-	rewardAddress: '0085',
-	},{
-	rewardType: 'Armor',
-	reward: 'Shadow Anklet',
-	rewardAddress: '0128',
-	},{
-	rewardType: 'Armor',
-	reward: 'Dark Anklet',
-	rewardAddress: '0129',
-	},{
-	rewardType: 'Armor',
-	reward: 'Midnight Anklet',
-	rewardAddress: '012A',
-	},{
-	rewardType: 'Armor',
-	reward: 'Chaos Anklet',
-	rewardAddress: '012B',
-	},{
-	rewardType: 'Armor',
-	reward: 'Champion Belt',
-	rewardAddress: '0131',
-	},{
-	rewardType: 'Armor',
-	reward: 'Abas Chain',
-	rewardAddress: '012D',
-	},{
-	rewardType: 'Armor',
-	reward: 'Aegis Chain',
-	rewardAddress: '012E',
-	},{
-	rewardType: 'Armor',
-	reward: 'Acrisius',
-	rewardAddress: '012F',
-	},{
-	rewardType: 'Armor',
-	reward: 'Acrisius+',
-	rewardAddress: '0133',
-	},{
-	rewardType: 'Armor',
-	reward: 'Cosmic Chain',
-	rewardAddress: '0134',
-	},{
-	rewardType: 'Armor',
-	reward: 'Petite Ribbon',
-	rewardAddress: '0132',
-	},{
-	rewardType: 'Armor',
-	reward: 'Ribbon',
-	rewardAddress: '0130',
-	},{
-	rewardType: 'Armor',
-	reward: 'Grand Ribbon',
-	rewardAddress: '009D',
-	},{
-	rewardType: 'Forms',
-	reward: 'Valor Form',
-	rewardAddress: '001A',
-	},{
-	rewardType: 'Forms',
-	reward: 'Wisdom Form',
-	rewardAddress: '001B',
-	},{
-	rewardType: 'Forms',
-	reward: 'Limit Form',
-	rewardAddress: '0233',
-	},{
-	rewardType: 'Forms',
-	reward: 'Master Form',
-	rewardAddress: '001F',
-	},{
-	rewardType: 'Forms',
-	reward: 'Final Form',
-	rewardAddress: '001D',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'High Jump LV1',
-	rewardAddress: '005E',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'High Jump LV2',
-	rewardAddress: '005F',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'High Jump LV3',
-	rewardAddress: '0060',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'High Jump MAX',
-	rewardAddress: '0061',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Quick Run LV1',
-	rewardAddress: '0062',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Quick Run LV2',
-	rewardAddress: '0063',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Quick Run LV3',
-	rewardAddress: '0064',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Quick Run MAX',
-	rewardAddress: '0065',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Dodge Roll LV1',
-	rewardAddress: '0234',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Dodge Roll LV2',
-	rewardAddress: '0235',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Dodge Roll LV3',
-	rewardAddress: '0236',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Dodge Roll MAX',
-	rewardAddress: '0237',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Aerial Dodge LV1',
-	rewardAddress: '0066',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Aerial Dodge LV2',
-	rewardAddress: '0067',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Aerial Dodge LV3',
-	rewardAddress: '0068',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Aerial Dodge MAX',
-	rewardAddress: '0069',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Glide LV1',
-	rewardAddress: '006A',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Glide LV2',
-	rewardAddress: '006B',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Glide LV3',
-	rewardAddress: '006C',
-	},{
-	rewardType: 'Growth Abilities',
-	reward: 'Glide MAX',
-	rewardAddress: '006D',
-	},{
-	rewardType: 'Items',
-	reward: 'Potion',
-	rewardAddress: '0001',
-	},{
-	rewardType: 'Items',
-	reward: 'Hi-Potion',
-	rewardAddress: '0002',
-	},{
-	rewardType: 'Items',
-	reward: 'Ether',
-	rewardAddress: '0003',
-	},{
-	rewardType: 'Items',
-	reward: 'Elixir',
-	rewardAddress: '0004',
-	},{
-	rewardType: 'Items',
-	reward: 'Mega-Potion',
-	rewardAddress: '0005',
-	},{
-	rewardType: 'Items',
-	reward: 'Mega-Ether',
-	rewardAddress: '0006',
-	},{
-	rewardType: 'Items',
-	reward: 'Mega-Elixir',
-	rewardAddress: '0007',
-	},{
-	rewardType: 'Items',
-	reward: 'Tent',
-	rewardAddress: '0083',
-	},{
-	rewardType: 'Items',
-	reward: 'Drive Recovery',
-	rewardAddress: '0112',
-	},{
-	rewardType: 'Items',
-	reward: 'High Drive Recovery',
-	rewardAddress: '0113',
-	},{
-	rewardType: 'Items',
-	reward: 'Power Boost',
-	rewardAddress: '0114',
-	},{
-	rewardType: 'Items',
-	reward: 'Magic Boost',
-	rewardAddress: '0115',
-	},{
-	rewardType: 'Items',
-	reward: 'Defense Boost',
-	rewardAddress: '0116',
-	},{
-	rewardType: 'Items',
-	reward: 'AP Boost',
-	rewardAddress: '0117',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Torn Page',
-	rewardAddress: '0020',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Munny Pouch (Olette)',
-	rewardAddress: '016A',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Munny Pouch (Mickey)',
-	rewardAddress: '0217',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Crystal Orb',
-	rewardAddress: '016B',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Seifer\'s Trophy',
-	rewardAddress: '016C',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Tournament Poster',
-	rewardAddress: '016D',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Poster',
-	rewardAddress: '016E',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Letter',
-	rewardAddress: '016F',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Namine\'s Sketches',
-	rewardAddress: '0170',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Membership Card',
-	rewardAddress: '0171',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Olympus Stone',
-	rewardAddress: '0172',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Auron\'s Statue',
-	rewardAddress: '0173',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Cursed Medallion',
-	rewardAddress: '0174',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Presents',
-	rewardAddress: '0175',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Decoy Presents',
-	rewardAddress: '0176',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Ice Cream',
-	rewardAddress: '0177',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Picture',
-	rewardAddress: '0178',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Promise Charm',
-	rewardAddress: '020C',
-	},{
-	rewardType: 'Key Items',
-	reward: 'Hades Cup Trophy',
-	rewardAddress: '0219',
-	},{
-	rewardType: 'Key Items',
-	reward: '"The Struggle" Trophy',
-	rewardAddress: '021A',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Kingdom Key',
-	rewardAddress: '0029',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Oathkeeper',
-	rewardAddress: '002A',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Oblivion',
-	rewardAddress: '002B',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Star Seeker',
-	rewardAddress: '01E0',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Hidden Dragon',
-	rewardAddress: '01E1',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Hero\'s Crest',
-	rewardAddress: '01E4',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Monochrome',
-	rewardAddress: '01E5',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Follow the Wind',
-	rewardAddress: '01E6',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Circle of Life',
-	rewardAddress: '01E7',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Photon Debugger',
-	rewardAddress: '01E8',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Gull Wing',
-	rewardAddress: '01E9',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Rumbling Rose',
-	rewardAddress: '01EA',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Guardian Soul',
-	rewardAddress: '01EB',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Wishing Lamp',
-	rewardAddress: '01EC',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Decisive Pumpkin',
-	rewardAddress: '01ED',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Sweet Memories',
-	rewardAddress: '01EF',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Mysterious Abyss',
-	rewardAddress: '01F0',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Sleeping Lion',
-	rewardAddress: '01EE',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Bond of Flame',
-	rewardAddress: '01F2',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Two Become One',
-	rewardAddress: '021F',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Fatal Crest',
-	rewardAddress: '01F1',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Fenrir',
-	rewardAddress: '01F3',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Ultima Weapon',
-	rewardAddress: '01F4',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Winner\'s Proof',
-	rewardAddress: '0220',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Detection Saber',
-	rewardAddress: '002C',
-	},{
-	rewardType: 'Keyblades',
-	reward: 'Edge of Ultima',
-	rewardAddress: '002D',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Navigational Map',
-	rewardAddress: '0059',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'DH Map',
-	rewardAddress: '0216',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Tower Map',
-	rewardAddress: '0215',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Twilight Town Map',
-	rewardAddress: '00FF',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Sunset Hill Map',
-	rewardAddress: '0213',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Mansion Map',
-	rewardAddress: '0214',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Castle Perimeter Map',
-	rewardAddress: '0201',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'The Great Maw Map',
-	rewardAddress: '0202',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Marketplace Map',
-	rewardAddress: '00FD',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Dark Remembrance Map',
-	rewardAddress: '024A',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Depths of Remembrance Map',
-	rewardAddress: '024E',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Garden of Assemblage Map',
-	rewardAddress: '0250',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Castle Map',
-	rewardAddress: '005A',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Basement Map',
-	rewardAddress: '005B',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Castle Walls Map',
-	rewardAddress: '005C',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Underworld Map',
-	rewardAddress: '0087',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Caverns Map',
-	rewardAddress: '0088',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Coliseum Map',
-	rewardAddress: '0086',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Cave of Wonders Map',
-	rewardAddress: '0079',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Ruins Map',
-	rewardAddress: '007A',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Agrabah Map',
-	rewardAddress: '0078',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Palace Map',
-	rewardAddress: '0082',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Encampment Area Map',
-	rewardAddress: '0070',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Village Area Map',
-	rewardAddress: '0071',
-	},{
-	rewardType: 'Area Maps',
-	reward: '100 Acre Wood Map',
-	rewardAddress: '007D',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Piglet\'s House Map',
-	rewardAddress: '007F',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Rabbit\'s House Map',
-	rewardAddress: '007E',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Kanga\'s House Map',
-	rewardAddress: '0080',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Spooky Cave Map',
-	rewardAddress: '0081',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Starry Hill Map',
-	rewardAddress: '007C',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Savannah Map',
-	rewardAddress: '0200',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Pride Rock Map',
-	rewardAddress: '00FC',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Oasis Map',
-	rewardAddress: '01FF',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Undersea Kingdom Map',
-	rewardAddress: '007B',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Disney Castle Map',
-	rewardAddress: '0077',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Cornerstone Hill Map',
-	rewardAddress: '0072',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Window of Time Map',
-	rewardAddress: '0206',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Window of Time Map?',
-	rewardAddress: '0073',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Lilliput Map',
-	rewardAddress: '0074',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Building Site Map',
-	rewardAddress: '0075',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Mickey\'s House Map',
-	rewardAddress: '0076',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Halloween Town Map',
-	rewardAddress: '00FA',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Christmas Town Map',
-	rewardAddress: '01FD',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Curly Hill Map',
-	rewardAddress: '01FE',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Naval Map',
-	rewardAddress: '00FB',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Isla de Muerta Map',
-	rewardAddress: '01FB',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Ship Graveyard Map',
-	rewardAddress: '01FC',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'The Interceptor Map',
-	rewardAddress: '01F9',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'The Black Pearl Map',
-	rewardAddress: '01FA',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Pit Cell Area Map',
-	rewardAddress: '00FE',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'I/O Tower Map',
-	rewardAddress: '0203',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Central Computer Core Map',
-	rewardAddress: '0204',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Solar Sailer Simulation Map',
-	rewardAddress: '0205',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Dark City Map',
-	rewardAddress: '0100',
-	},{
-	rewardType: 'Area Maps',
-	reward: 'Castle That Never Was Map',
-	rewardAddress: '0218',
-	},{
-	rewardType: 'Proofs',
-	reward: 'Proof of Connection',
-	rewardAddress: '0251',
-	},{
-	rewardType: 'Proofs',
-	reward: 'Proof of Nonexistence',
-	rewardAddress: '0252',
-	},{
-	rewardType: 'Proofs',
-	reward: 'Proof of Peace',
-	rewardAddress: '0253',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Mega-Recipe',
-	rewardAddress: '017E',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Star Recipe',
-	rewardAddress: '01C1',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Recovery Recipe',
-	rewardAddress: '01C2',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Skill Recipe',
-	rewardAddress: '01C3',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Guard Recipe',
-	rewardAddress: '01C4',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Road to Discovery',
-	rewardAddress: '01D0',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Strength Beyond Strength',
-	rewardAddress: '01D1',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Book of Shadows',
-	rewardAddress: '01D2',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Cloaked Thunder',
-	rewardAddress: '01D3',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Eternal Blossom',
-	rewardAddress: '01D4',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Rare Document',
-	rewardAddress: '01D5',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Style Recipe',
-	rewardAddress: '01DB',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Moon Recipe',
-	rewardAddress: '01DC',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Queen Recipe',
-	rewardAddress: '01DD',
-	},{
-	rewardType: 'Recipes',
-	reward: 'King Recipe',
-	rewardAddress: '01DE',
-	},{
-	rewardType: 'Recipes',
-	reward: 'Ultimate Recipe',
-	rewardAddress: '01DF',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 1',
-	rewardAddress: '00E2',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 2',
-	rewardAddress: '00E3',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 3',
-	rewardAddress: '00E4',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 4',
-	rewardAddress: '00E5',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 5',
-	rewardAddress: '00E6',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 6',
-	rewardAddress: '00E7',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 7',
-	rewardAddress: '00E8',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 8',
-	rewardAddress: '00E9',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 9',
-	rewardAddress: '00EA',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 10',
-	rewardAddress: '00EB',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 11',
-	rewardAddress: '00EC',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 12',
-	rewardAddress: '00ED',
-	},{
-	rewardType: 'Secret Reports',
-	reward: 'Secret Ansem\'s Report 13',
-	rewardAddress: '00EE',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Knight\'s Shield',
-	rewardAddress: '0031',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Adamant Shield',
-	rewardAddress: '008B',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Chain Gear',
-	rewardAddress: '008C',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Falling Star',
-	rewardAddress: '008E',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Dream Cloud',
-	rewardAddress: '008F',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Knight Defender',
-	rewardAddress: '0090',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Ogre Shield',
-	rewardAddress: '008D',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Genji Shield',
-	rewardAddress: '0091',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Akashic Record',
-	rewardAddress: '0092',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Akashic Record+',
-	rewardAddress: '0259',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Nobody Guard',
-	rewardAddress: '0093',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Frozen Pride',
-	rewardAddress: '0228',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Frozen Pride+',
-	rewardAddress: '0229',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Save The King',
-	rewardAddress: '01E3',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Save The King+',
-	rewardAddress: '01F8',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Joyous Mushroom',
-	rewardAddress: '022A',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Joyous Mushroom+',
-	rewardAddress: '022B',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Majestic Mushroom',
-	rewardAddress: '022C',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Majestic Mushroom+',
-	rewardAddress: '022D',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Ultimate Mushroom',
-	rewardAddress: '022E',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Detection Shield',
-	rewardAddress: '0032',
-	},{
-	rewardType: 'Goofy\'s Shields',
-	reward: 'Test The King',
-	rewardAddress: '0033',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Mage\'s Staff',
-	rewardAddress: '004B',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Hammer Staff',
-	rewardAddress: '0094',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Victory Bell',
-	rewardAddress: '0095',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Comet Staff',
-	rewardAddress: '0097',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Lord\'s Broom',
-	rewardAddress: '0098',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Wisdom Wand',
-	rewardAddress: '0099',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Meteor Staff',
-	rewardAddress: '0096',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Rising Dragon',
-	rewardAddress: '009A',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Shaman\'s Relic',
-	rewardAddress: '009C',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Shaman\'s Relic+',
-	rewardAddress: '0258',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Nobody Lance',
-	rewardAddress: '009B',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Centurion',
-	rewardAddress: '0221',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Centurion+',
-	rewardAddress: '0222',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Save The Queen',
-	rewardAddress: '01E2',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Save The Queen+',
-	rewardAddress: '01F7',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Plain Mushroom',
-	rewardAddress: '0223',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Plain Mushroom+',
-	rewardAddress: '0224',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Precious Mushroom',
-	rewardAddress: '0225',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Precious Mushroom+',
-	rewardAddress: '0226',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Premium Mushroom',
-	rewardAddress: '0227',
-	},{
-	rewardType: 'Donald\'s Staves',
-	reward: 'Staff of Detection',
-	rewardAddress: '00A1',
-	},{
-	rewardType: 'Magic Spells',
-	reward: 'Fire',
-	rewardAddress: '0015',
-	},{
-	rewardType: 'Magic Spells',
-	reward: 'Blizzard',
-	rewardAddress: '0016',
-	},{
-	rewardType: 'Magic Spells',
-	reward: 'Thunder',
-	rewardAddress: '0017',
-	},{
-	rewardType: 'Magic Spells',
-	reward: 'Cure',
-	rewardAddress: '0018',
-	},{
-	rewardType: 'Magic Spells',
-	reward: 'Magnet',
-	rewardAddress: '0057',
-	},{
-	rewardType: 'Magic Spells',
-	reward: 'Reflect',
-	rewardAddress: '0058',
-	},{
-	rewardType: 'Summons',
-	reward: 'Baseball Charm',
-	rewardAddress: '017F',
-	},{
-	rewardType: 'Summons',
-	reward: 'Ukulele Charm',
-	rewardAddress: '0019',
-	},{
-	rewardType: 'Summons',
-	reward: 'Lamp Charm',
-	rewardAddress: '009F',
-	},{
-	rewardType: 'Summons',
-	reward: 'Feather Charm',
-	rewardAddress: '00A0',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Blazing Shard',
-	rewardAddress: '013D',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Blazing Stone',
-	rewardAddress: '013E',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Blazing Gem',
-	rewardAddress: '013F',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Blazing Crystal',
-	rewardAddress: '0140',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Frost Shard',
-	rewardAddress: '017A',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Frost Stone',
-	rewardAddress: '017B',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Frost Gem',
-	rewardAddress: '017C',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Frost Crystal',
-	rewardAddress: '017D',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lightning Shard',
-	rewardAddress: '0145',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lightning Stone',
-	rewardAddress: '0146',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lightning Gem',
-	rewardAddress: '0147',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lightning Crystal',
-	rewardAddress: '0148',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lucid Shard',
-	rewardAddress: '014D',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lucid Stone',
-	rewardAddress: '014E',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lucid Gem',
-	rewardAddress: '014F',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lucid Crystal',
-	rewardAddress: '0150',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Power Shard',
-	rewardAddress: '0149',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Power Stone',
-	rewardAddress: '014A',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Power Gem',
-	rewardAddress: '014B',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Power Crystal',
-	rewardAddress: '014C',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Dark Shard',
-	rewardAddress: '0118',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Dark Stone',
-	rewardAddress: '0119',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Dark Gem',
-	rewardAddress: '011A',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Dark Crystal',
-	rewardAddress: '011B',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Dense Shard',
-	rewardAddress: '0151',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Dense Stone',
-	rewardAddress: '0152',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Dense Gem',
-	rewardAddress: '0153',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Dense Crystal',
-	rewardAddress: '0154',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Twilight Shard',
-	rewardAddress: '0155',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Twilight Stone',
-	rewardAddress: '0156',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Twilight Gem',
-	rewardAddress: '0157',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Twilight Crystal',
-	rewardAddress: '0158',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Mythril Shard',
-	rewardAddress: '0159',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Mythril Stone',
-	rewardAddress: '015A',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Mythril Gem',
-	rewardAddress: '015B',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Mythril Crystal',
-	rewardAddress: '015C',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Remembrance Shard',
-	rewardAddress: '0240',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Remembrance Stone',
-	rewardAddress: '0241',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Remembrance Gem',
-	rewardAddress: '0242',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Remembrance Crystal',
-	rewardAddress: '0243',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Tranquility Shard',
-	rewardAddress: '0244',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Tranquility Stone',
-	rewardAddress: '0245',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Tranquility Gem',
-	rewardAddress: '0246',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Tranquility Crystal',
-	rewardAddress: '0247',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Bright Shard',
-	rewardAddress: '015D',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Bright Stone',
-	rewardAddress: '015E',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Bright Gem',
-	rewardAddress: '015F',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Bright Crystal',
-	rewardAddress: '0160',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Energy Shard',
-	rewardAddress: '0161',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Energy Stone',
-	rewardAddress: '0162',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Energy Gem',
-	rewardAddress: '0163',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Energy Crystal',
-	rewardAddress: '0164',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Serenity Shard',
-	rewardAddress: '0165',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Serenity Stone',
-	rewardAddress: '0166',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Serenity Gem',
-	rewardAddress: '0167',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Serenity Crystal',
-	rewardAddress: '0168',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Lost Illusion',
-	rewardAddress: '0248',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Manifest Illusion',
-	rewardAddress: '0249',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Orichalcum',
-	rewardAddress: '0179',
-	},{
-	rewardType: 'Synth Materials',
-	reward: 'Orichalcum+',
-	rewardAddress: '0169',
-	}]	
+const rewardArray = [{
+	'Reward Type': 'Abilities',
+	'Rewards': [{
+		'Reward': 'Guard',
+		'Reward Address': '0052'
+	}, {
+		'Reward': 'Upper Slash',
+		'Reward Address': '0089'
+	}, {
+		'Reward': 'Horizontal Slash',
+		'Reward Address': '010F'
+	}, {
+		'Reward': 'Finishing Leap',
+		'Reward Address': '010B'
+	}, {
+		'Reward': 'Retaliating Slash',
+		'Reward Address': '0111'
+	}, {
+		'Reward': 'Slapshot',
+		'Reward Address': '0106'
+	}, {
+		'Reward': 'Dodge Slash',
+		'Reward Address': '0107'
+	}, {
+		'Reward': 'Flash Step',
+		'Reward Address': '022F'
+	}, {
+		'Reward': 'Slide Dash',
+		'Reward Address': '0108'
+	}, {
+		'Reward': 'Vicinity Break',
+		'Reward Address': '0232'
+	}, {
+		'Reward': 'Guard Break',
+		'Reward Address': '0109'
+	}, {
+		'Reward': 'Explosion',
+		'Reward Address': '010A'
+	}, {
+		'Reward': 'Aerial Sweep',
+		'Reward Address': '010D'
+	}, {
+		'Reward': 'Aerial Dive',
+		'Reward Address': '0230'
+	}, {
+		'Reward': 'Aerial Spiral',
+		'Reward Address': '010E'
+	}, {
+		'Reward': 'Aerial Finish',
+		'Reward Address': '0110'
+	}, {
+		'Reward': 'Magnet Burst',
+		'Reward Address': '0231'
+	}, {
+		'Reward': 'Counterguard',
+		'Reward Address': '010C'
+	}, {
+		'Reward': 'Auto Valor',
+		'Reward Address': '0181'
+	}, {
+		'Reward': 'Auto Wisdom',
+		'Reward Address': '0182'
+	}, {
+		'Reward': 'Auto Limit',
+		'Reward Address': '0238'
+	}, {
+		'Reward': 'Auto Master',
+		'Reward Address': '0183'
+	}, {
+		'Reward': 'Auto Final',
+		'Reward Address': '0184'
+	}, {
+		'Reward': 'Auto Summon',
+		'Reward Address': '0185'
+	}, {
+		'Reward': 'Trinity Limit',
+		'Reward Address': '00C6'
+	}, {
+		'Reward': 'Donald Fire',
+		'Reward Address': '00A5'
+	}, {
+		'Reward': 'Donald Blizzard',
+		'Reward Address': '00A6'
+	}, {
+		'Reward': 'Donald Thunder',
+		'Reward Address': '00A7'
+	}, {
+		'Reward': 'Donald Cure',
+		'Reward Address': '00A8'
+	}, {
+		'Reward': 'Fantasia (Comet)',
+		'Reward Address': '00C7'
+	}, {
+		'Reward': 'Flare Force (Duck Flare)',
+		'Reward Address': '00C8'
+	}, {
+		'Reward': 'Goofy Tornado',
+		'Reward Address': '01A7'
+	}, {
+		'Reward': 'Goofy Bash',
+		'Reward Address': '01AD'
+	}, {
+		'Reward': 'Goofy Turbo',
+		'Reward Address': '01A9'
+	}, {
+		'Reward': 'Tornado Fusion (Whirli-Goof)',
+		'Reward Address': '00C9'
+	}, {
+		'Reward': 'Teamwork (Knocksmash)',
+		'Reward Address': '00CA'
+	}, {
+		'Reward': 'Scan',
+		'Reward Address': '008A'
+	}, {
+		'Reward': 'Aerial Recovery',
+		'Reward Address': '009E'
+	}, {
+		'Reward': 'Combo Master',
+		'Reward Address': '021B'
+	}, {
+		'Reward': 'Combo Plus',
+		'Reward Address': '00A2'
+	}, {
+		'Reward': 'Air Combo Plus',
+		'Reward Address': '00A3'
+	}, {
+		'Reward': 'Combo Boost',
+		'Reward Address': '0186'
+	}, {
+		'Reward': 'Air Combo Boost',
+		'Reward Address': '0187'
+	}, {
+		'Reward': 'Reaction Boost',
+		'Reward Address': '0188'
+	}, {
+		'Reward': 'Finishing Plus',
+		'Reward Address': '0189'
+	}, {
+		'Reward': 'Negative Combo',
+		'Reward Address': '018A'
+	}, {
+		'Reward': 'Berserk Charge',
+		'Reward Address': '018B'
+	}, {
+		'Reward': 'Damage Drive',
+		'Reward Address': '018C'
+	}, {
+		'Reward': 'Drive Boost',
+		'Reward Address': '018D'
+	}, {
+		'Reward': 'Form Boost',
+		'Reward Address': '018E'
+	}, {
+		'Reward': 'Summon Boost',
+		'Reward Address': '018F'
+	}, {
+		'Reward': 'Combination Boost',
+		'Reward Address': '0190'
+	}, {
+		'Reward': 'Experience Boost',
+		'Reward Address': '0191'
+	}, {
+		'Reward': 'Leaf Bracer',
+		'Reward Address': '0192'
+	}, {
+		'Reward': 'Magic Lock-On',
+		'Reward Address': '0193'
+	}, {
+		'Reward': 'Light & Darkness',
+		'Reward Address': '021D'
+	}, {
+		'Reward': 'Draw',
+		'Reward Address': '0195'
+	}, {
+		'Reward': 'Jackpot',
+		'Reward Address': '0196'
+	}, {
+		'Reward': 'Lucky Lucky',
+		'Reward Address': '0197'
+	}, {
+		'Reward': 'Drive Converter',
+		'Reward Address': '021C'
+	}, {
+		'Reward': 'Fire Boost',
+		'Reward Address': '0198'
+	}, {
+		'Reward': 'Blizzard Boost',
+		'Reward Address': '0199'
+	}, {
+		'Reward': 'Thunder Boost',
+		'Reward Address': '019A'
+	}, {
+		'Reward': 'Item Boost',
+		'Reward Address': '019B'
+	}, {
+		'Reward': 'MP Rage',
+		'Reward Address': '019C'
+	}, {
+		'Reward': 'MP Haste',
+		'Reward Address': '019D'
+	}, {
+		'Reward': 'MP Hastera',
+		'Reward Address': '01A5'
+	}, {
+		'Reward': 'MP Hastega',
+		'Reward Address': '01A6'
+	}, {
+		'Reward': 'Defender',
+		'Reward Address': '019E'
+	}, {
+		'Reward': 'Damage Control',
+		'Reward Address': '021E'
+	}, {
+		'Reward': 'Second Chance',
+		'Reward Address': '019F'
+	}, {
+		'Reward': 'Once More',
+		'Reward Address': '01A0'
+	}, {
+		'Reward': 'No Experience',
+		'Reward Address': '0194'
+	}, {
+		'Reward': 'Auto Limit',
+		'Reward Address': '01A1'
+	}, {
+		'Reward': 'Auto Change',
+		'Reward Address': '01A2'
+	}, {
+		'Reward': 'Hyper Healing',
+		'Reward Address': '01A3'
+	}, {
+		'Reward': 'Auto Healing',
+		'Reward Address': '01A4'
+	}, {
+		'Reward': 'Protect',
+		'Reward Address': '0254'
+	}, {
+		'Reward': 'Protectra',
+		'Reward Address': '0255'
+	}, {
+		'Reward': 'Protectga',
+		'Reward Address': '0256',
+	}]
+}, {
+	'Reward Type': 'Accessories',
+	'Rewards': [{
+		'Reward': 'Ability Ring',
+		'Reward Address': '0008'
+	}, {
+		'Reward': 'Engineer\'s Ring',
+		'Reward Address': '0009'
+	}, {
+		'Reward': 'Technician\'s Ring',
+		'Reward Address': '000A'
+	}, {
+		'Reward': 'Skill Ring',
+		'Reward Address': '0026'
+	}, {
+		'Reward': 'Skillful Ring',
+		'Reward Address': '0027'
+	}, {
+		'Reward': 'Expert\'s Ring',
+		'Reward Address': '000B'
+	}, {
+		'Reward': 'Master\'s Ring',
+		'Reward Address': '0022'
+	}, {
+		'Reward': 'Cosmic Ring',
+		'Reward Address': '0034'
+	}, {
+		'Reward': 'Executive\'s Ring',
+		'Reward Address': '0257'
+	}, {
+		'Reward': 'Sardonyx Ring',
+		'Reward Address': '000C'
+	}, {
+		'Reward': 'Tourmaline Ring',
+		'Reward Address': '000D'
+	}, {
+		'Reward': 'Aquamarine Ring',
+		'Reward Address': '000E'
+	}, {
+		'Reward': 'Garnet Ring',
+		'Reward Address': '0F10'
+	}, {
+		'Reward': 'Diamond Ring',
+		'Reward Address': '0010'
+	}, {
+		'Reward': 'Silver Ring',
+		'Reward Address': '0011'
+	}, {
+		'Reward': 'Gold Ring',
+		'Reward Address': '0012'
+	}, {
+		'Reward': 'Platinum Ring',
+		'Reward Address': '0013'
+	}, {
+		'Reward': 'Mythril Ring',
+		'Reward Address': '0014'
+	}, {
+		'Reward': 'Orichalcum Ring',
+		'Reward Address': '001C'
+	}, {
+		'Reward': 'Soldier Earring',
+		'Reward Address': '0028'
+	}, {
+		'Reward': 'Fencer Earring',
+		'Reward Address': '002E'
+	}, {
+		'Reward': 'Mage Earring',
+		'Reward Address': '002F'
+	}, {
+		'Reward': 'Slayer Earring',
+		'Reward Address': '0030'
+	}, {
+		'Reward': 'Medal',
+		'Reward Address': '0035'
+	}, {
+		'Reward': 'Moon Amulet',
+		'Reward Address': '0023'
+	}, {
+		'Reward': 'Star Charm',
+		'Reward Address': '0024'
+	}, {
+		'Reward': 'Cosmic Arts',
+		'Reward Address': '0038'
+	}, {
+		'Reward': 'Shadow Archive',
+		'Reward Address': '0039'
+	}, {
+		'Reward': 'Shadow Archive+',
+		'Reward Address': '003A'
+	}, {
+		'Reward': 'Full Bloom',
+		'Reward Address': '0040'
+	}, {
+		'Reward': 'Full Bloom+',
+		'Reward Address': '0042'
+	}, {
+		'Reward': 'Draw Ring',
+		'Reward Address': '0041'
+	}, {
+		'Reward': 'Lucky Ring',
+		'Reward Address': '003F',
+	}]
+}, {
+	'Reward Type': 'Armor',
+	'Rewards': [{
+		'Reward': 'Elven Bandana',
+		'Reward Address': '0043'
+	}, {
+		'Reward': 'Divine Bandana',
+		'Reward Address': '0044'
+	}, {
+		'Reward': 'Protect Belt',
+		'Reward Address': '004E'
+	}, {
+		'Reward': 'Gaia Belt',
+		'Reward Address': '004F'
+	}, {
+		'Reward': 'Power Band',
+		'Reward Address': '0045'
+	}, {
+		'Reward': 'Buster Band',
+		'Reward Address': '0046'
+	}, {
+		'Reward': 'Cosmic Belt',
+		'Reward Address': '006F'
+	}, {
+		'Reward': 'Fire Bangle',
+		'Reward Address': '00AD'
+	}, {
+		'Reward': 'Fira Bangle',
+		'Reward Address': '00AE'
+	}, {
+		'Reward': 'Firaga Bangle',
+		'Reward Address': '00C5'
+	}, {
+		'Reward': 'Firagun Bangle',
+		'Reward Address': '011C'
+	}, {
+		'Reward': 'Blizzard Armlet',
+		'Reward Address': '011E'
+	}, {
+		'Reward': 'Blizzara Armlet',
+		'Reward Address': '011F'
+	}, {
+		'Reward': 'Blizzaga Armlet',
+		'Reward Address': '0120'
+	}, {
+		'Reward': 'Blizzagun Armlet',
+		'Reward Address': '0121'
+	}, {
+		'Reward': 'Thunder Trinket',
+		'Reward Address': '0123'
+	}, {
+		'Reward': 'Thundara Trinket',
+		'Reward Address': '0124'
+	}, {
+		'Reward': 'Thundaga Trinket',
+		'Reward Address': '0125'
+	}, {
+		'Reward': 'Thundagun Trinket',
+		'Reward Address': '0126'
+	}, {
+		'Reward': 'Shock Charm',
+		'Reward Address': '0084'
+	}, {
+		'Reward': 'Shock Charm+',
+		'Reward Address': '0085'
+	}, {
+		'Reward': 'Shadow Anklet',
+		'Reward Address': '0128'
+	}, {
+		'Reward': 'Dark Anklet',
+		'Reward Address': '0129'
+	}, {
+		'Reward': 'Midnight Anklet',
+		'Reward Address': '012A'
+	}, {
+		'Reward': 'Chaos Anklet',
+		'Reward Address': '012B'
+	}, {
+		'Reward': 'Champion Belt',
+		'Reward Address': '0131'
+	}, {
+		'Reward': 'Abas Chain',
+		'Reward Address': '012D'
+	}, {
+		'Reward': 'Aegis Chain',
+		'Reward Address': '012E'
+	}, {
+		'Reward': 'Acrisius',
+		'Reward Address': '012F'
+	}, {
+		'Reward': 'Acrisius+',
+		'Reward Address': '0133'
+	}, {
+		'Reward': 'Cosmic Chain',
+		'Reward Address': '0134'
+	}, {
+		'Reward': 'Petite Ribbon',
+		'Reward Address': '0132'
+	}, {
+		'Reward': 'Ribbon',
+		'Reward Address': '0130'
+	}, {
+		'Reward': 'Grand Ribbon',
+		'Reward Address': '009D',
+	}]
+}, {
+	'Reward Type': 'Forms',
+	'Rewards': [{
+		'Reward': 'Valor Form',
+		'Reward Address': '001A'
+	}, {
+		'Reward': 'Wisdom Form',
+		'Reward Address': '001B'
+	}, {
+		'Reward': 'Limit Form',
+		'Reward Address': '0233'
+	}, {
+		'Reward': 'Master Form',
+		'Reward Address': '001F'
+	}, {
+		'Reward': 'Final Form',
+		'Reward Address': '001D',
+	}]
+}, {
+	'Reward Type': 'Growth Abilities',
+	'Rewards': [{
+		'Reward': 'High Jump LV1',
+		'Reward Address': '005E'
+	}, {
+		'Reward': 'High Jump LV2',
+		'Reward Address': '005F'
+	}, {
+		'Reward': 'High Jump LV3',
+		'Reward Address': '0060'
+	}, {
+		'Reward': 'High Jump MAX',
+		'Reward Address': '0061'
+	}, {
+		'Reward': 'Quick Run LV1',
+		'Reward Address': '0062'
+	}, {
+		'Reward': 'Quick Run LV2',
+		'Reward Address': '0063'
+	}, {
+		'Reward': 'Quick Run LV3',
+		'Reward Address': '0064'
+	}, {
+		'Reward': 'Quick Run MAX',
+		'Reward Address': '0065'
+	}, {
+		'Reward': 'Dodge Roll LV1',
+		'Reward Address': '0234'
+	}, {
+		'Reward': 'Dodge Roll LV2',
+		'Reward Address': '0235'
+	}, {
+		'Reward': 'Dodge Roll LV3',
+		'Reward Address': '0236'
+	}, {
+		'Reward': 'Dodge Roll MAX',
+		'Reward Address': '0237'
+	}, {
+		'Reward': 'Aerial Dodge LV1',
+		'Reward Address': '0066'
+	}, {
+		'Reward': 'Aerial Dodge LV2',
+		'Reward Address': '0067'
+	}, {
+		'Reward': 'Aerial Dodge LV3',
+		'Reward Address': '0068'
+	}, {
+		'Reward': 'Aerial Dodge MAX',
+		'Reward Address': '0069'
+	}, {
+		'Reward': 'Glide LV1',
+		'Reward Address': '006A'
+	}, {
+		'Reward': 'Glide LV2',
+		'Reward Address': '006B'
+	}, {
+		'Reward': 'Glide LV3',
+		'Reward Address': '006C'
+	}, {
+		'Reward': 'Glide MAX',
+		'Reward Address': '006D',
+	}]
+}, {
+	'Reward Type': 'Items',
+	'Rewards': [{
+		'Reward': 'Potion',
+		'Reward Address': '0001'
+	}, {
+		'Reward': 'Hi-Potion',
+		'Reward Address': '0002'
+	}, {
+		'Reward': 'Ether',
+		'Reward Address': '0003'
+	}, {
+		'Reward': 'Elixir',
+		'Reward Address': '0004'
+	}, {
+		'Reward': 'Mega-Potion',
+		'Reward Address': '0005'
+	}, {
+		'Reward': 'Mega-Ether',
+		'Reward Address': '0006'
+	}, {
+		'Reward': 'Mega-Elixir',
+		'Reward Address': '0007'
+	}, {
+		'Reward': 'Tent',
+		'Reward Address': '0083'
+	}, {
+		'Reward': 'Drive Recovery',
+		'Reward Address': '0112'
+	}, {
+		'Reward': 'High Drive Recovery',
+		'Reward Address': '0113'
+	}, {
+		'Reward': 'Power Boost',
+		'Reward Address': '0114'
+	}, {
+		'Reward': 'Magic Boost',
+		'Reward Address': '0115'
+	}, {
+		'Reward': 'Defense Boost',
+		'Reward Address': '0116'
+	}, {
+		'Reward': 'AP Boost',
+		'Reward Address': '0117',
+	}]
+}, {
+	'Reward Type': 'Key Items',
+	'Rewards': [{
+		'Reward': 'Torn Page',
+		'Reward Address': '0020'
+	}, {
+		'Reward': 'Munny Pouch (Olette)',
+		'Reward Address': '016A'
+	}, {
+		'Reward': 'Munny Pouch (Mickey)',
+		'Reward Address': '0217'
+	}, {
+		'Reward': 'Crystal Orb',
+		'Reward Address': '016B'
+	}, {
+		'Reward': 'Seifer\'s Trophy',
+		'Reward Address': '016C'
+	}, {
+		'Reward': 'Tournament Poster',
+		'Reward Address': '016D'
+	}, {
+		'Reward': 'Poster',
+		'Reward Address': '016E'
+	}, {
+		'Reward': 'Letter',
+		'Reward Address': '016F'
+	}, {
+		'Reward': 'Namine\'s Sketches',
+		'Reward Address': '0170'
+	}, {
+		'Reward': 'Membership Card',
+		'Reward Address': '0171'
+	}, {
+		'Reward': 'Olympus Stone',
+		'Reward Address': '0172'
+	}, {
+		'Reward': 'Auron\'s Statue',
+		'Reward Address': '0173'
+	}, {
+		'Reward': 'Cursed Medallion',
+		'Reward Address': '0174'
+	}, {
+		'Reward': 'Presents',
+		'Reward Address': '0175'
+	}, {
+		'Reward': 'Decoy Presents',
+		'Reward Address': '0176'
+	}, {
+		'Reward': 'Ice Cream',
+		'Reward Address': '0177'
+	}, {
+		'Reward': 'Picture',
+		'Reward Address': '0178'
+	}, {
+		'Reward': 'Promise Charm',
+		'Reward Address': '020C'
+	}, {
+		'Reward': 'Hades Cup Trophy',
+		'Reward Address': '0219'
+	}, {
+		'Reward': '"The Struggle" Trophy',
+		'Reward Address': '021A',
+	}]
+}, {
+	'Reward Type': 'Keyblades',
+	'Rewards': [{
+		'Reward': 'Kingdom Key',
+		'Reward Address': '0029'
+	}, {
+		'Reward': 'Oathkeeper',
+		'Reward Address': '002A'
+	}, {
+		'Reward': 'Oblivion',
+		'Reward Address': '002B'
+	}, {
+		'Reward': 'Star Seeker',
+		'Reward Address': '01E0'
+	}, {
+		'Reward': 'Hidden Dragon',
+		'Reward Address': '01E1'
+	}, {
+		'Reward': 'Hero\'s Crest',
+		'Reward Address': '01E4'
+	}, {
+		'Reward': 'Monochrome',
+		'Reward Address': '01E5'
+	}, {
+		'Reward': 'Follow the Wind',
+		'Reward Address': '01E6'
+	}, {
+		'Reward': 'Circle of Life',
+		'Reward Address': '01E7'
+	}, {
+		'Reward': 'Photon Debugger',
+		'Reward Address': '01E8'
+	}, {
+		'Reward': 'Gull Wing',
+		'Reward Address': '01E9'
+	}, {
+		'Reward': 'Rumbling Rose',
+		'Reward Address': '01EA'
+	}, {
+		'Reward': 'Guardian Soul',
+		'Reward Address': '01EB'
+	}, {
+		'Reward': 'Wishing Lamp',
+		'Reward Address': '01EC'
+	}, {
+		'Reward': 'Decisive Pumpkin',
+		'Reward Address': '01ED'
+	}, {
+		'Reward': 'Sweet Memories',
+		'Reward Address': '01EF'
+	}, {
+		'Reward': 'Mysterious Abyss',
+		'Reward Address': '01F0'
+	}, {
+		'Reward': 'Sleeping Lion',
+		'Reward Address': '01EE'
+	}, {
+		'Reward': 'Bond of Flame',
+		'Reward Address': '01F2'
+	}, {
+		'Reward': 'Two Become One',
+		'Reward Address': '021F'
+	}, {
+		'Reward': 'Fatal Crest',
+		'Reward Address': '01F1'
+	}, {
+		'Reward': 'Fenrir',
+		'Reward Address': '01F3'
+	}, {
+		'Reward': 'Ultima Weapon',
+		'Reward Address': '01F4'
+	}, {
+		'Reward': 'Winner\'s Proof',
+		'Reward Address': '0220'
+	}, {
+		'Reward': 'Detection Saber',
+		'Reward Address': '002C'
+	}, {
+		'Reward': 'Edge of Ultima',
+		'Reward Address': '002D',
+	}]
+}, {
+	'Reward Type': 'Area Maps',
+	'Rewards': [{
+		'Reward': 'Navigational Map',
+		'Reward Address': '0059'
+	}, {
+		'Reward': 'DH Map',
+		'Reward Address': '0216'
+	}, {
+		'Reward': 'Tower Map',
+		'Reward Address': '0215'
+	}, {
+		'Reward': 'Twilight Town Map',
+		'Reward Address': '00FF'
+	}, {
+		'Reward': 'Sunset Hill Map',
+		'Reward Address': '0213'
+	}, {
+		'Reward': 'Mansion Map',
+		'Reward Address': '0214'
+	}, {
+		'Reward': 'Castle Perimeter Map',
+		'Reward Address': '0201'
+	}, {
+		'Reward': 'The Great Maw Map',
+		'Reward Address': '0202'
+	}, {
+		'Reward': 'Marketplace Map',
+		'Reward Address': '00FD'
+	}, {
+		'Reward': 'Dark Remembrance Map',
+		'Reward Address': '024A'
+	}, {
+		'Reward': 'Depths of Remembrance Map',
+		'Reward Address': '024E'
+	}, {
+		'Reward': 'Garden of Assemblage Map',
+		'Reward Address': '0250'
+	}, {
+		'Reward': 'Castle Map',
+		'Reward Address': '005A'
+	}, {
+		'Reward': 'Basement Map',
+		'Reward Address': '005B'
+	}, {
+		'Reward': 'Castle Walls Map',
+		'Reward Address': '005C'
+	}, {
+		'Reward': 'Underworld Map',
+		'Reward Address': '0087'
+	}, {
+		'Reward': 'Caverns Map',
+		'Reward Address': '0088'
+	}, {
+		'Reward': 'Coliseum Map',
+		'Reward Address': '0086'
+	}, {
+		'Reward': 'Cave of Wonders Map',
+		'Reward Address': '0079'
+	}, {
+		'Reward': 'Ruins Map',
+		'Reward Address': '007A'
+	}, {
+		'Reward': 'Agrabah Map',
+		'Reward Address': '0078'
+	}, {
+		'Reward': 'Palace Map',
+		'Reward Address': '0082'
+	}, {
+		'Reward': 'Encampment Area Map',
+		'Reward Address': '0070'
+	}, {
+		'Reward': 'Village Area Map',
+		'Reward Address': '0071'
+	}, {
+		'Reward': '100 Acre Wood Map',
+		'Reward Address': '007D'
+	}, {
+		'Reward': 'Piglet\'s House Map',
+		'Reward Address': '007F'
+	}, {
+		'Reward': 'Rabbit\'s House Map',
+		'Reward Address': '007E'
+	}, {
+		'Reward': 'Kanga\'s House Map',
+		'Reward Address': '0080'
+	}, {
+		'Reward': 'Spooky Cave Map',
+		'Reward Address': '0081'
+	}, {
+		'Reward': 'Starry Hill Map',
+		'Reward Address': '007C'
+	}, {
+		'Reward': 'Savannah Map',
+		'Reward Address': '0200'
+	}, {
+		'Reward': 'Pride Rock Map',
+		'Reward Address': '00FC'
+	}, {
+		'Reward': 'Oasis Map',
+		'Reward Address': '01FF'
+	}, {
+		'Reward': 'Undersea Kingdom Map',
+		'Reward Address': '007B'
+	}, {
+		'Reward': 'Disney Castle Map',
+		'Reward Address': '0077'
+	}, {
+		'Reward': 'Cornerstone Hill Map',
+		'Reward Address': '0072'
+	}, {
+		'Reward': 'Window of Time Map',
+		'Reward Address': '0206'
+	}, {
+		'Reward': 'Window of Time Map?',
+		'Reward Address': '0073'
+	}, {
+		'Reward': 'Lilliput Map',
+		'Reward Address': '0074'
+	}, {
+		'Reward': 'Building Site Map',
+		'Reward Address': '0075'
+	}, {
+		'Reward': 'Mickey\'s House Map',
+		'Reward Address': '0076'
+	}, {
+		'Reward': 'Halloween Town Map',
+		'Reward Address': '00FA'
+	}, {
+		'Reward': 'Christmas Town Map',
+		'Reward Address': '01FD'
+	}, {
+		'Reward': 'Curly Hill Map',
+		'Reward Address': '01FE'
+	}, {
+		'Reward': 'Naval Map',
+		'Reward Address': '00FB'
+	}, {
+		'Reward': 'Isla de Muerta Map',
+		'Reward Address': '01FB'
+	}, {
+		'Reward': 'Ship Graveyard Map',
+		'Reward Address': '01FC'
+	}, {
+		'Reward': 'The Interceptor Map',
+		'Reward Address': '01F9'
+	}, {
+		'Reward': 'The Black Pearl Map',
+		'Reward Address': '01FA'
+	}, {
+		'Reward': 'Pit Cell Area Map',
+		'Reward Address': '00FE'
+	}, {
+		'Reward': 'I/O Tower Map',
+		'Reward Address': '0203'
+	}, {
+		'Reward': 'Central Computer Core Map',
+		'Reward Address': '0204'
+	}, {
+		'Reward': 'Solar Sailer Simulation Map',
+		'Reward Address': '0205'
+	}, {
+		'Reward': 'Dark City Map',
+		'Reward Address': '0100'
+	}, {
+		'Reward': 'Castle That Never Was Map',
+		'Reward Address': '0218',
+	}]
+}, {
+	'Reward Type': 'Proofs',
+	'Rewards': [{
+		'Reward': 'Proof of Connection',
+		'Reward Address': '0251'
+	}, {
+		'Reward': 'Proof of Nonexistence',
+		'Reward Address': '0252'
+	}, {
+		'Reward': 'Proof of Peace',
+		'Reward Address': '0253',
+	}]
+}, {
+	'Reward Type': 'Recipes',
+	'Rewards': [{
+		'Reward': 'Mega-Recipe',
+		'Reward Address': '017E'
+	}, {
+		'Reward': 'Star Recipe',
+		'Reward Address': '01C1'
+	}, {
+		'Reward': 'Recovery Recipe',
+		'Reward Address': '01C2'
+	}, {
+		'Reward': 'Skill Recipe',
+		'Reward Address': '01C3'
+	}, {
+		'Reward': 'Guard Recipe',
+		'Reward Address': '01C4'
+	}, {
+		'Reward': 'Road to Discovery',
+		'Reward Address': '01D0'
+	}, {
+		'Reward': 'Strength Beyond Strength',
+		'Reward Address': '01D1'
+	}, {
+		'Reward': 'Book of Shadows',
+		'Reward Address': '01D2'
+	}, {
+		'Reward': 'Cloaked Thunder',
+		'Reward Address': '01D3'
+	}, {
+		'Reward': 'Eternal Blossom',
+		'Reward Address': '01D4'
+	}, {
+		'Reward': 'Rare Document',
+		'Reward Address': '01D5'
+	}, {
+		'Reward': 'Style Recipe',
+		'Reward Address': '01DB'
+	}, {
+		'Reward': 'Moon Recipe',
+		'Reward Address': '01DC'
+	}, {
+		'Reward': 'Queen Recipe',
+		'Reward Address': '01DD'
+	}, {
+		'Reward': 'King Recipe',
+		'Reward Address': '01DE'
+	}, {
+		'Reward': 'Ultimate Recipe',
+		'Reward Address': '01DF',
+	}]
+}, {
+	'Reward Type': 'Secret Reports',
+	'Rewards': [{
+		'Reward': 'Secret Ansem\'s Report 1',
+		'Reward Address': '00E2'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 2',
+		'Reward Address': '00E3'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 3',
+		'Reward Address': '00E4'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 4',
+		'Reward Address': '00E5'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 5',
+		'Reward Address': '00E6'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 6',
+		'Reward Address': '00E7'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 7',
+		'Reward Address': '00E8'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 8',
+		'Reward Address': '00E9'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 9',
+		'Reward Address': '00EA'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 10',
+		'Reward Address': '00EB'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 11',
+		'Reward Address': '00EC'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 12',
+		'Reward Address': '00ED'
+	}, {
+		'Reward': 'Secret Ansem\'s Report 13',
+		'Reward Address': '00EE',
+	}]
+}, {
+	'Reward Type': 'Goofy\'s Shields',
+	'Rewards': [{
+		'Reward': 'Knight\'s Shield',
+		'Reward Address': '0031'
+	}, {
+		'Reward': 'Adamant Shield',
+		'Reward Address': '008B'
+	}, {
+		'Reward': 'Chain Gear',
+		'Reward Address': '008C'
+	}, {
+		'Reward': 'Falling Star',
+		'Reward Address': '008E'
+	}, {
+		'Reward': 'Dream Cloud',
+		'Reward Address': '008F'
+	}, {
+		'Reward': 'Knight Defender',
+		'Reward Address': '0090'
+	}, {
+		'Reward': 'Ogre Shield',
+		'Reward Address': '008D'
+	}, {
+		'Reward': 'Genji Shield',
+		'Reward Address': '0091'
+	}, {
+		'Reward': 'Akashic Record',
+		'Reward Address': '0092'
+	}, {
+		'Reward': 'Akashic Record+',
+		'Reward Address': '0259'
+	}, {
+		'Reward': 'Nobody Guard',
+		'Reward Address': '0093'
+	}, {
+		'Reward': 'Frozen Pride',
+		'Reward Address': '0228'
+	}, {
+		'Reward': 'Frozen Pride+',
+		'Reward Address': '0229'
+	}, {
+		'Reward': 'Save The King',
+		'Reward Address': '01E3'
+	}, {
+		'Reward': 'Save The King+',
+		'Reward Address': '01F8'
+	}, {
+		'Reward': 'Joyous Mushroom',
+		'Reward Address': '022A'
+	}, {
+		'Reward': 'Joyous Mushroom+',
+		'Reward Address': '022B'
+	}, {
+		'Reward': 'Majestic Mushroom',
+		'Reward Address': '022C'
+	}, {
+		'Reward': 'Majestic Mushroom+',
+		'Reward Address': '022D'
+	}, {
+		'Reward': 'Ultimate Mushroom',
+		'Reward Address': '022E'
+	}, {
+		'Reward': 'Detection Shield',
+		'Reward Address': '0032'
+	}, {
+		'Reward': 'Test The King',
+		'Reward Address': '0033',
+	}]
+}, {
+	'Reward Type': 'Donald\'s Staves',
+	'Rewards': [{
+		'Reward': 'Mage\'s Staff',
+		'Reward Address': '004B'
+	}, {
+		'Reward': 'Hammer Staff',
+		'Reward Address': '0094'
+	}, {
+		'Reward': 'Victory Bell',
+		'Reward Address': '0095'
+	}, {
+		'Reward': 'Comet Staff',
+		'Reward Address': '0097'
+	}, {
+		'Reward': 'Lord\'s Broom',
+		'Reward Address': '0098'
+	}, {
+		'Reward': 'Wisdom Wand',
+		'Reward Address': '0099'
+	}, {
+		'Reward': 'Meteor Staff',
+		'Reward Address': '0096'
+	}, {
+		'Reward': 'Rising Dragon',
+		'Reward Address': '009A'
+	}, {
+		'Reward': 'Shaman\'s Relic',
+		'Reward Address': '009C'
+	}, {
+		'Reward': 'Shaman\'s Relic+ ',
+		'Reward Address': '0258'
+	}, {
+		'Reward': 'Nobody Lance',
+		'Reward Address': '009B'
+	}, {
+		'Reward': 'Centurion',
+		'Reward Address': '0221'
+	}, {
+		'Reward': 'Centurion+',
+		'Reward Address': '0222'
+	}, {
+		'Reward': 'Save The Queen',
+		'Reward Address': '01E2'
+	}, {
+		'Reward': 'Save The Queen+',
+		'Reward Address': '01F7'
+	}, {
+		'Reward': 'Plain Mushroom',
+		'Reward Address': '0223'
+	}, {
+		'Reward': 'Plain Mushroom+',
+		'Reward Address': '0224'
+	}, {
+		'Reward': 'Precious Mushroom',
+		'Reward Address': '0225'
+	}, {
+		'Reward': 'Precious Mushroom+',
+		'Reward Address': '0226'
+	}, {
+		'Reward': 'Premium Mushroom',
+		'Reward Address': '0227'
+	}, {
+		'Reward': 'Staff of Detection',
+		'Reward Address': '00A1',
+	}]
+}, {
+	'Reward Type': 'Magic Spells',
+	'Rewards': [{
+		'Reward': 'Fire',
+		'Reward Address': '0015'
+	}, {
+		'Reward': 'Blizzard',
+		'Reward Address': '0016'
+	}, {
+		'Reward': 'Thunder',
+		'Reward Address': '0017'
+	}, {
+		'Reward': 'Cure',
+		'Reward Address': '0018'
+	}, {
+		'Reward': 'Magnet',
+		'Reward Address': '0057'
+	}, {
+		'Reward': 'Reflect',
+		'Reward Address': '0058',
+	}]
+}, {
+	'Reward Type': 'Summons',
+	'Rewards': [{
+		'Reward': 'Baseball Charm',
+		'Reward Address': '017F'
+	}, {
+		'Reward': 'Ukulele Charm',
+		'Reward Address': '0019'
+	}, {
+		'Reward': 'Lamp Charm',
+		'Reward Address': '009F'
+	}, {
+		'Reward': 'Feather Charm',
+		'Reward Address': '00A0',
+	}]
+}, {
+	'Reward Type': 'Synth Materials',
+	'Rewards': [{
+		'Reward': 'Blazing Shard',
+		'Reward Address': '013D'
+	}, {
+		'Reward': 'Blazing Stone',
+		'Reward Address': '013E'
+	}, {
+		'Reward': 'Blazing Gem',
+		'Reward Address': '013F'
+	}, {
+		'Reward': 'Blazing Crystal',
+		'Reward Address': '0140'
+	}, {
+		'Reward': 'Frost Shard',
+		'Reward Address': '017A'
+	}, {
+		'Reward': 'Frost Stone',
+		'Reward Address': '017B'
+	}, {
+		'Reward': 'Frost Gem',
+		'Reward Address': '017C'
+	}, {
+		'Reward': 'Frost Crystal',
+		'Reward Address': '017D'
+	}, {
+		'Reward': 'Lightning Shard',
+		'Reward Address': '0145'
+	}, {
+		'Reward': 'Lightning Stone',
+		'Reward Address': '0146'
+	}, {
+		'Reward': 'Lightning Gem',
+		'Reward Address': '0147'
+	}, {
+		'Reward': 'Lightning Crystal',
+		'Reward Address': '0148'
+	}, {
+		'Reward': 'Lucid Shard',
+		'Reward Address': '014D'
+	}, {
+		'Reward': 'Lucid Stone',
+		'Reward Address': '014E'
+	}, {
+		'Reward': 'Lucid Gem',
+		'Reward Address': '014F'
+	}, {
+		'Reward': 'Lucid Crystal',
+		'Reward Address': '0150'
+	}, {
+		'Reward': 'Power Shard',
+		'Reward Address': '0149'
+	}, {
+		'Reward': 'Power Stone',
+		'Reward Address': '014A'
+	}, {
+		'Reward': 'Power Gem',
+		'Reward Address': '014B'
+	}, {
+		'Reward': 'Power Crystal',
+		'Reward Address': '014C'
+	}, {
+		'Reward': 'Dark Shard',
+		'Reward Address': '0118'
+	}, {
+		'Reward': 'Dark Stone',
+		'Reward Address': '0119'
+	}, {
+		'Reward': 'Dark Gem',
+		'Reward Address': '011A'
+	}, {
+		'Reward': 'Dark Crystal',
+		'Reward Address': '011B'
+	}, {
+		'Reward': 'Dense Shard',
+		'Reward Address': '0151'
+	}, {
+		'Reward': 'Dense Stone',
+		'Reward Address': '0152'
+	}, {
+		'Reward': 'Dense Gem',
+		'Reward Address': '0153'
+	}, {
+		'Reward': 'Dense Crystal',
+		'Reward Address': '0154'
+	}, {
+		'Reward': 'Twilight Shard',
+		'Reward Address': '0155'
+	}, {
+		'Reward': 'Twilight Stone',
+		'Reward Address': '0156'
+	}, {
+		'Reward': 'Twilight Gem',
+		'Reward Address': '0157'
+	}, {
+		'Reward': 'Twilight Crystal',
+		'Reward Address': '0158'
+	}, {
+		'Reward': 'Mythril Shard',
+		'Reward Address': '0159'
+	}, {
+		'Reward': 'Mythril Stone',
+		'Reward Address': '015A'
+	}, {
+		'Reward': 'Mythril Gem',
+		'Reward Address': '015B'
+	}, {
+		'Reward': 'Mythril Crystal',
+		'Reward Address': '015C'
+	}, {
+		'Reward': 'Remembrance Shard',
+		'Reward Address': '0240'
+	}, {
+		'Reward': 'Remembrance Stone',
+		'Reward Address': '0241'
+	}, {
+		'Reward': 'Remembrance Gem',
+		'Reward Address': '0242'
+	}, {
+		'Reward': 'Remembrance Crystal',
+		'Reward Address': '0243'
+	}, {
+		'Reward': 'Tranquility Shard',
+		'Reward Address': '0244'
+	}, {
+		'Reward': 'Tranquility Stone',
+		'Reward Address': '0245'
+	}, {
+		'Reward': 'Tranquility Gem',
+		'Reward Address': '0246'
+	}, {
+		'Reward': 'Tranquility Crystal',
+		'Reward Address': '0247'
+	}, {
+		'Reward': 'Bright Shard',
+		'Reward Address': '015D'
+	}, {
+		'Reward': 'Bright Stone',
+		'Reward Address': '015E'
+	}, {
+		'Reward': 'Bright Gem',
+		'Reward Address': '015F'
+	}, {
+		'Reward': 'Bright Crystal',
+		'Reward Address': '0160'
+	}, {
+		'Reward': 'Energy Shard',
+		'Reward Address': '0161'
+	}, {
+		'Reward': 'Energy Stone',
+		'Reward Address': '0162'
+	}, {
+		'Reward': 'Energy Gem',
+		'Reward Address': '0163'
+	}, {
+		'Reward': 'Energy Crystal',
+		'Reward Address': '0164'
+	}, {
+		'Reward': 'Serenity Shard',
+		'Reward Address': '0165'
+	}, {
+		'Reward': 'Serenity Stone',
+		'Reward Address': '0166'
+	}, {
+		'Reward': 'Serenity Gem',
+		'Reward Address': '0167'
+	}, {
+		'Reward': 'Serenity Crystal',
+		'Reward Address': '0168'
+	}, {
+		'Reward': 'Lost Illusion',
+		'Reward Address': '0248'
+	}, {
+		'Reward': 'Manifest Illusion',
+		'Reward Address': '0249'
+	}, {
+		'Reward': 'Orichalcum',
+		'Reward Address': '0179'
+	}, {
+		'Reward': 'Orichalcum+',
+		'Reward Address': '0169',
+	}]
+}, {
+	'Reward Type': 'Empty',
+	'Rewards': [{
+		'Reward': 'Empty',
+		'Reward Address': '0000'
+	}]
+}]
