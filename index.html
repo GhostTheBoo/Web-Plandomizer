@@ -7,16 +7,22 @@
 	<title>Document</title>
 </head>
 <body>
-	<table id = "chests">
+	<select name = "worlds" id = "worlds" onchange="chestWorldSelectorChanged(this.value)"></select>
+	<!-- <table id = "chests">
 		<thead>
 			<tr>
 				<th>World</th>
 				<th>Room</th>
 				<th>Original Reward</th>
 				<th>Replaced Reward</th>
+				<th>Replace</th>
 			</tr>
 		</thead>
 	</table>
+	<select name = 'rewards' id = 'rewards'></select> -->
+	<script src="javascript/worlds.js"></script>
+	<script src="javascript/rewards.js"></script>
+	<script src="javascript/chests.js"></script>
 	<script src="javascript/main.js"></script>
 </body>
 </html>
