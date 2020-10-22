@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<title>Document</title>
 </head>
+
 <body>
-	<select name = "worlds" id = "worlds" onchange="populateChestTable(this.value)"></select>
-	<select name = "rewardTypes" id = "rewardTypes" onchange="populateRewardTypeSelector(this.value)"></select>
-	<select name = "rewards" id = "rewards"></select>
+	<div>
+		<select name="worldSelector" id="worldSelector" onchange="populateChestTable(this.value)"></select>
+		<select name="rewardTypeSelector" id="rewardTypeSelector" onchange="populateRewardTypeSelector(this.value)"></select>
+		<select name="rewardSelector" id="rewardSelector"></select>
+		<button name = 'replaceButton' id = 'replaceButton' onclick="replace()">Replace</button>
+	</div>
+	<table name="chestTable" id="chestTable">
+		<thead>
+			<tr>
+				<th name='chestCheckbox' id='chestCheckbox'></th>
+				<th>
+					Room
+				</th>
+				<th>
+					Original Reward
+				</th>
+				<th>
+					Original Address
+				</th>
+				<th>
+					Replacement Reward
+				</th>
+				<th>
+					Replacement Address
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
 
 
 
 
 
 
-	
-	<script src="javascript/rewards.js"></script>
-	<script src="javascript/chests.js"></script>
+	<script src="javascript/data.js"></script>
 	<script src="javascript/main.js"></script>
 </body>
+
 </html>

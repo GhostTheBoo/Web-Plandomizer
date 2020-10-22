@@ -1,32 +1,13 @@
 // create world list
 function addWorlds() {
-	let select = document.getElementById('worlds');
-	let counter = 0;
-	worldArray.forEach(world => {
+	let select = document.getElementById('worldSelector');
+	for (let i = 0; i < worldArray.length; i++) {
 		let option = document.createElement('option');
-		option.text = world;
-		option.value = counter;
+		option.text = worldArray[i];
+		option.value = i;
 		select.add(option);
-		counter++;
-	})
-	populateChestTable(0);
-}
-
-// create chest table, chest table header, and empty table body
-function createChestTableHeader() {
-	let table = document.createElement('table');
-	let tableBody = document.createElement('tbody');
-	table.id = 'chestTable';
-	let tableHead = table.createTHead();
-	let headerRow = tableHead.insertRow();
-	for (let key of Object.keys(chestArray[0].Chests[0])) {
-		let th = document.createElement('th');
-		let text = document.createTextNode(key);
-		th.appendChild(text);
-		headerRow.appendChild(th);
 	}
-	table.appendChild(tableBody);
-	return table;
+	populateChestTable(0);
 }
 
 // populate Chest Table with selected world's chests
@@ -34,73 +15,48 @@ function populateChestTable(worldID) {
 	let table = document.getElementById('chestTable');
 	let oldTableBody = table.lastElementChild;
 	let newTableBody = document.createElement('tbody');
-	let chestProperties = [
-		'Room',
-		'Original Reward',
-		'Original Address',
-		'Replacement Reward',
-		'Replacement Address'
-	]
-	let counter = 0;
 	if (chestArray[worldID].Chests.length > 0) {
-		chestArray[worldID].Chests.forEach(chest => {
+		for (let i = 0; i < chestArray[worldID].Chests.length; i++) {
 			let row = document.createElement('tr');
-			chestProperties.forEach(prop => {
+			row.id = 'row' + i;
+			let cell = document.createElement('input');
+			cell.type = 'checkbox';
+			cell.id = 'check' + i;
+			row.appendChild(cell);
+			chestPropertiesArray.forEach(property => {
 				let cell = document.createElement('td');
-				cell.innerHTML = chest[prop];
+				cell.innerHTML = chestArray[worldID].Chests[i][property];
 				row.appendChild(cell);
 			})
-			let replaceButton = document.createElement('button');
-			replaceButton.innerHTML = 'Replace';
-			replaceButton.value = counter;
-			replaceButton.onclick = function () {
-				let body = document.body;
-				let p = document.createElement('p');
-				let rt = document.getElementById('rewardTypes');
-				let r = document.getElementById('rewards');
-				let address = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
-
-
-
-				p.innerHTML = 'patch=1,EE,' + chest['Original Address'] + ',extended,0000' + address;
-				body.appendChild(p);
-				//console.log(this.value);
-			}
-			row.appendChild(replaceButton);
 			newTableBody.appendChild(row);
-			counter++;
-		})
+			// console.log(row);
+		}
 	}
 	table.replaceChild(newTableBody, oldTableBody);
 }
 
 // add types of rewards to reward type dropdown
 function addRewardTypes() {
-	let select = document.getElementById('rewardTypes');
-	let counter = 0;
-	rewardTypeArray.forEach(rewardType => {
+	let select = document.getElementById('rewardTypeSelector');
+	for (let i = 0; i < rewardTypeArray.length; i++) {
 		let option = document.createElement('option');
-		option.text = rewardType;
-		option.value = counter;
+		option.text = rewardTypeArray[i];
+		option.value = i;
 		select.add(option);
-		counter++;
-	})
+	}
 	populateRewardTypeSelector(0);
 }
 
 // populate reward selector with selected reward type index
 function populateRewardTypeSelector(rewardTypeID) {
-	let select = document.getElementById('rewards');
-	let counter = 0;
+	let select = document.getElementById('rewardSelector');
 	removeOptions(select);
-	//let arr = rewardArray[rewardTypeID].Rewards;
-	rewardArray[rewardTypeID].Rewards.forEach(reward => {
+	for (let i = 0; i < rewardArray[rewardTypeID].Rewards.length; i++) {
 		let option = document.createElement('option');
-		option.text = reward.Reward;
-		option.value = counter;
+		option.text = rewardArray[rewardTypeID].Rewards[i].Reward;
+		option.value = i;
 		select.add(option);
-		counter++;
-	})
+	}
 }
 
 // clear all options in select
@@ -112,11 +68,20 @@ function removeOptions(selectElement) {
 }
 
 function replace() {
-	console.log('yo');
+	let rt = document.getElementById('rewardTypeSelector');
+	let r = document.getElementById('rewardSelector');
+	let w = document.getElementById('worldSelector');
+	let rowCount = document.getElementById('chestTable').rows.length;
+
+	for (let i = 0; i < rowCount - 1; i++) {
+		let checked = document.getElementById('check' + i).checked;
+		if (checked) {
+			chestArray[w.value].Chests[i]['Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
+			chestArray[w.value].Chests[i]['Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
+		}
+	}
+	populateChestTable(w.value);
 }
 
-var table = createChestTableHeader();
-var body = document.body;
-body.appendChild(table);
 addWorlds();
 addRewardTypes();
