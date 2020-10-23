@@ -1,3 +1,9 @@
+// initialize page
+function windowInit(){
+	addWorlds();
+	addRewardTypes();
+}
+
 // create world list
 function addWorlds() {
 	let select = document.getElementById('worldSelector');
@@ -67,6 +73,7 @@ function removeOptions(selectElement) {
 	}
 }
 
+// add reward and reward address to chest
 function replace() {
 	let rt = document.getElementById('rewardTypeSelector');
 	let r = document.getElementById('rewardSelector');
@@ -83,5 +90,21 @@ function replace() {
 	populateChestTable(w.value);
 }
 
-addWorlds();
-addRewardTypes();
+// save replacement patch codes to pnach file
+function savePnach() {
+	let finalPnachStrings = [];
+	for (let i = 0; i < chestArray.length; i++) {
+		for (let j = 0; j < chestArray[i].Chests.length; j++) {
+			let chest = chestArray[i].Chests[j];
+			if (chest["Replacement Address"] !== '') {
+				let s = 'patch=1,EE,' + chest['Original Address'] + ',extended,0000' + chest['Replacement Address'];
+				s += ' // ' + chest['Room'] + ', ' + chest['Original Reward'] + ' is now ' + chest['Replacement Reward'] + '\n';
+				finalPnachStrings.push(s);
+			}
+		}
+	}
+	let finalPnach = new Blob(finalPnachStrings, {type: "text/plain;charset=utf-8"});
+	saveAs(finalPnach, 'F266B00B.pnach');
+}
+
+window.onload = function () { windowInit() };
