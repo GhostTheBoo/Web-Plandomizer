@@ -1,0 +1,9 @@
+table{
+	border:none;
+}
+th, td {
+	border: 1px solid black;
+  }
+#chestCheckbox{
+	border:none;
+}
