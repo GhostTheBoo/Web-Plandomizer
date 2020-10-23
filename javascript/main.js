@@ -93,7 +93,11 @@ function replace() {
 // save replacement patch codes to pnach file
 function savePnach() {
 	let finalPnachStrings = [];
-	for (let i = 0; i < chestArray.length; i++) {
+
+	// Printing Chest Replacements
+	finalPnachStrings.push('//Chest Replacements\n')
+	for (let i = 0; i < worldArray.length; i++) {
+		finalPnachStrings.push('// ' + worldArray[i] + '\n')
 		for (let j = 0; j < chestArray[i].Chests.length; j++) {
 			let chest = chestArray[i].Chests[j];
 			if (chest["Replacement Address"] !== '') {
