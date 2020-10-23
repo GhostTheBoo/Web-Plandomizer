@@ -2,7 +2,7 @@
 
 An online version of my plandomizer tool!
 
-A very rough work in progress so excuse the look for now while I'm still learning
+A very rough work in progress so excuse the look for now while I'm still learning.
 
 Right now only chest replacement is implemented.
 

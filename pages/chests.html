@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<script src="../javascript/FileSaver.js"></script>
+	<script src="../javascript/data.js"></script>
+	<script src="../javascript/main.js"></script>
+	<title>Chests</title>
+</head>
+
+<body>
+	<nav>
+		<a href="/pages/chests.html">Chests</a>
+		<a href="/pages/popups.html">Popups</a>
+		<a href="/pages/forms.html">Forms</a>
+		<a href="/pages/equipment.html">Equipment</a>
+		<a href="/pages/bonus.html">Bonus</a>
+		<a href="/pages/levels.html">Levels</a>
+		<a href="/pages/other.html">Other</a>
+	</nav>
+	<section class='selectors'>
+		<select name="worldSelector" id="worldSelector" onchange="populateTable(this.value, chestArray, chestPropertiesArray)"></select>
+		<select name="rewardTypeSelector" id="rewardTypeSelector"
+			onchange="populateRewardTypeSelector(this.value)"></select>
+		<select name="rewardSelector" id="rewardSelector"></select>
+		<button name='replaceButton' id='replaceButton' onclick="replace()">Replace</button>
+		<button name='defaultButton' id='defaultButton' onclick="goldExperienceRequiem()">Default</button>
+		<button name='saveButton' id='saveButton' onclick="save()">Save</button>
+	</section>
+	<section class='rewardTable'>
+		<table name="chestsTable" id="chestsTable">
+			<thead>
+				<tr>
+					<th name='chestCheckbox' id='chestCheckbox'></th>
+					<th>
+						Room
+					</th>
+					<th>
+						Original Reward
+					</th>
+					<th>
+						Original Address
+					</th>
+					<th>
+						Replacement Reward
+					</th>
+					<th>
+						Replacement Address
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</section>
+</body>
+
+</html>

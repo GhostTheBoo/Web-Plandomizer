@@ -1,0 +1,20 @@
+body{
+	background-image: url('../images/KHCheckeredBackground.jpg');
+	font-family: Arial, Helvetica, sans-serif;
+}
+.rewardTable{
+	margin: 100px;
+	padding:20px;
+	background-color: gainsboro;
+}
+table{
+	border:none;
+	width: 100%;
+	text-align: center;
+}
+th, td {
+	border-bottom: 1px solid black;
+  }
+#chestCheckbox{
+	border:none;
+}
