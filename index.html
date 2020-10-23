@@ -4,21 +4,51 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/styles.css">
-	<script src="../javascript/FileSaver.js"></script>
-	<script src="../javascript/data.js"></script>
-	<script src="../javascript/main.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script src="javascript/FileSaver.js"></script>
+	<script src="javascript/data.js"></script>
+	<script src="javascript/main.js"></script>
 	<title>Document</title>
 </head>
 
 <body>
-	<a href="/pages/chests.html">Chests</a>
-	<a href="/pages/popups.html">Popups</a>
-	<a href="/pages/forms.html">Forms</a>
-	<a href="/pages/equipment.html">Equipment</a>
-	<a href="/pages/bonus.html">Bonus</a>
-	<a href="/pages/levels.html">Levels</a>
-	<a href="/pages/other.html">Other</a>
+	<div>
+		<select name="worldSelector" id="worldSelector" onchange="populateChestTable(this.value)"></select>
+		<select name="rewardTypeSelector" id="rewardTypeSelector" onchange="populateRewardTypeSelector(this.value)"></select>
+		<select name="rewardSelector" id="rewardSelector"></select>
+		<button name = 'replaceButton' id = 'replaceButton' onclick="replace()">Replace</button>
+		<button name = 'saveButton' id = 'saveButton' onclick="savePnach()">Save</button>
+	</div>
+	<table name="chestTable" id="chestTable">
+		<thead>
+			<tr>
+				<th name='chestCheckbox' id='chestCheckbox'></th>
+				<th>
+					Room
+				</th>
+				<th>
+					Original Reward
+				</th>
+				<th>
+					Original Address
+				</th>
+				<th>
+					Replacement Reward
+				</th>
+				<th>
+					Replacement Address
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+
+
+
+
+
 </body>
 
 </html>
