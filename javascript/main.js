@@ -1,7 +1,26 @@
 // initialize page
-function windowInit(){
-	addWorlds();
-	addRewardTypes();
+function initialize() {
+	switch (currentPage) {
+		case 'bonus':
+			break;
+		case 'chests':
+			addWorlds();
+			addRewardTypes();
+			populateTable(0);
+			break;
+		case 'equipment':
+			break;
+		case 'forms':
+			break;
+		case 'levels':
+			break;
+		case 'other':
+			break;
+		case 'popups':
+			break;
+		default:
+			break;
+	}
 }
 
 // create world list
@@ -13,30 +32,34 @@ function addWorlds() {
 		option.value = i;
 		select.add(option);
 	}
-	populateChestTable(0);
 }
 
-// populate Chest Table with selected world's chests
-function populateChestTable(worldID) {
-	let table = document.getElementById('chestTable');
+// populate table with selected world's reward locations
+function populateTable(worldID) {
+	let table = document.getElementById(currentPage + 'Table');
 	let oldTableBody = table.lastElementChild;
 	let newTableBody = document.createElement('tbody');
-	if (chestArray[worldID].Chests.length > 0) {
-		for (let i = 0; i < chestArray[worldID].Chests.length; i++) {
-			let row = document.createElement('tr');
-			row.id = 'row' + i;
-			let cell = document.createElement('input');
-			cell.type = 'checkbox';
-			cell.id = 'check' + i;
-			row.appendChild(cell);
-			chestPropertiesArray.forEach(property => {
-				let cell = document.createElement('td');
-				cell.innerHTML = chestArray[worldID].Chests[i][property];
-				row.appendChild(cell);
-			})
-			newTableBody.appendChild(row);
-			// console.log(row);
-		}
+	switch (currentPage) {
+		case 'chests':
+			if (chestArray[worldID].Chests.length > 0) {
+				for (let i = 0; i < chestArray[worldID].Chests.length; i++) {
+					let row = document.createElement('tr');
+					row.id = 'row' + i;
+					let cell = document.createElement('input');
+					cell.type = 'checkbox';
+					cell.id = 'check' + i;
+					row.appendChild(cell);
+					chestPropertiesArray.forEach(property => {
+						let cell = document.createElement('td');
+						cell.innerHTML = chestArray[worldID].Chests[i][property];
+						row.appendChild(cell);
+					})
+					newTableBody.appendChild(row);
+				}
+			}
+			break;
+		default:
+			break;
 	}
 	table.replaceChild(newTableBody, oldTableBody);
 }
@@ -73,25 +96,81 @@ function removeOptions(selectElement) {
 	}
 }
 
-// add reward and reward address to chest
+// add reward and reward address to location
 function replace() {
 	let rt = document.getElementById('rewardTypeSelector');
 	let r = document.getElementById('rewardSelector');
 	let w = document.getElementById('worldSelector');
-	let rowCount = document.getElementById('chestTable').rows.length;
+	let rowCount = document.getElementById(currentPage + 'Table').rows.length;
+	let locationArray;
+
+	switch(currentPage){
+		case 'bonus':
+			break;
+		case 'chests':
+			locationArray = chestArray[w.value].Chests;
+			break;
+		case 'equipment':
+			break;
+		case 'forms':
+			break;
+		case 'levels':
+			break;
+		case 'other':
+			break;
+		case 'popups':
+			break;
+		default:
+			break;
+	}
 
 	for (let i = 0; i < rowCount - 1; i++) {
 		let checked = document.getElementById('check' + i).checked;
 		if (checked) {
-			chestArray[w.value].Chests[i]['Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
-			chestArray[w.value].Chests[i]['Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
+			locationArray[i]['Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
+			locationArray[i]['Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
 		}
 	}
-	populateChestTable(w.value);
+	populateTable(w.value, locationArray,);
+}
+
+// set replaced rewards to null
+function goldExperienceRequiem() {
+	let w = document.getElementById('worldSelector');
+	let rowCount = document.getElementById(currentPage + 'Table').rows.length;
+	let locationArray;
+
+	switch(currentPage){
+		case 'bonus':
+			break;
+		case 'chests':
+			locationArray = chestArray[w.value].Chests;
+			break;
+		case 'equipment':
+			break;
+		case 'forms':
+			break;
+		case 'levels':
+			break;
+		case 'other':
+			break;
+		case 'popups':
+			break;
+		default:
+			break;
+	}
+	for (let i = 0; i < rowCount - 1; i++) {
+		let checked = document.getElementById('check' + i).checked;
+		if (checked) {
+			locationArray[i]['Replacement Reward'] = '';
+			locationArray[i]['Replacement Address'] = '';
+		}
+	}
+	populateTable(w.value);
 }
 
 // save replacement patch codes to pnach file
-function savePnach() {
+function save() {
 	let finalPnachStrings = [];
 
 	// Printing Chest Replacements
@@ -107,8 +186,9 @@ function savePnach() {
 			}
 		}
 	}
-	let finalPnach = new Blob(finalPnachStrings, {type: "text/plain;charset=utf-8"});
+	let finalPnach = new Blob(finalPnachStrings, { type: "text/plain;charset=utf-8" });
 	saveAs(finalPnach, 'F266B00B.pnach');
 }
 
-window.onload = function () { windowInit() };
+const currentPage = window.location.pathname.slice(7, -5);
+window.onload = function () { initialize() };
