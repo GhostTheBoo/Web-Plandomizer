@@ -608,7 +608,7 @@ const chestArray = [{
 		'Replacement Address': ''
 	}, {
 		Room: 'Postern',
-		'Original Reward': 'Castle Perimiter Map',
+		'Original Reward': 'Castle Perimeter Map',
 		'Original Address': '11CDFF76',
 		'Replacement Reward': '',
 		'Replacement Address': ''
@@ -656,7 +656,7 @@ const chestArray = [{
 		'Replacement Address': ''
 	}, {
 		Room: 'Ansem\'s Study',
-		'Original Reward': 'Ukelele Charm',
+		'Original Reward': 'Ukulele Charm',
 		'Original Address': '11CDFFD6',
 		'Replacement Reward': '',
 		'Replacement Address': ''
