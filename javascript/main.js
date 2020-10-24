@@ -38,9 +38,9 @@ function addWorlds() {
 	populateChestTable(0);
 }
 
-// populate Chest Table with selected world's chests
-function populateChestTable(worldID) {
-	let table = document.getElementById('chestTable');
+// populate table with selected world's reward locations
+function populateTable(worldID) {
+	let table = document.getElementById(currentPage + 'Table');
 	let oldTableBody = table.lastElementChild;
 	let newTableBody = document.createElement('tbody');
 	switch (currentPage) {
@@ -118,7 +118,7 @@ function removeOptions(selectElement) {
 	}
 }
 
-// add reward and reward address to chest
+// add reward and reward address to location
 function replace() {
 	let rt = document.getElementById('rewardTypeSelector');
 	let r = document.getElementById('rewardSelector');
@@ -150,11 +150,11 @@ function replace() {
 	for (let i = 0; i < rowCount - 1; i++) {
 		let checked = document.getElementById('check' + i).checked;
 		if (checked) {
-			chestArray[w.value].Chests[i]['Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
-			chestArray[w.value].Chests[i]['Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
+			locationArray[i]['Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
+			locationArray[i]['Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
 		}
 	}
-	populateTable(w.value, locationArray,);
+	populateTable(w.value);
 }
 
 // set replaced rewards to null
@@ -194,9 +194,13 @@ function goldExperienceRequiem() {
 }
 
 // save replacement patch codes to pnach file
-function savePnach() {
+function save() {
 	let finalPnachStrings = [];
-	for (let i = 0; i < chestArray.length; i++) {
+
+	// Printing Chest Replacements
+	finalPnachStrings.push('//Chest Replacements\n')
+	for (let i = 0; i < worldArray.length; i++) {
+		finalPnachStrings.push('// ' + worldArray[i] + '\n')
 		for (let j = 0; j < chestArray[i].Chests.length; j++) {
 			let chest = chestArray[i].Chests[j];
 			if (chest["Replacement Address"] !== '') {
@@ -206,7 +210,7 @@ function savePnach() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	//finalPnachStrings.push('\n')
 
 	// Printing Popup Replacements
 	finalPnachStrings.push('//Popup Replacements\n')
@@ -226,4 +230,5 @@ function savePnach() {
 	saveAs(finalPnach, 'F266B00B.pnach');
 }
 
-window.onload = function () { windowInit() };
+const currentPage = window.location.pathname.slice(7, -5);
+window.onload = function () { initialize() };
