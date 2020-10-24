@@ -17,6 +17,9 @@ function initialize() {
 		case 'other':
 			break;
 		case 'popups':
+			addWorlds();
+			addRewardTypes();
+			populateTable(0);
 			break;
 		default:
 			break;
@@ -52,6 +55,24 @@ function populateTable(worldID) {
 					chestPropertiesArray.forEach(property => {
 						let cell = document.createElement('td');
 						cell.innerHTML = chestArray[worldID].Chests[i][property];
+						row.appendChild(cell);
+					})
+					newTableBody.appendChild(row);
+				}
+			}
+			break;
+		case 'popups':
+			if (popupArray[worldID].Popups.length > 0) {
+				for (let i = 0; i < popupArray[worldID].Popups.length; i++) {
+					let row = document.createElement('tr');
+					row.id = 'row' + i;
+					let cell = document.createElement('input');
+					cell.type = 'checkbox';
+					cell.id = 'check' + i;
+					row.appendChild(cell);
+					popupPropertiesArray.forEach(property => {
+						let cell = document.createElement('td');
+						cell.innerHTML = popupArray[worldID].Popups[i][property];
 						row.appendChild(cell);
 					})
 					newTableBody.appendChild(row);
@@ -119,6 +140,7 @@ function replace() {
 		case 'other':
 			break;
 		case 'popups':
+			locationArray = popupArray[w.value].Popups;
 			break;
 		default:
 			break;
@@ -155,6 +177,7 @@ function goldExperienceRequiem() {
 		case 'other':
 			break;
 		case 'popups':
+			locationArray = popupArray[w.value].Popups;
 			break;
 		default:
 			break;
@@ -186,6 +209,22 @@ function save() {
 			}
 		}
 	}
+	finalPnachStrings.push('\n')
+
+	// Printing Popup Replacements
+	finalPnachStrings.push('//Popup Replacements\n')
+	for (let i = 0; i < worldArray.length; i++) {
+		finalPnachStrings.push('// ' + worldArray[i] + '\n')
+		for (let j = 0; j < popupArray[i].Popups.length; j++) {
+			let popup = popupArray[i].Popups[j];
+			if (popup["Replacement Address"] !== '') {
+				let s = 'patch=1,EE,' + popup['Original Address'] + ',extended,0000' + popup['Replacement Address'];
+				s += ' // ' + popup['Location'] + ', ' + popup['Original Reward'] + ' is now ' + popup['Replacement Reward'] + '\n';
+				finalPnachStrings.push(s);
+			}
+		}
+	}
+
 	let finalPnach = new Blob(finalPnachStrings, { type: "text/plain;charset=utf-8" });
 	saveAs(finalPnach, 'F266B00B.pnach');
 }
