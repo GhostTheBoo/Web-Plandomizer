@@ -35,6 +35,7 @@ function addWorlds() {
 		option.value = i;
 		select.add(option);
 	}
+	populateChestTable(0);
 }
 
 // populate table with selected world's reward locations
@@ -125,7 +126,7 @@ function replace() {
 	let rowCount = document.getElementById(currentPage + 'Table').rows.length;
 	let locationArray;
 
-	switch(currentPage){
+	switch (currentPage) {
 		case 'bonus':
 			break;
 		case 'chests':
@@ -153,7 +154,7 @@ function replace() {
 			locationArray[i]['Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
 		}
 	}
-	populateTable(w.value, locationArray,);
+	populateTable(w.value);
 }
 
 // set replaced rewards to null
@@ -162,7 +163,7 @@ function goldExperienceRequiem() {
 	let rowCount = document.getElementById(currentPage + 'Table').rows.length;
 	let locationArray;
 
-	switch(currentPage){
+	switch (currentPage) {
 		case 'bonus':
 			break;
 		case 'chests':
