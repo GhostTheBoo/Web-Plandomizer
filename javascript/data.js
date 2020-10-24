@@ -1964,6 +1964,730 @@ const chestPropertiesArray = [
 	'Replacement Address'
 ]
 
+var popupArray = [{
+	World: 'Agrabah',
+	Popups: [{
+		Location: 'Agrabah Map',
+		'Original Reward': 'Agrabah Map',
+		'Original Address': '11CE0792',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Lamp Charm',
+		'Original Reward': 'Lamp Charm',
+		'Original Address': '11CE079E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Wishing Lamp',
+		'Original Reward': 'Wishing Lamp',
+		'Original Address': '11CE08B2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Lexaeus (Absent Silhouette)',
+		'Original Reward': 'Strength Beyond Strength',
+		'Original Address': '11CE0A4A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Lexaeus (Data)',
+		'Original Reward': 'Lost Illusion',
+		'Original Address': '11CE0A86',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Atlantica',
+	Popups: [{
+		Location: 'Undersea Kingdom Map',
+		'Original Reward': 'Undersea Kingdom Map',
+		'Original Address': '11CE0846',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Mysterious Abyss',
+		'Original Reward': 'Mysterious Abyss',
+		'Original Address': '11CE08E2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Blizzard',
+		'Original Reward': 'Blizzard',
+		'Original Address': '11CE08EE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Orichalcum+',
+		'Original Reward': 'Orichalcum+',
+		'Original Address': '11CE08FA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Beast\'s Castle',
+	Popups: [{
+		Location: 'Cure',
+		'Original Reward': 'Cure',
+		'Original Address': '11CE06F6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Rumbling Rose',
+		'Original Reward': 'Rumbling Rose',
+		'Original Address': '11CE0852',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Castle Walls Map',
+		'Original Reward': 'Castle Walls Map',
+		'Original Address': '11CE085E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Xaldin',
+		'Original Reward': 'Secret Ansem\'s Report 4',
+		'Original Address': '11CE09C6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Xaldin (Data)',
+		'Original Reward': 'Defense Boost',
+		'Original Address': '11CE0AC2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Cavern of Remembrance',
+	Popups: []
+}, {
+	World: 'Disney Castle',
+	Popups: [{
+		Location: 'Disney Castle Map',
+		'Original Reward': 'Disney Castle Map',
+		'Original Address': '11CE0756',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Proof of Connection',
+		'Original Reward': 'Proof of Connection',
+		'Original Address': '11CE0B16',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Manifest Illusion',
+		'Original Reward': 'Manifest Illusion',
+		'Original Address': '11CE0B22',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Marluxia (Absent Silhouette)',
+		'Original Reward': 'Eternal Blossom',
+		'Original Address': '11CE0A6E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Marluxia (Data)',
+		'Original Reward': 'Lost Illusion',
+		'Original Address': '11CE0AAA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Halloween Town',
+	Popups: [{
+		Location: 'Magnet',
+		'Original Reward': 'Magnet',
+		'Original Address': '11CE07AA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Present',
+		'Original Reward': 'Present',
+		'Original Address': '11CE08BE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Decoy Presents',
+		'Original Reward': 'Decoy Presents',
+		'Original Address': '11CE08CA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Decisive Pumpkin',
+		'Original Reward': 'Decisive Pumpkin',
+		'Original Address': '11CE08D6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Vexen (Absent Silhouette)',
+		'Original Reward': 'Road to Discovery',
+		'Original Address': '11CE0A3E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Vexen (Data)',
+		'Original Reward': 'Lost Illusion',
+		'Original Address': '11CE0A7A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Hollow Bastion',
+	Popups: [{
+		Location: 'Marketplace Map',
+		'Original Reward': 'Marketplace Map',
+		'Original Address': '11CE068A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Membership Card',
+		'Original Reward': 'Membership Card',
+		'Original Address': '11CE0696',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Blizzard',
+		'Original Reward': 'Blizzard',
+		'Original Address': '11CE06A2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Bailey Nobodies',
+		'Original Reward': 'Secret Ansem\'s Report 7',
+		'Original Address': '11CE09EA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Baseball Charm',
+		'Original Reward': 'Baseball Charm',
+		'Original Address': '11CE0702',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Master Form',
+		'Original Reward': 'Master Form',
+		'Original Address': '11CE080A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Cure',
+		'Original Reward': 'Cure',
+		'Original Address': '11CE0822',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: '1,000 Heartless',
+		'Original Reward': 'Secret Ansem\'s Report 1',
+		'Original Address': '11CE09A2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Ice Cream',
+		'Original Reward': 'Ice Cream',
+		'Original Address': '11CE082E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Picture',
+		'Original Reward': 'Picture',
+		'Original Address': '11CE083A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Sleeping Lion',
+		'Original Reward': 'Sleeping Lion',
+		'Original Address': '11CE0936',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Fenrir',
+		'Original Reward': 'Fenrir',
+		'Original Address': '11CE0942',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Proof of Peace',
+		'Original Reward': 'Proof of Peace',
+		'Original Address': '11CE0B3A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Winner\'s Proof',
+		'Original Reward': 'Winner\'s Proof',
+		'Original Address': '11CE0B2E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Demyx (Data)',
+		'Original Reward': 'AP Boost',
+		'Original Address': '11CE0AB6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Land of Dragons',
+	Popups: [{
+		Location: 'Encampment Area Map',
+		'Original Reward': 'Encampment Area Map',
+		'Original Address': '11CE06D2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'AP Boost (Missions)',
+		'Original Reward': 'AP Boost',
+		'Original Address': '11CE06C6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Village Area Map',
+		'Original Reward': 'Village Area Map',
+		'Original Address': '11CE06DE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Hidden Dragon',
+		'Original Reward': 'Hidden Dragon',
+		'Original Address': '11CE06EA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Xigbar (Data)',
+		'Original Reward': 'Defense Boost',
+		'Original Address': '11CE0AE6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Olympus Coliseum',
+	Popups: [{
+		Location: 'Coliseum Map',
+		'Original Reward': 'Coliseum Map',
+		'Original Address': '11CE070E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Olympus Stone',
+		'Original Reward': 'Olympus Stone',
+		'Original Address': '11CE071A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'OC Demyx',
+		'Original Reward': 'Secret Ansem\'s Report 5',
+		'Original Address': '11CE09D2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Hero\'s Crest',
+		'Original Reward': 'Hero\'s Crest',
+		'Original Address': '11CE0726',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Auron\'s Statue',
+		'Original Reward': 'Auron\'s Statue',
+		'Original Address': '11CE0882',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Guardian Soul',
+		'Original Reward': 'Guardian Soul',
+		'Original Address': '11CE088E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Zexion (Absent Silhouette)',
+		'Original Reward': 'Book of Shadows',
+		'Original Address': '11CE0A56',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Zexion (Data)',
+		'Original Reward': 'Lost Illusion',
+		'Original Address': '11CE0A92',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Olympus Cups',
+	Popups: [{
+		Location: 'Protect Belt (Pain & Panic Cup)',
+		'Original Reward': 'Protect Belt',
+		'Original Address': '11CE073E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Serenity Gem (Pain & Panic Cup)',
+		'Original Reward': 'Serenity Gem',
+		'Original Address': '11CE074A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Rising Dragon (Cerberus Cup)',
+		'Original Reward': 'Rising Dragon',
+		'Original Address': '11CE07CE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Serenity Crystal (Cerberus Cup)',
+		'Original Reward': 'Serenity Crystal',
+		'Original Address': '11CE07DA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Genji Shield (Titan Cup)',
+		'Original Reward': 'Genji Shield',
+		'Original Address': '11CE089A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Skillful Ring (Titan Cup)',
+		'Original Reward': 'Skillful Ring',
+		'Original Address': '11CE08A6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Fatal Crest (Goddess of Fate Cup)',
+		'Original Reward': 'Fatal Crest',
+		'Original Address': '11CE094E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Orichalcum+ (Goddess of Fate Cup)',
+		'Original Reward': 'Orichalcum+',
+		'Original Address': '11CE095A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Hades Cup',
+		'Original Reward': 'Hades Cup Trophy',
+		'Original Address': '11CE0996',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: '100 Acre Wood',
+	Popups: [{
+		Location: 'Sweet Memories',
+		'Original Reward': 'Sweet Memories',
+		'Original Address': '11CE0906',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Spooky Cave Map',
+		'Original Reward': 'Spooky Cave Map',
+		'Original Address': '11CE0912',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Cure',
+		'Original Reward': 'Cure',
+		'Original Address': '11CE091E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Orichalcum+',
+		'Original Reward': 'Orichalcum+',
+		'Original Address': '11CE092A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Port Royal',
+	Popups: [{
+		Location: 'Isla de Muerta Map',
+		'Original Reward': 'Isla de Muerta Map',
+		'Original Address': '11CE077A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Follow the Wind',
+		'Original Reward': 'Follow the Wind',
+		'Original Address': '11CE0786',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Cursed Medallion',
+		'Original Reward': 'Cursed Medallion',
+		'Original Address': '11CE086A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Ship Graveyard Map',
+		'Original Reward': 'Ship Graveyard Map',
+		'Original Address': '11CE0876',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Grim Reaper 2',
+		'Original Reward': 'Secret Ansem\'s Report 6',
+		'Original Address': '11CE09DE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Luxord (Data)',
+		'Original Reward': 'AP Boost',
+		'Original Address': '11CE0AFE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Pride Lands',
+	Popups: [{
+		Location: 'Circle of Life',
+		'Original Reward': 'Circle of Life',
+		'Original Address': '11CE07B6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Fire',
+		'Original Reward': 'Fire',
+		'Original Address': '11CE07C2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Saix (Data)',
+		'Original Reward': 'Defense Boost',
+		'Original Address': '11CE0AF2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Simulated Twilight Town',
+	Popups: [{
+		Location: 'Twilight Town Map',
+		'Original Reward': 'Twilight Town Map',
+		'Original Address': '11CE0636',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Munny Pouch (Olette)',
+		'Original Reward': 'Munny Pouch (Olette)',
+		'Original Address': '11CE0606',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Champion Belt',
+		'Original Reward': 'Champion Belt',
+		'Original Address': '11CE0612',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Medal',
+		'Original Reward': 'Medal',
+		'Original Address': '11CE061E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: '"The Struggle" Trophy',
+		'Original Reward': '"The Struggle" Trophy',
+		'Original Address': '11CE062A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Namine\'s Sketches',
+		'Original Reward': 'Namine\'s Sketches',
+		'Original Address': '11CE0642',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Mansion Map',
+		'Original Reward': 'Mansion Map',
+		'Original Address': '11CE064E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Roxas (Data)',
+		'Original Reward': 'Magic Boost',
+		'Original Address': '11CE0B0A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Space Paranoids',
+	Popups: [{
+		Location: 'Photon Debugger',
+		'Original Reward': 'Photon Debugger',
+		'Original Address': '11CE0816',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Larxene (Absent Silhouette)',
+		'Original Reward': 'Cloaked Thunder',
+		'Original Address': '11CE0A62',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Larxene (Data)',
+		'Original Reward': 'Lost Illusion',
+		'Original Address': '11CE0A9E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Timeless River',
+	Popups: [{
+		Location: 'Window of Time Map',
+		'Original Reward': 'Window of Time Map',
+		'Original Address': '11CE076E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Monochrome',
+		'Original Reward': 'Monochrome',
+		'Original Address': '11CE0732',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Wisdom Form',
+		'Original Reward': 'Wisdom Form',
+		'Original Address': '11CE0762',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'Twilight Town',
+	Popups: [{
+		Location: 'Munny Pouch (Mickey)',
+		'Original Reward': 'Munny Pouch (Mickey)',
+		'Original Address': '11CE065A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Crystal Orb',
+		'Original Reward': 'Crystal Orb',
+		'Original Address': '11CE0666',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Star Seeker',
+		'Original Reward': 'Star Seeker',
+		'Original Address': '11CE0672',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Valor Form',
+		'Original Reward': 'Valor Form',
+		'Original Address': '11CE067E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Seifer\'s Trophy',
+		'Original Reward': 'Seifer\'s Trophy',
+		'Original Address': '11CE07E6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Oathkeeper',
+		'Original Reward': 'Oathkeeper',
+		'Original Address': '11CE07F2',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Limit Form',
+		'Original Reward': 'Limit Form',
+		'Original Address': '11CE07FE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Bond of Flame',
+		'Original Reward': 'Bond of Flame',
+		'Original Address': '11CE0966',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Station Plaza Nobodies',
+		'Original Reward': 'Secret Ansem\'s Report 2',
+		'Original Address': '11CE09AE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Twilight Town 3',
+		'Original Reward': 'Secret Ansem\'s Report 10',
+		'Original Address': '11CE0A0E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Axel (Data)',
+		'Original Reward': 'Magic Boost',
+		'Original Address': '11CE0ACE',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}, {
+	World: 'The World That Never Was',
+	Popups: [{
+		Location: 'Roxas',
+		'Original Reward': 'Two Become One',
+		'Original Address': '11CE0972',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Hall of Empty Melodies 2F',
+		'Original Reward': 'Oblivion',
+		'Original Address': '11CE097E',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Castle That Never Was Map',
+		'Original Reward': 'Castle That Never Was Map',
+		'Original Address': '11CE098A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Xigbar',
+		'Original Reward': 'Secret Ansem\'s Report 3',
+		'Original Address': '11CE09BA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Roxas',
+		'Original Reward': 'Secret Ansem\'s Report 8',
+		'Original Address': '11CE09F6',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Luxord',
+		'Original Reward': 'Secret Ansem\'s Report 9',
+		'Original Address': '11CE0A02',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Before Xemnas 1',
+		'Original Reward': 'Secret Ansem\'s Report 11',
+		'Original Address': '11CE0A1A',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Saix',
+		'Original Reward': 'Secret Ansem\'s Report 12',
+		'Original Address': '11CE0A26',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Xemnas 1',
+		'Original Reward': 'Secret Ansem\'s Report 13',
+		'Original Address': '11CE0A32',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}, {
+		Location: 'Xemnas (Data)',
+		'Original Reward': 'Power Boost',
+		'Original Address': '11CE0ADA',
+		'Replacement Reward': '',
+		'Replacement Address': '',
+	}]
+}]
+
+const popupPropertiesArray = [
+	'Location',
+	'Original Reward',
+	'Original Address',
+	'Replacement Reward',
+	'Replacement Address'
+]
+
 const rewardArray = [{
 	'Reward Type': 'Abilities',
 	'Rewards': [{
