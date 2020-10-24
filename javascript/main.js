@@ -1,5 +1,6 @@
 // initialize page
 function initialize() {
+	console.log(currentPage);
 	switch (currentPage) {
 		case 'bonus':
 			break;
