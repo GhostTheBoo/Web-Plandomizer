@@ -35,11 +35,12 @@ function addWorlds() {
 		option.value = i;
 		select.add(option);
 	}
+	populateChestTable(0);
 }
 
-// populate table with selected world's reward locations
-function populateTable(worldID) {
-	let table = document.getElementById(currentPage + 'Table');
+// populate Chest Table with selected world's chests
+function populateChestTable(worldID) {
+	let table = document.getElementById('chestTable');
 	let oldTableBody = table.lastElementChild;
 	let newTableBody = document.createElement('tbody');
 	switch (currentPage) {
@@ -117,7 +118,7 @@ function removeOptions(selectElement) {
 	}
 }
 
-// add reward and reward address to location
+// add reward and reward address to chest
 function replace() {
 	let rt = document.getElementById('rewardTypeSelector');
 	let r = document.getElementById('rewardSelector');
@@ -125,7 +126,7 @@ function replace() {
 	let rowCount = document.getElementById(currentPage + 'Table').rows.length;
 	let locationArray;
 
-	switch(currentPage){
+	switch (currentPage) {
 		case 'bonus':
 			break;
 		case 'chests':
@@ -149,8 +150,8 @@ function replace() {
 	for (let i = 0; i < rowCount - 1; i++) {
 		let checked = document.getElementById('check' + i).checked;
 		if (checked) {
-			locationArray[i]['Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
-			locationArray[i]['Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
+			chestArray[w.value].Chests[i]['Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
+			chestArray[w.value].Chests[i]['Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
 		}
 	}
 	populateTable(w.value, locationArray,);
@@ -162,7 +163,7 @@ function goldExperienceRequiem() {
 	let rowCount = document.getElementById(currentPage + 'Table').rows.length;
 	let locationArray;
 
-	switch(currentPage){
+	switch (currentPage) {
 		case 'bonus':
 			break;
 		case 'chests':
@@ -193,13 +194,9 @@ function goldExperienceRequiem() {
 }
 
 // save replacement patch codes to pnach file
-function save() {
+function savePnach() {
 	let finalPnachStrings = [];
-
-	// Printing Chest Replacements
-	finalPnachStrings.push('//Chest Replacements\n')
-	for (let i = 0; i < worldArray.length; i++) {
-		finalPnachStrings.push('// ' + worldArray[i] + '\n')
+	for (let i = 0; i < chestArray.length; i++) {
 		for (let j = 0; j < chestArray[i].Chests.length; j++) {
 			let chest = chestArray[i].Chests[j];
 			if (chest["Replacement Address"] !== '') {
@@ -229,5 +226,4 @@ function save() {
 	saveAs(finalPnach, 'F266B00B.pnach');
 }
 
-const currentPage = window.location.pathname.slice(7, -5);
-window.onload = function () { initialize() };
+window.onload = function () { windowInit() };
