@@ -35,7 +35,7 @@ function addWorlds() {
 		option.value = i;
 		select.add(option);
 	}
-	populateChestTable(0);
+	populateTable(0);
 }
 
 // populate table with selected world's reward locations
