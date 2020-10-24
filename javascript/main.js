@@ -209,7 +209,7 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	//finalPnachStrings.push('\n')
 
 	// Printing Popup Replacements
 	finalPnachStrings.push('//Popup Replacements\n')
