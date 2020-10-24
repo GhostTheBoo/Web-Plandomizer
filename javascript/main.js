@@ -22,6 +22,8 @@ function initialize() {
 			addRewardTypes();
 			populateTable(0);
 			break;
+		case 'index':
+			break;
 		default:
 			break;
 	}
@@ -231,5 +233,5 @@ function save() {
 	saveAs(finalPnach, 'F266B00B.pnach');
 }
 
-const currentPage = window.location.pathname.slice(7, -5);
+const currentPage = window.location.pathname.split('/').pop().split('.')[0];
 window.onload = function () { initialize() };
