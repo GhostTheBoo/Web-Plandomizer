@@ -10,6 +10,9 @@ function initialize() {
 			populateTable(0);
 			break;
 		case 'equipment':
+			addEquipmentTypes();
+			addRewardTypes();
+			populateTable(0);
 			break;
 		case 'forms':
 			break;
@@ -38,18 +41,28 @@ function addWorlds() {
 		option.value = i;
 		select.add(option);
 	}
-	populateTable(0);
+}
+
+// create equipment type list
+function addEquipmentTypes() {
+	let select = document.getElementById('equipmentTypeSelector');
+	for (let i = 0; i < equipmentTypeArray.length; i++) {
+		let option = document.createElement('option');
+		option.text = equipmentTypeArray[i];
+		option.value = i;
+		select.add(option);
+	}
 }
 
 // populate table with selected world's reward locations
-function populateTable(worldID) {
+function populateTable(ID) {
 	let table = document.getElementById(currentPage + 'Table');
 	let oldTableBody = table.lastElementChild;
 	let newTableBody = document.createElement('tbody');
 	switch (currentPage) {
 		case 'chests':
-			if (chestArray[worldID].Chests.length > 0) {
-				for (let i = 0; i < chestArray[worldID].Chests.length; i++) {
+			if (chestArray[ID].Chests.length > 0) {
+				for (let i = 0; i < chestArray[ID].Chests.length; i++) {
 					let row = document.createElement('tr');
 					row.id = 'row' + i;
 					let cell = document.createElement('input');
@@ -58,7 +71,7 @@ function populateTable(worldID) {
 					row.appendChild(cell);
 					chestPropertiesArray.forEach(property => {
 						let cell = document.createElement('td');
-						cell.innerHTML = chestArray[worldID].Chests[i][property];
+						cell.innerHTML = chestArray[ID].Chests[i][property];
 						row.appendChild(cell);
 					})
 					newTableBody.appendChild(row);
@@ -66,8 +79,8 @@ function populateTable(worldID) {
 			}
 			break;
 		case 'popups':
-			if (popupArray[worldID].Popups.length > 0) {
-				for (let i = 0; i < popupArray[worldID].Popups.length; i++) {
+			if (popupArray[ID].Popups.length > 0) {
+				for (let i = 0; i < popupArray[ID].Popups.length; i++) {
 					let row = document.createElement('tr');
 					row.id = 'row' + i;
 					let cell = document.createElement('input');
@@ -76,7 +89,22 @@ function populateTable(worldID) {
 					row.appendChild(cell);
 					popupPropertiesArray.forEach(property => {
 						let cell = document.createElement('td');
-						cell.innerHTML = popupArray[worldID].Popups[i][property];
+						cell.innerHTML = popupArray[ID].Popups[i][property];
+						row.appendChild(cell);
+					})
+					newTableBody.appendChild(row);
+				}
+			}
+			break;
+		case 'equipment':
+			table = document.getElementById(currentPage + 'Table');
+			if (equipmentArray[ID].Equipments.length > 0) {
+				for (let i = 0; i < equipmentArray[ID].Equipments.length; i++) {
+					let row = document.createElement('tr');
+					row.id = 'row' + i;
+					equipmentPropertiesArray.forEach(property=>{
+						let cell = document.createElement('td');
+						cell.innerHTML = equipmentArray[ID].Equipments[i][property];
 						row.appendChild(cell);
 					})
 					newTableBody.appendChild(row);

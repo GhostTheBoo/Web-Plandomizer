@@ -21,6 +21,107 @@
 		<a href="../pages/levels.html">Levels</a>
 		<a href="../pages/other.html">Other</a>
 	</nav>
+	<section class='selectors'>
+		<select name="equipmentTypeSelector" id="equipmentTypeSelector" onchange="populateTable(this.value)"></select>
+		<button name='replaceButton' id='replaceButton'>Replace</button>
+		<button name='defaultButton' id='defaultButton'>Default</button>
+		<button name='saveButton' id='saveButton'>Save</button>
+	</section>
+	<section class='rewardTable'>
+		<table name="equipmentTable" id="equipmentTable">
+			<thead>
+				<tr>
+					<!-- <th name='replaceCheckbox' id='replaceCheckbox'></th> -->
+					<th>
+						Equipment Name
+					</th>
+					<th>
+						Ability
+					</th>
+					<th>
+						Strength
+					</th>
+					<th>
+						Magic
+					</th>
+					<th>
+						AP
+					</th>
+					<th>
+						Defense
+					</th>
+					<th>
+						Physical Resistance
+					</th>
+					<th>
+						Fire Resistance
+					</th>
+					<th>
+						Blizzard Resistance
+					</th>
+					<th>
+						Thunder Resistance
+					</th>
+					<th>
+						Dark Resistance
+					</th>
+					<th>
+						Light Resistance
+					</th>
+					<th>
+						Universal Resistance
+					</th>
+					<th>
+						Ability Address
+					</th>
+					<th>
+						Stat Address
+					</th>
+					<th>
+						Elemental Resistance Address
+					</th>
+					<th>
+						Other Resistance Address
+					</th>
+					<th>
+						Replacement Ability Addres
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<section>
+			<div>
+				<select name="rewardTypeSelector" id="rewardTypeSelector" onchange="populateRewardTypeSelector(this.value)"></select>
+				<select name="rewardSelector" id="rewardSelector"></select>
+			</div>
+			<form>
+				<label for="strength">Strength:</label><br>
+				<input type="number" id="strength" name="strength"><br>
+				<label for="magic">Magic:</label><br>
+				<input type="number" id="magic" name="magic"><br>
+				<label for="ap">AP:</label><br>
+				<input type="number" id="ap" name="ap"><br>
+				<label for="defense">Defense:</label><br>
+				<input type="number" id="defense" name="defense"><br>
+				<label for="physicalResistance">Physical Resistance:</label><br>
+				<input type="number" id="physicalResistance" name="physicalResistance"><br>
+				<label for="fireResistance">Fire Resistance:</label><br>
+				<input type="number" id="fireResistance" name="fireResistance"><br>
+				<label for="blizzardResistance">Blizzard Resistance:</label><br>
+				<input type="number" id="blizzardResistance" name="blizzardResistance"><br>
+				<label for="thunderResistance">Thunder Resistance:</label><br>
+				<input type="number" id="thunderResistance" name="thunderResistance"><br>
+				<label for="darkResistance">Dark Resistance:</label><br>
+				<input type="number" id="darkResistance" name="darkResistance"><br>
+				<label for="lightResistance">Light Resistance:</label><br>
+				<input type="number" id="lightResistance" name="lightResistance"><br>
+				<label for="universalResistance">Universal Resistance:</label><br>
+				<input type="number" id="universalResistance" name="universalResistance"><br>
+			  </form>
+		</section>
+	</section>
 </body>
 
 </html>
