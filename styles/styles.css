@@ -18,6 +18,9 @@ th, td {
 #replaceCheckbox{
 	border:none;
 }
+a{
+	background: gainsboro;
+}
 /* .equipmentTable{
 	margin: 100px;
 	padding:20px;

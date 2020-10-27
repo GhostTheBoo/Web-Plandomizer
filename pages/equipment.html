@@ -23,15 +23,15 @@
 	</nav>
 	<section class='selectors'>
 		<select name="equipmentTypeSelector" id="equipmentTypeSelector" onchange="populateTable(this.value)"></select>
-		<button name='replaceButton' id='replaceButton'>Replace</button>
-		<button name='defaultButton' id='defaultButton'>Default</button>
+		<button name='replaceButton' id='replaceButton' onclick="replace()">Replace</button>
+		<button name='defaultButton' id='defaultButton' onclick="goldExperienceRequiem()">Default</button>
 		<button name='saveButton' id='saveButton'>Save</button>
 	</section>
 	<section class='rewardTable'>
 		<table name="equipmentTable" id="equipmentTable">
 			<thead>
 				<tr>
-					<!-- <th name='replaceCheckbox' id='replaceCheckbox'></th> -->
+					<th name='replaceCheckbox' id='replaceCheckbox'></th>
 					<th>
 						Equipment Name
 					</th>
