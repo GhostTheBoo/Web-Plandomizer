@@ -359,7 +359,7 @@ function save() {
 		finalPnachStrings.push('// ' + worldArray[i] + '\n')
 		for (let j = 0; j < chestArray[i].Chests.length; j++) {
 			let chest = chestArray[i].Chests[j];
-			if (chest["Replacement Address"] !== '') {
+			if (chest['Replacement Address'] !== '') {
 				let s = 'patch=1,EE,' + chest['Original Address'] + ',extended,0000' + chest['Replacement Address'];
 				s += ' // ' + chest['Room'] + ', ' + chest['Original Reward'] + ' is now ' + chest['Replacement Reward'] + '\n';
 				finalPnachStrings.push(s);
@@ -374,10 +374,72 @@ function save() {
 		finalPnachStrings.push('// ' + equipmentTypeArray[i] + '\n')
 		for (let j = 0; j < equipmentArray[i].Equipments.length; j++) {
 			let equipment = equipmentArray[i].Equipments[j];
+			let word = '';
+			let statCount = 0;
+			let eResistCount = 0;
+			let oResistCount = 0;
+			
+			// equipment name
+			finalPnachStrings.push('// ' + equipment['Name'] + '\n');
+
 			// ability replacement
+			if (equipment['Replacement Ability Address'] !== '') {
+				finalPnachStrings.push('patch=1,EE,' + equipment['Ability Address'] + ',extended,0000');
+				finalPnachStrings.push(equipment['Replacement Ability Address'] + ' // Ability: ' + equipment['Ability'] + '\n');
+			}
+
 			// stat replacement
+			if (equipment['AP'] !== equipment['Vanilla AP'])
+				statCount++;
+			word += equipment['AP'].toString(16).padStart(2, '0');
+			if (equipment['Defense'] !== equipment['Vanilla Defense'])
+				statCount++;
+			word += equipment['Defense'].toString(16).padStart(2, '0');
+			if (equipment['Magic'] !== equipment['Vanilla Magic'])
+				statCount++;
+			word += equipment['Magic'].toString(16).padStart(2, '0');
+			if (equipment['Strength'] !== equipment['Vanilla Strength'])
+				statCount++;
+			word += equipment['Strength'].toString(16).padStart(2, '0');
+			if (statCount > 0) {
+				word += ' // AP:' + equipment['AP'] + ' Defense:' + equipment['Defense'] + ' Magic:' + equipment['Magic'] + ' Strength:' + equipment['Strength'] + '\n';
+				finalPnachStrings.push('patch=1,EE,' + equipment['Stat Address'] + ',extended,' + word);
+			}
+			word = '';
+
 			// elemental resistance replacement
+			if (equipment['Thunder Resistance'] !== equipment['Vanilla Thunder Resistance'])
+				eResistCount++;
+			word += (100 - equipment['Thunder Resistance']).toString(16).padStart(2, '0');
+			if (equipment['Blizzard Resistance'] !== equipment['Vanilla Blizzard Resistance'])
+				eResistCount++;
+			word += (100 - equipment['Blizzard Resistance']).toString(16).padStart(2, '0');
+			if (equipment['Fire Resistance'] !== equipment['Vanilla Fire Resistance'])
+				eResistCount++;
+			word += (100 - equipment['Fire Resistance']).toString(16).padStart(2, '0');
+			if (equipment['Physical Resistance'] !== 0)
+				eResistCount++;
+			word += (100 - equipment['Physical Resistance']).toString(16).padStart(2, '0');
+			if (eResistCount > 0) {
+				word += ' // Thunder:' + equipment['Thunder Resistance'] + '% Blizzard:' + equipment['Blizzard Resistance'] + '% Fire:' + equipment['Fire Resistance'] + '% Physical:' + equipment['Physical Resistance'] + '%\n';
+				finalPnachStrings.push('patch=1,EE,' + equipment['Elemental Resistance Address'] + ',extended,' + word);
+			}
+			word = '00';
+
 			// other resistance replacement
+			if (equipment['Universal Resistance'] !== 0)
+				oResistCount++;
+			word += (100 - equipment['Universal Resistance']).toString(16).padStart(2, '0');
+			if (equipment['Light Resistance'] !== 0)
+				oResistCount++;
+			word += (100 - equipment['Light Resistance']).toString(16).padStart(2, '0');
+			if (equipment['Dark Resistance'] !== equipment['Vanilla Dark Resistance'])
+				oResistCount++;
+			word += (100 - equipment['Dark Resistance']).toString(16).padStart(2, '0');
+			if (oResistCount > 0) {
+				word += ' // Universal:' + equipment['Universal Resistance'] + '% Light:' + equipment['Light Resistance'] + '% Dark:' + equipment['Dark Resistance'] + '%\n';
+				finalPnachStrings.push('patch=1,EE,' + equipment['Other Resistance Address'] + ',extended,' + word);
+			}
 		}
 	}
 	finalPnachStrings.push('\n')
@@ -388,7 +450,7 @@ function save() {
 		finalPnachStrings.push('// ' + worldArray[i] + '\n')
 		for (let j = 0; j < popupArray[i].Popups.length; j++) {
 			let popup = popupArray[i].Popups[j];
-			if (popup["Replacement Address"] !== '') {
+			if (popup['Replacement Address'] !== '') {
 				let s = 'patch=1,EE,' + popup['Original Address'] + ',extended,0000' + popup['Replacement Address'];
 				s += ' // ' + popup['Location'] + ', ' + popup['Original Reward'] + ' is now ' + popup['Replacement Reward'] + '\n';
 				finalPnachStrings.push(s);
@@ -396,7 +458,7 @@ function save() {
 		}
 	}
 
-	let finalPnach = new Blob(finalPnachStrings, { type: "text/plain;charset=utf-8" });
+	let finalPnach = new Blob(finalPnachStrings, { type: 'text/plain;charset=utf-8' });
 	saveAs(finalPnach, 'F266B00B.pnach');
 }
 
