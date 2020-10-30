@@ -6677,7 +6677,7 @@ const equipmentPropertiesArray = [
 	'Replacement Ability Address'
 ]
 
-var levelArray = [{
+const levelArray = [{
 	'Level': 1,
 	'EXP to Next Level': 0,
 	'EXP to Next Address': 0,

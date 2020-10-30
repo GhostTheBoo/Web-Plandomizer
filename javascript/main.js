@@ -21,6 +21,8 @@ function initialize() {
 			break;
 		}
 		case 'levels': {
+			addRewardTypes();
+			populateTable(0);
 			break;
 		}
 		case 'other': {
@@ -95,7 +97,6 @@ function populateTable(ID) {
 		case 'equipment': {
 			table = document.getElementById('equipmentTable');
 			newTableBody = document.createElement('tbody');
-			table = document.getElementById(currentPage + 'Table');
 			if (equipmentArray[ID].Equipments.length > 0) {
 				for (let i = 0; i < equipmentArray[ID].Equipments.length; i++) {
 					let row = document.createElement('tr');
@@ -118,6 +119,23 @@ function populateTable(ID) {
 			break;
 		}
 		case 'levels': {
+			table = document.getElementById('levelsTable');
+			newTableBody = document.createElement('tbody');
+			levelArray.forEach(level => {
+				let row = document.createElement('tr');
+				row.id = 'row' + (level['Level'] - 1);
+				let cell = document.createElement('input');
+				cell.type = 'checkbox';
+				cell.id = 'check' + (level['Level'] - 1);
+				row.appendChild(cell);
+				for (let i = 0; i < levelPropertiesArray.length - 3; i++) {
+					let cell = document.createElement('td');
+					let property = levelPropertiesArray[i];
+					cell.innerHTML = level[property];
+					row.appendChild(cell);
+				}
+				newTableBody.appendChild(row);
+			})
 			break;
 		}
 		case 'other': {
@@ -378,7 +396,7 @@ function save() {
 			let statCount = 0;
 			let eResistCount = 0;
 			let oResistCount = 0;
-			
+
 			// equipment name
 			finalPnachStrings.push('// ' + equipment['Name'] + '\n');
 
