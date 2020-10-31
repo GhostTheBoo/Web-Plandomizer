@@ -1,7 +1,7 @@
 INDEX/GLOBAL
 --------------------------------------------------------------
 general css changes
-retaining data between pages
+saving data between pages
 help functionality
 highlighting changes
 highlighting potential errors
@@ -30,4 +30,6 @@ vanilla stats maybe?
 BONUS
 --------------------------------------------------------------
 FORMS
+--------------------------------------------------------------
+OTHER
 --------------------------------------------------------------
