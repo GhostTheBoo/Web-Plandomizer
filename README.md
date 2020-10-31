@@ -14,6 +14,8 @@ Popups
 
 Equipment
 
+Levels
+
 ## How-To
 
 Check all of the items you wish to replace, select what you wish to replace them with, and click replace.
