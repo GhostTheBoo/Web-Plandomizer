@@ -128,12 +128,11 @@ function populateTable(ID) {
 				cell.type = 'checkbox';
 				cell.id = 'check' + (level['Level'] - 1);
 				row.appendChild(cell);
-				for (let i = 0; i < levelPropertiesArray.length - 3; i++) {
+				levelPropertiesArray.forEach(property=>{
 					let cell = document.createElement('td');
-					let property = levelPropertiesArray[i];
 					cell.innerHTML = level[property];
 					row.appendChild(cell);
-				}
+				})
 				newTableBody.appendChild(row);
 			})
 			break;

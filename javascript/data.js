@@ -1959,9 +1959,7 @@ const chestArray = [{
 const chestPropertiesArray = [
 	'Room',
 	'Original Reward',
-	'Original Address',
-	'Replacement Reward',
-	'Replacement Address'
+	'Replacement Reward'
 ]
 
 var popupArray = [{
@@ -2683,9 +2681,7 @@ var popupArray = [{
 const popupPropertiesArray = [
 	'Location',
 	'Original Reward',
-	'Original Address',
-	'Replacement Reward',
-	'Replacement Address'
+	'Replacement Reward'
 ]
 
 var equipmentArray = [{
@@ -4577,7 +4573,7 @@ var equipmentArray = [{
 	'Equipment Type': 'Ally Weapon',
 	Equipments: [{
 		'Name': 'Sword of Ancestors (Ping/Mulan)',
-		'Ability': '0',
+		'Ability': '',
 		'Strength': 3,
 		'Magic': 0,
 		'AP': 0,
@@ -4605,7 +4601,7 @@ var equipmentArray = [{
 		'Replacement Ability Address': ''
 	}, {
 		'Name': 'Beast\'s Claw (Beast)',
-		'Ability': '0',
+		'Ability': '',
 		'Strength': 3,
 		'Magic': 0,
 		'AP': 0,
@@ -4633,7 +4629,7 @@ var equipmentArray = [{
 		'Replacement Ability Address': ''
 	}, {
 		'Name': 'Battlefields of War (Auron)',
-		'Ability': '0',
+		'Ability': '',
 		'Strength': 3,
 		'Magic': 0,
 		'AP': 0,
@@ -4661,7 +4657,7 @@ var equipmentArray = [{
 		'Replacement Ability Address': ''
 	}, {
 		'Name': 'Skill and Crossbones (Jack Sparrow)',
-		'Ability': '0',
+		'Ability': '',
 		'Strength': 3,
 		'Magic': 0,
 		'AP': 0,
@@ -4689,7 +4685,7 @@ var equipmentArray = [{
 		'Replacement Ability Address': ''
 	}, {
 		'Name': 'Scimitar (Aladdin)',
-		'Ability': '0',
+		'Ability': '',
 		'Strength': 3,
 		'Magic': 0,
 		'AP': 0,
@@ -4717,7 +4713,7 @@ var equipmentArray = [{
 		'Replacement Ability Address': ''
 	}, {
 		'Name': 'Bone Fist (Jack)',
-		'Ability': '0',
+		'Ability': '',
 		'Strength': 3,
 		'Magic': 0,
 		'AP': 0,
@@ -4745,7 +4741,7 @@ var equipmentArray = [{
 		'Replacement Ability Address': ''
 	}, {
 		'Name': 'Proud Fang (Simba)',
-		'Ability': '0',
+		'Ability': '',
 		'Strength': 3,
 		'Magic': 0,
 		'AP': 0,
@@ -4773,7 +4769,7 @@ var equipmentArray = [{
 		'Replacement Ability Address': ''
 	}, {
 		'Name': 'Way to the Dawn (Riku)',
-		'Ability': '0',
+		'Ability': '',
 		'Strength': 3,
 		'Magic': 0,
 		'AP': 0,
@@ -6669,12 +6665,7 @@ const equipmentPropertiesArray = [
 	'Thunder Resistance',
 	'Dark Resistance',
 	'Light Resistance',
-	'Universal Resistance',
-	'Ability Address',
-	'Stat Address',
-	'Elemental Resistance Address',
-	'Other Resistance Address',
-	'Replacement Ability Address'
+	'Universal Resistance'
 ]
 
 const levelArray = [{
@@ -8761,24 +8752,13 @@ const levelArray = [{
 const levelPropertiesArray = [
 	'Level',
 	'EXP to Next Level',
-	'EXP to Next Address',
 	'AP',
 	'Defense',
 	'Magic',
 	'Strength',
-	'Stat Address',
-	'Sword Address',
-	'Shield Address',
-	'Staff Address',
-	'Sword Replacement Address',
-	'Shield Replacement Address',
-	'Staff Replacement Address',
 	'Sword Replacement Reward',
 	'Shield Replacement Reward',
-	'Staff Replacement Reward',
-	'Vanilla Sword Reward',
-	'Vanilla Shield Reward',
-	'Vanilla Staff Reward'
+	'Staff Replacement Reward'
 ]
 
 const rewardArray = [{
