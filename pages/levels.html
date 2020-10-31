@@ -21,6 +21,73 @@
 		<a href="../pages/levels.html">Levels</a>
 		<a href="../pages/other.html">Other</a>
 	</nav>
+	<section class='selectors'>
+		<button name='replaceButton' id='replaceButton' onclick="replace()">Replace</button>
+		<button name='defaultButton' id='defaultButton' onclick="goldExperienceRequiem()">Default</button>
+		<button name='saveButton' id='saveButton' onclick="save()">Save</button>
+	</section>
+	<section class='rewardTable'>
+		<table name="levelsTable" id="levelsTable">
+			<thead>
+				<tr>
+					<th name='replaceCheckbox' id='replaceCheckbox'></th>
+					<th>
+						Level
+					</th>
+					<th>
+						Total EXP to Next Level
+					</th>
+					<th>
+						AP
+					</th>
+					<th>
+						Defense
+					</th>
+					<th>
+						Magic
+					</th>
+					<th>
+						Strength
+					</th>
+					<th>
+						Sword Replacement Reward
+					</th>
+					<th>
+						Shield Replacement Reward
+					</th>
+					<th>
+						Staff Replacement Reward
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<section>
+			<div>
+				<select name="rewardTypeSelector" id="rewardTypeSelector"
+					onchange="populateRewardTypeSelector(this.value)"></select>
+				<select name="rewardSelector" id="rewardSelector"></select>
+			</div>
+			<form>
+				<label for="ap">AP:</label><br>
+				<input type="number" id="ap" name="ap">
+				<br>
+				<label for="defense">Defense:</label><br>
+				<input type="number" id="defense" name="defense">
+				<br>
+				<label for="strength">Strength:</label><br>
+				<input type="number" id="strength" name="strength">
+				<br>
+				<label for="magic">Magic:</label><br>
+				<input type="number" id="magic" name="magic">
+				<br>
+				<label for="totalEXPToNext">Total Experience to Next Level:</label><br>
+				<input type="number" id="totalEXPToNext" name="totalEXPToNext">
+				<br>
+			</form>
+		</section>
+	</section>
 </body>
 
 </html>

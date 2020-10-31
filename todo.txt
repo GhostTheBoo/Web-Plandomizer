@@ -1,0 +1,35 @@
+INDEX/GLOBAL
+--------------------------------------------------------------
+general css changes
+saving data between pages
+help functionality
+highlighting changes
+highlighting potential errors
+
+CHESTS
+--------------------------------------------------------------
+general formatting
+
+POPUPS
+--------------------------------------------------------------
+general formatting
+warnings for abilities
+
+EQUIPMENT
+--------------------------------------------------------------
+default values for input fields
+bounds for input fields
+
+LEVELS
+--------------------------------------------------------------
+inidividual sword/shield/staff level rewards
+default values for input fields
+bounds for input fields
+vanilla stats maybe?
+
+BONUS
+--------------------------------------------------------------
+FORMS
+--------------------------------------------------------------
+OTHER
+--------------------------------------------------------------
