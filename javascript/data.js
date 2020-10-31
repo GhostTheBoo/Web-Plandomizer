@@ -6680,7 +6680,7 @@ const equipmentPropertiesArray = [
 const levelArray = [{
 	'Level': 1,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B6A8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6697,11 +6697,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 2,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B6B8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6718,11 +6718,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 3,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B6C8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6739,11 +6739,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 4,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B6D8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6760,11 +6760,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 5,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B6E8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6781,11 +6781,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 6,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B6F8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6802,11 +6802,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 7,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B708',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6823,11 +6823,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Experience Boost',
 	'Vanilla Sword Reward': 'Combo Boost',
 	'Vanilla Shield Reward': 'Item Boost',
-	'Vanilla Staff Reward': 'Experience Boost'
+	'Vanilla Staff Reward': 'Experience Boost',
 }, {
 	'Level': 8,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B718',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6844,11 +6844,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 9,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B728',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6865,11 +6865,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Item Boost',
 	'Vanilla Sword Reward': 'Experience Boost',
 	'Vanilla Shield Reward': 'Combo Boost',
-	'Vanilla Staff Reward': 'Item Boost'
+	'Vanilla Staff Reward': 'Item Boost',
 }, {
 	'Level': 10,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B738',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6886,11 +6886,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 11,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B748',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6907,11 +6907,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 12,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B758',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6928,11 +6928,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Magic Lock-On',
 	'Vanilla Sword Reward': 'Magic Lock-On',
 	'Vanilla Shield Reward': 'Magic Lock-On',
-	'Vanilla Staff Reward': 'Magic Lock-On'
+	'Vanilla Staff Reward': 'Magic Lock-On',
 }, {
 	'Level': 13,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B768',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6949,11 +6949,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 14,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B778',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6970,11 +6970,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 15,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B788',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -6991,11 +6991,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Fire Boost',
 	'Vanilla Sword Reward': 'Reaction Boost',
 	'Vanilla Shield Reward': 'Damage Drive',
-	'Vanilla Staff Reward': 'Fire Boost'
+	'Vanilla Staff Reward': 'Fire Boost',
 }, {
 	'Level': 16,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B798',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7012,11 +7012,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 17,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B7A8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7033,11 +7033,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Combo Boost',
 	'Vanilla Sword Reward': 'Item Boost',
 	'Vanilla Shield Reward': 'Experience Boost',
-	'Vanilla Staff Reward': 'Combo Boost'
+	'Vanilla Staff Reward': 'Combo Boost',
 }, {
 	'Level': 18,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B7B8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7054,11 +7054,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 19,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B7C8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7075,11 +7075,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 20,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B7D8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7096,11 +7096,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Leaf Bracer',
 	'Vanilla Sword Reward': 'Leaf Bracer',
 	'Vanilla Shield Reward': 'Leaf Bracer',
-	'Vanilla Staff Reward': 'Leaf Bracer'
+	'Vanilla Staff Reward': 'Leaf Bracer',
 }, {
 	'Level': 21,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B7E8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7117,11 +7117,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 22,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B7F8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7138,11 +7138,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 23,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B808',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7159,11 +7159,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Damage Drive',
 	'Vanilla Sword Reward': 'Fire Boost',
 	'Vanilla Shield Reward': 'Reaction Boost',
-	'Vanilla Staff Reward': 'Damage Drive'
+	'Vanilla Staff Reward': 'Damage Drive',
 }, {
 	'Level': 24,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B818',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7180,11 +7180,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 25,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B828',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7201,11 +7201,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Draw',
 	'Vanilla Sword Reward': 'Drive Boost',
 	'Vanilla Shield Reward': 'Once More',
-	'Vanilla Staff Reward': 'Draw'
+	'Vanilla Staff Reward': 'Draw',
 }, {
 	'Level': 26,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B838',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7222,11 +7222,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 27,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B848',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7243,11 +7243,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 28,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B858',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7264,11 +7264,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Once More',
 	'Vanilla Sword Reward': 'Draw',
 	'Vanilla Shield Reward': 'Drive Boost',
-	'Vanilla Staff Reward': 'Once More'
+	'Vanilla Staff Reward': 'Once More',
 }, {
 	'Level': 29,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B868',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7285,11 +7285,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 30,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B878',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7306,11 +7306,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 31,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B888',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7327,11 +7327,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Blizzard Boost',
 	'Vanilla Sword Reward': 'Combination Boost',
 	'Vanilla Shield Reward': 'Defender',
-	'Vanilla Staff Reward': 'Blizzard Boost'
+	'Vanilla Staff Reward': 'Blizzard Boost',
 }, {
 	'Level': 32,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B898',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7348,11 +7348,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 33,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B8A8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7369,11 +7369,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Reaction Boost',
 	'Vanilla Sword Reward': 'Damage Drive',
 	'Vanilla Shield Reward': 'Fire Boost',
-	'Vanilla Staff Reward': 'Reaction Boost'
+	'Vanilla Staff Reward': 'Reaction Boost',
 }, {
 	'Level': 34,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B8B8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7390,11 +7390,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 35,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B8C8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7411,11 +7411,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 36,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B8D8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7432,11 +7432,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Negative Combo',
 	'Vanilla Sword Reward': 'Air Combo Boost',
 	'Vanilla Shield Reward': 'Jackpot',
-	'Vanilla Staff Reward': 'Negative Combo'
+	'Vanilla Staff Reward': 'Negative Combo',
 }, {
 	'Level': 37,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B8E8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7453,11 +7453,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 38,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B8F8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7474,11 +7474,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 39,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B908',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7495,11 +7495,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Defender',
 	'Vanilla Sword Reward': 'Blizzard Boost',
 	'Vanilla Shield Reward': 'Combination Boost',
-	'Vanilla Staff Reward': 'Defender'
+	'Vanilla Staff Reward': 'Defender',
 }, {
 	'Level': 40,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B918',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7516,11 +7516,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 41,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B928',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7537,11 +7537,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Thunder Boost',
 	'Vanilla Sword Reward': 'Drive Converter',
 	'Vanilla Shield Reward': 'Damage Control',
-	'Vanilla Staff Reward': 'Thunder Boost'
+	'Vanilla Staff Reward': 'Thunder Boost',
 }, {
 	'Level': 42,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B938',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7558,11 +7558,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 43,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B948',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7579,11 +7579,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 44,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B958',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7600,11 +7600,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Jackpot',
 	'Vanilla Sword Reward': 'Negative Combo',
 	'Vanilla Shield Reward': 'Air Combo Boost',
-	'Vanilla Staff Reward': 'Jackpot'
+	'Vanilla Staff Reward': 'Jackpot',
 }, {
 	'Level': 45,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B968',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7621,11 +7621,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 46,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B978',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7642,11 +7642,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 47,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B988',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7663,11 +7663,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Drive Boost',
 	'Vanilla Sword Reward': 'Once More',
 	'Vanilla Shield Reward': 'Draw',
-	'Vanilla Staff Reward': 'Drive Boost'
+	'Vanilla Staff Reward': 'Drive Boost',
 }, {
 	'Level': 48,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B998',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7684,11 +7684,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 49,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B9A8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7705,11 +7705,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Berserk Charge',
 	'Vanilla Sword Reward': 'Finishing Plus',
 	'Vanilla Shield Reward': 'Second Chance',
-	'Vanilla Staff Reward': 'Berserk Charge'
+	'Vanilla Staff Reward': 'Berserk Charge',
 }, {
 	'Level': 50,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B9B8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7726,11 +7726,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 51,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B9C8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7747,11 +7747,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 52,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B9D8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7768,11 +7768,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 53,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B9E8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7789,11 +7789,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Damage Control',
 	'Vanilla Sword Reward': 'Thunder Boost',
 	'Vanilla Shield Reward': 'Drive Converter',
-	'Vanilla Staff Reward': 'Damage Control'
+	'Vanilla Staff Reward': 'Damage Control',
 }, {
 	'Level': 54,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0B9F8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7810,11 +7810,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 55,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA08',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7831,11 +7831,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 56,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA18',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7852,11 +7852,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 57,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA28',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7873,11 +7873,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 58,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA38',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7894,11 +7894,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 59,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA48',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7915,11 +7915,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Combination Boost',
 	'Vanilla Sword Reward': 'Defender',
 	'Vanilla Shield Reward': 'Blizzard Boost',
-	'Vanilla Staff Reward': 'Combination Boost'
+	'Vanilla Staff Reward': 'Combination Boost',
 }, {
 	'Level': 60,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA58',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7936,11 +7936,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 61,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA68',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7957,11 +7957,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 62,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA78',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7978,11 +7978,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 63,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA88',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -7999,11 +7999,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 64,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BA98',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8020,11 +8020,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 65,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BAA8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8041,11 +8041,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Second Chance',
 	'Vanilla Sword Reward': 'Berserk Charge',
 	'Vanilla Shield Reward': 'Finishing Plus',
-	'Vanilla Staff Reward': 'Second Chance'
+	'Vanilla Staff Reward': 'Second Chance',
 }, {
 	'Level': 66,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BAB8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8062,11 +8062,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 67,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BAC8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8083,11 +8083,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 68,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BAD8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8104,11 +8104,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 69,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BAE8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8125,11 +8125,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 70,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BAF8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8146,11 +8146,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 71,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB08',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8167,11 +8167,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 72,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB18',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8188,11 +8188,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 73,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB28',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8209,11 +8209,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Air Combo Boost',
 	'Vanilla Sword Reward': 'Jackpot',
 	'Vanilla Shield Reward': 'Negative Combo',
-	'Vanilla Staff Reward': 'Air Combo Boost'
+	'Vanilla Staff Reward': 'Air Combo Boost',
 }, {
 	'Level': 74,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB38',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8230,11 +8230,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 75,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB48',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8251,11 +8251,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 76,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB58',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8272,11 +8272,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 77,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB68',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8293,11 +8293,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 78,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB78',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8314,11 +8314,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 79,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB88',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8335,11 +8335,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 80,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BB98',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8356,11 +8356,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 81,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BBA8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8377,11 +8377,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 82,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BBB8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8398,11 +8398,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 83,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BBC8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8419,11 +8419,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 84,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BBD8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8440,11 +8440,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 85,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BBE8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8461,11 +8461,11 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Finishing Plus',
 	'Vanilla Sword Reward': 'Second Chance',
 	'Vanilla Shield Reward': 'Berserk Charge',
-	'Vanilla Staff Reward': 'Finishing Plus'
+	'Vanilla Staff Reward': 'Finishing Plus',
 }, {
 	'Level': 86,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BBF8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8482,11 +8482,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 87,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC08',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8503,11 +8503,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 88,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC18',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8524,11 +8524,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 89,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC28',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8545,11 +8545,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 90,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC38',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8566,11 +8566,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 91,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC48',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8587,11 +8587,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 92,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC58',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8608,11 +8608,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 93,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC68',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8629,11 +8629,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 94,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC78',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8650,11 +8650,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 95,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC88',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8671,11 +8671,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 96,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BC98',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8692,11 +8692,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 97,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BCA8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8713,11 +8713,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 98,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BCB8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8734,11 +8734,11 @@ const levelArray = [{
 	'Staff Replacement Reward': '',
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
-	'Vanilla Staff Reward': ''
+	'Vanilla Staff Reward': '',
 }, {
 	'Level': 99,
 	'EXP to Next Level': 0,
-	'EXP to Next Address': 0,
+	'EXP to Next Address': '21D0BCC8',
 	'AP': 0,
 	'Defense': 0,
 	'Magic': 0,
@@ -8755,7 +8755,7 @@ const levelArray = [{
 	'Staff Replacement Reward': 'Drive Converter',
 	'Vanilla Sword Reward': 'Damage Control',
 	'Vanilla Shield Reward': 'Thunder Boost',
-	'Vanilla Staff Reward': 'Drive Converter'
+	'Vanilla Staff Reward': 'Drive Converter',
 }]
 
 const levelPropertiesArray = [

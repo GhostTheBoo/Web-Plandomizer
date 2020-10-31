@@ -266,6 +266,32 @@ function replace() {
 			break;
 		}
 		case 'levels': {
+			let rt = document.getElementById('rewardTypeSelector');
+			let r = document.getElementById('rewardSelector');
+			let locationArray = levelArray;
+			let str = document.getElementById('strength');
+			let mag = document.getElementById('magic');
+			let ap = document.getElementById('ap');
+			let def = document.getElementById('defense');
+			let exp = document.getElementById('totalEXPToNext');
+			let rowCount = document.getElementById('levelsTable').rows.length;
+			for (let i = 0; i < rowCount - 1; i++) {
+				let checked = document.getElementById('check' + i).checked;
+				if (checked) {
+					locationArray[i]['EXP to Next Level'] = exp.value;
+					locationArray[i]['AP'] = ap.value;
+					locationArray[i]['Defense'] = def.value;
+					locationArray[i]['Magic'] = mag.value;
+					locationArray[i]['Strength'] = str.value;
+					locationArray[i]['Sword Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
+					locationArray[i]['Shield Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
+					locationArray[i]['Staff Replacement Address'] = rewardArray[rt.value].Rewards[r.value]['Reward Address'];
+					locationArray[i]['Sword Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
+					locationArray[i]['Shield Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
+					locationArray[i]['Staff Replacement Reward'] = rewardArray[rt.value].Rewards[r.value]['Reward'];
+				}
+			}
+			populateTable(0);
 			break;
 		}
 		case 'other': {
@@ -342,6 +368,25 @@ function goldExperienceRequiem() {
 			break;
 		}
 		case 'levels': {
+			let locationArray = levelArray;
+			let rowCount = document.getElementById('levelsTable').rows.length;
+			for (let i = 0; i < rowCount - 1; i++) {
+				let checked = document.getElementById('check' + i).checked;
+				if (checked) {
+					locationArray[i]['EXP to Next Level'] = 0;
+					locationArray[i]['AP'] = 0;
+					locationArray[i]['Defense'] = 0;
+					locationArray[i]['Magic'] = 0;
+					locationArray[i]['Strength'] = 0;
+					locationArray[i]['Sword Replacement Address'] = '';
+					locationArray[i]['Shield Replacement Address'] = '';
+					locationArray[i]['Staff Replacement Address'] = '';
+					locationArray[i]['Sword Replacement Reward'] = locationArray[i]['Vanilla Sword Reward'];
+					locationArray[i]['Shield Replacement Reward'] = locationArray[i]['Vanilla Shield Reward'];
+					locationArray[i]['Staff Replacement Reward'] = locationArray[i]['Vanilla Staff Reward'];
+				}
+			}
+			populateTable(0);
 			break;
 		}
 		case 'other': {
@@ -370,6 +415,8 @@ function goldExperienceRequiem() {
 // save replacement patch codes to pnach file
 function save() {
 	let finalPnachStrings = [];
+
+	// Printing Bonus Replacements
 
 	// Printing Chest Replacements
 	finalPnachStrings.push('//Chest Replacements\n')
@@ -439,7 +486,8 @@ function save() {
 				eResistCount++;
 			word += (100 - equipment['Physical Resistance']).toString(16).padStart(2, '0');
 			if (eResistCount > 0) {
-				word += ' // Thunder:' + equipment['Thunder Resistance'] + '% Blizzard:' + equipment['Blizzard Resistance'] + '% Fire:' + equipment['Fire Resistance'] + '% Physical:' + equipment['Physical Resistance'] + '%\n';
+				word += ' // Thunder:' + equipment['Thunder Resistance'] + '% Blizzard:' + equipment['Blizzard Resistance'];
+				word += '% Fire:' + equipment['Fire Resistance'] + '% Physical:' + equipment['Physical Resistance'] + '%\n';
 				finalPnachStrings.push('patch=1,EE,' + equipment['Elemental Resistance Address'] + ',extended,' + word);
 			}
 			word = '00';
@@ -461,6 +509,48 @@ function save() {
 		}
 	}
 	finalPnachStrings.push('\n')
+
+	// Printing Form Replacements
+
+	// Printing Level Replacements
+	finalPnachStrings.push('//Level Replacements\n')
+	for (let i = 0; i < 99; i++) {
+		let currentLevel = levelArray[i];
+		finalPnachStrings.push('// Level: ' + currentLevel['Level'] + '\n')
+		// Experience
+		if (currentLevel['Level'] === 99)
+			finalPnachStrings.push('// Cannot Level to 100\n');
+		else {
+			finalPnachStrings.push('patch=1,EE,' + currentLevel['EXP to Next Address'] + ',extended,' + currentLevel['EXP to Next Level'].toString(16).padStart(8, '0'));
+			finalPnachStrings.push(' // Level ' + currentLevel['Level'] + ' at ' + currentLevel['EXP to Next Level'] + ' experience\n');
+		}
+		// Stats
+		finalPnachStrings.push('patch=1,EE,' + currentLevel['Stat Address'] + ',extended,');
+		finalPnachStrings.push(currentLevel['AP'].toString(16).padStart(2, '0') + currentLevel['Defense'].toString(16).padStart(2, '0'))
+		finalPnachStrings.push(currentLevel['Magic'].toString(16).padStart(2, '0') + currentLevel['Strength'].toString(16).padStart(2, '0'));
+		finalPnachStrings.push(' // AP:' + currentLevel['AP'].toString() + ' Magic:' + currentLevel['Magic'].toString());
+		finalPnachStrings.push(' Defense:' + currentLevel['Defense'].toString() + ' Strength:' + currentLevel['Strength'].toString() + '\n');
+		// Rewards
+		if (currentLevel['Level'] === 1)
+			finalPnachStrings.push('// No Level 1 Dream Weapon Rewards\n');
+		else {
+			if (currentLevel['Sword Replacement Address'] !== '') {
+				finalPnachStrings.push('patch=1,EE,' + currentLevel['Sword Address'] + ',extended,0000');
+				finalPnachStrings.push(currentLevel['Sword Replacement Address'] + ' // Sword Reward: ' + currentLevel['Sword Replacement Reward'] + '\n');
+			}
+			if (currentLevel['Shield Replacement Address'] !== '') {
+				finalPnachStrings.push('patch=1,EE,' + currentLevel['Shield Address'] + ',extended,0000');
+				finalPnachStrings.push(currentLevel['Shield Replacement Address'] + ' // Shield Reward: ' + currentLevel['Shield Replacement Reward'] + '\n');
+			}
+			if (currentLevel['Staff Replacement Address'] !== '') {
+				finalPnachStrings.push('patch=1,EE,' + currentLevel['Staff Address'] + ',extended,0000');
+				finalPnachStrings.push(currentLevel['Staff Replacement Address'] + ' // Staff Reward: ' + currentLevel['Staff Replacement Reward'] + '\n');
+			}
+		}
+	}
+	finalPnachStrings.push('\n')
+
+	// Printing Other Replacements
 
 	// Printing Popup Replacements
 	finalPnachStrings.push('//Popup Replacements\n')
