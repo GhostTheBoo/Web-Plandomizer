@@ -128,7 +128,7 @@ function populateTable(ID) {
 				cell.type = 'checkbox';
 				cell.id = 'check' + (level['Level'] - 1);
 				row.appendChild(cell);
-				levelPropertiesArray.forEach(property=>{
+				levelPropertiesArray.forEach(property => {
 					let cell = document.createElement('td');
 					cell.innerHTML = level[property];
 					row.appendChild(cell);
@@ -373,10 +373,10 @@ function goldExperienceRequiem() {
 				let checked = document.getElementById('check' + i).checked;
 				if (checked) {
 					locationArray[i]['EXP to Next Level'] = 0;
-					locationArray[i]['AP'] = 0;
-					locationArray[i]['Defense'] = 0;
-					locationArray[i]['Magic'] = 0;
-					locationArray[i]['Strength'] = 0;
+					locationArray[i]['AP'] = locationArray[i]['Vanilla AP']
+					locationArray[i]['Defense'] = locationArray[i]['Vanilla Defense']
+					locationArray[i]['Magic'] = locationArray[i]['Vanilla Magic']
+					locationArray[i]['Strength'] = locationArray[i]['Vanilla Strength']
 					locationArray[i]['Sword Replacement Address'] = '';
 					locationArray[i]['Shield Replacement Address'] = '';
 					locationArray[i]['Staff Replacement Address'] = '';
@@ -520,15 +520,50 @@ function save() {
 		if (currentLevel['Level'] === 99)
 			finalPnachStrings.push('// Cannot Level to 100\n');
 		else {
-			finalPnachStrings.push('patch=1,EE,' + currentLevel['EXP to Next Address'] + ',extended,' + currentLevel['EXP to Next Level'].toString(16).padStart(8, '0'));
-			finalPnachStrings.push(' // Level ' + currentLevel['Level'] + ' at ' + currentLevel['EXP to Next Level'] + ' experience\n');
+			if (currentLevel['EXP to Next Level'] !== 0) {
+				finalPnachStrings.push('patch=1,EE,' + currentLevel['EXP to Next Address'] + ',extended,' + currentLevel['EXP to Next Level'].toString(16).padStart(8, '0'));
+				finalPnachStrings.push(' // Level ' + currentLevel['Level'] + ' at ' + currentLevel['EXP to Next Level'] + ' experience\n');
+			}
 		}
 		// Stats
-		finalPnachStrings.push('patch=1,EE,' + currentLevel['Stat Address'] + ',extended,');
-		finalPnachStrings.push(currentLevel['AP'].toString(16).padStart(2, '0') + currentLevel['Defense'].toString(16).padStart(2, '0'))
-		finalPnachStrings.push(currentLevel['Magic'].toString(16).padStart(2, '0') + currentLevel['Strength'].toString(16).padStart(2, '0'));
-		finalPnachStrings.push(' // AP:' + currentLevel['AP'].toString() + ' Magic:' + currentLevel['Magic'].toString());
-		finalPnachStrings.push(' Defense:' + currentLevel['Defense'].toString() + ' Strength:' + currentLevel['Strength'].toString() + '\n');
+		let cheat = 'patch=1,EE,' + currentLevel['Stat Address'] + ',extended,';
+		let changeCount = 0;
+
+		if (currentLevel['AP'] !== currentLevel['Vanilla AP']) {
+			cheat += currentLevel['AP'].toString(16).padStart(2, '0');
+			changeCount++;
+		}
+		else {
+			cheat += '00';
+		}
+		if (currentLevel['Defense'] !== currentLevel['Vanilla Defense']) {
+			cheat += currentLevel['Defense'].toString(16).padStart(2, '0');
+			changeCount++;
+		}
+		else {
+			cheat += '00';
+		}
+		if (currentLevel['Magic'] !== currentLevel['Vanilla Magic']) {
+			cheat += currentLevel['Magic'].toString(16).padStart(2, '0');
+			changeCount++;
+		}
+		else {
+			cheat += '00';
+		}
+		if (currentLevel['Strength'] !== currentLevel['Vanilla Strength']) {
+			cheat += currentLevel['Strength'].toString(16).padStart(2, '0');
+			changeCount++;
+		}
+		else {
+			cheat += '00';
+		}
+
+		if(changeCount !== 0)
+		{
+			finalPnachStrings.push(cheat);
+			finalPnachStrings.push(' // AP:' + currentLevel['AP'].toString() + ' Magic:' + currentLevel['Magic'].toString());
+			finalPnachStrings.push(' Defense:' + currentLevel['Defense'].toString() + ' Strength:' + currentLevel['Strength'].toString() + '\n');
+		}
 		// Rewards
 		if (currentLevel['Level'] === 1)
 			finalPnachStrings.push('// No Level 1 Dream Weapon Rewards\n');
