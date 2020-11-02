@@ -278,7 +278,8 @@ function replace() {
 				let checked = document.getElementById('check' + i).checked;
 				if (checked) {
 					locationArray[i]['EXP to Next Level'] = exp.value;
-					locationArray[i]['AP'] = ap.value;
+					locationArray[i]['Standard AP'] = ap.value;
+					locationArray[i]['Critical AP'] = Math.floor(((ap.value - 2) * 1.5) + 50);
 					locationArray[i]['Defense'] = def.value;
 					locationArray[i]['Magic'] = mag.value;
 					locationArray[i]['Strength'] = str.value;
@@ -373,7 +374,8 @@ function goldExperienceRequiem() {
 				let checked = document.getElementById('check' + i).checked;
 				if (checked) {
 					locationArray[i]['EXP to Next Level'] = 0;
-					locationArray[i]['AP'] = locationArray[i]['Vanilla AP']
+					locationArray[i]['Standard AP'] = locationArray[i]['Vanilla AP']
+					locationArray[i]['Critical AP'] = Math.floor(((locationArray[i]['Standard AP'] - 2) * 1.5) + 50);
 					locationArray[i]['Defense'] = locationArray[i]['Vanilla Defense']
 					locationArray[i]['Magic'] = locationArray[i]['Vanilla Magic']
 					locationArray[i]['Strength'] = locationArray[i]['Vanilla Strength']
