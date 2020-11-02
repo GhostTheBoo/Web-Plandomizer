@@ -52,22 +52,34 @@ warnings for abilities
 
 EQUIPMENT
 --
+general formatting
+
 default values for input fields
 
 bounds for input fields
 
 LEVELS
 --
+general formatting
+
 inidividual sword/shield/staff level rewards
 
 default values for input fields
 
 bounds for input fields
 
-vanilla stats maybe?
+:D vanilla stats maybe?
 
 BONUS
 --
+general formatting
+
+allow for 2 non stat rewards per bonus level
+
+bounds for input fields
+
+checks for more than 2 replacements
+
 FORMS
 --
 OTHER

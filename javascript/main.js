@@ -3,6 +3,10 @@ function initialize() {
 	console.log(currentPage);
 	switch (currentPage) {
 		case 'bonus': {
+			addCharacters();
+			addWorlds();
+			addRewardTypes();
+			populateTable(0);
 			break;
 		}
 		case 'chests': {
@@ -43,6 +47,17 @@ function initialize() {
 	}
 }
 
+// create character list
+function addCharacters() {
+	let select = document.getElementById('characterSelector');
+	for (let i = 0; i < characterArray.length; i++) {
+		let option = document.createElement('option');
+		option.text = characterArray[i];
+		option.value = i;
+		select.add(option);
+	}
+}
+
 // create world list
 function addWorlds() {
 	let select = document.getElementById('worldSelector');
@@ -71,6 +86,27 @@ function populateTable(ID) {
 	let newTableBody;
 	switch (currentPage) {
 		case 'bonus': {
+			let world = document.getElementById('worldSelector').value;
+			let character = document.getElementById('characterSelector').value;
+			let worldBonusesArray = bonusArray[character]['All Character Bonuses'][world]['World Bonuses'];
+			table = document.getElementById('bonusTable');
+			newTableBody = document.createElement('tbody');
+			if (worldBonusesArray.length > 0) {
+				for (let i = 0; i < worldBonusesArray.length; i++) {
+					let row = document.createElement('tr');
+					row.id = 'row' + i;
+					let cell = document.createElement('input');
+					cell.type = 'checkbox';
+					cell.id = 'check' + i;
+					row.appendChild(cell);
+					bonusPropertiesArray.forEach(property => {
+						let cell = document.createElement('td');
+						cell.innerHTML = worldBonusesArray[i][property];
+						row.appendChild(cell);
+					})
+					newTableBody.appendChild(row);
+				}
+			}
 			break;
 		}
 		case 'chests': {
@@ -128,7 +164,7 @@ function populateTable(ID) {
 				cell.type = 'checkbox';
 				cell.id = 'check' + (level['Level'] - 1);
 				row.appendChild(cell);
-				levelPropertiesArray.forEach(property=>{
+				levelPropertiesArray.forEach(property => {
 					let cell = document.createElement('td');
 					cell.innerHTML = level[property];
 					row.appendChild(cell);
@@ -205,6 +241,35 @@ function removeOptions(selectElement) {
 function replace() {
 	switch (currentPage) {
 		case 'bonus': {
+			let rt = document.getElementById('rewardTypeSelector');
+			let r = document.getElementById('rewardSelector');
+			let w = document.getElementById('worldSelector');
+			let c = document.getElementById('characterSelector');
+			let locationArray = bonusArray[c.value]['All Character Bonuses'][w.value]['World Bonuses'];
+			let reward = rewardArray[rt.value].Rewards[r.value];
+			let hp = document.getElementById('hp');
+			let mp = document.getElementById('mp');
+			let armor = document.getElementById('armor');
+			let accessory = document.getElementById('accessory');
+			let item = document.getElementById('item');
+			let drive = document.getElementById('drive');
+			let rowCount = document.getElementById('bonusTable').rows.length;
+			for (let i = 0; i < rowCount - 1; i++) {
+				let checked = document.getElementById('check' + i).checked;
+				if (checked) {
+					locationArray[i]['Replacement Reward 1'] = reward['Reward'];
+					locationArray[i]['Replacement Reward Address 1'] = reward['Reward Address'];
+					// locationArray[i]['Replacement Reward 2'] = reward['Reward'];
+					// locationArray[i]['Replacement Reward Address 2'] = reward['Reward Address'];
+					locationArray[i]['HP Increase'] = hp.value;
+					locationArray[i]['MP Increase'] = mp.value;
+					locationArray[i]['Armor Slot Increase'] = armor.value;
+					locationArray[i]['Accessory Slot Increase'] = accessory.value;
+					locationArray[i]['Item Slot Increase'] = item.value;
+					locationArray[i]['Drive Gauge Increase'] = drive.value;
+				}
+			}
+			populateTable(0);
 			break;
 		}
 		case 'chests': {
@@ -278,7 +343,8 @@ function replace() {
 				let checked = document.getElementById('check' + i).checked;
 				if (checked) {
 					locationArray[i]['EXP to Next Level'] = exp.value;
-					locationArray[i]['AP'] = ap.value;
+					locationArray[i]['Standard AP'] = ap.value;
+					locationArray[i]['Critical AP'] = Math.floor(((ap.value - 2) * 1.5) + 50);
 					locationArray[i]['Defense'] = def.value;
 					locationArray[i]['Magic'] = mag.value;
 					locationArray[i]['Strength'] = str.value;
@@ -322,6 +388,26 @@ function replace() {
 function goldExperienceRequiem() {
 	switch (currentPage) {
 		case 'bonus': {
+			let w = document.getElementById('worldSelector');
+			let c = document.getElementById('characterSelector');
+			let locationArray = bonusArray[c.value]['All Character Bonuses'][w.value]['World Bonuses'];
+			let rowCount = document.getElementById('bonusTable').rows.length;
+			for (let i = 0; i < rowCount - 1; i++) {
+				let checked = document.getElementById('check' + i).checked;
+				if (checked) {
+					locationArray[i]['Replacement Reward 1'] = locationArray[i]['Vanilla Reward 1'];
+					locationArray[i]['Replacement Reward Address 1'] = '';
+					// locationArray[i]['Replacement Reward 2'] = locationArray[i]['Vanilla Reward 2'];
+					// locationArray[i]['Replacement Reward Address 2'] = '';
+					locationArray[i]['HP Increase'] = locationArray[i]['Vanilla HP Increase'];
+					locationArray[i]['MP Increase'] = locationArray[i]['Vanilla MP Increase'];
+					locationArray[i]['Armor Slot Increase'] = locationArray[i]['Vanilla Armor Slot Increase'];
+					locationArray[i]['Accessory Slot Increase'] = locationArray[i]['Vanilla Accessory Slot Increase'];
+					locationArray[i]['Item Slot Increase'] = locationArray[i]['Vanilla Item Slot Increase'];
+					locationArray[i]['Drive Gauge Increase'] = locationArray[i]['Vanilla Drive Gauge Increase'];
+				}
+			}
+			populateTable(0);
 			break;
 		}
 		case 'chests': {
@@ -373,10 +459,11 @@ function goldExperienceRequiem() {
 				let checked = document.getElementById('check' + i).checked;
 				if (checked) {
 					locationArray[i]['EXP to Next Level'] = 0;
-					locationArray[i]['AP'] = 0;
-					locationArray[i]['Defense'] = 0;
-					locationArray[i]['Magic'] = 0;
-					locationArray[i]['Strength'] = 0;
+					locationArray[i]['Standard AP'] = locationArray[i]['Vanilla AP']
+					locationArray[i]['Critical AP'] = Math.floor(((locationArray[i]['Standard AP'] - 2) * 1.5) + 50);
+					locationArray[i]['Defense'] = locationArray[i]['Vanilla Defense']
+					locationArray[i]['Magic'] = locationArray[i]['Vanilla Magic']
+					locationArray[i]['Strength'] = locationArray[i]['Vanilla Strength']
 					locationArray[i]['Sword Replacement Address'] = '';
 					locationArray[i]['Shield Replacement Address'] = '';
 					locationArray[i]['Staff Replacement Address'] = '';
@@ -416,6 +503,61 @@ function save() {
 	let finalPnachStrings = [];
 
 	// Printing Bonus Replacements
+	finalPnachStrings.push('//Bonus Level Replacements\n')
+	for (let i = 0; i < characterArray.length; i++) {
+		finalPnachStrings.push('// ' + characterArray[i] + '\n');
+		for (let j = 0; j < worldArray.length; j++) {
+			let bonusCount = 0;
+			let bonusString = '';
+			finalPnachStrings.push('// ' + worldArray[j] + '\n');
+			bonusArray[i]['All Character Bonuses'][j]['World Bonuses'].forEach(bonus => {
+				// Fight
+				finalPnachStrings.push('// ' + bonus['Fight'] + '\n');
+				// Stats
+				bonusString += 'patch=1,EE,' + bonus['Stat Address'] + ',extended,0000';
+				if (bonus['MP Increase'] !== bonus['Vanilla MP Increase'])
+					bonusCount++;
+				bonusString += bonus['MP Increase'].toString(16).padStart(2, '0');
+				if (bonus['HP Increase'] !== bonus['Vanilla HP Increase'])
+					bonusCount++;
+				bonusString += bonus['HP Increase'].toString(16).padStart(2, '0');
+				bonusString += ' // MP:' + bonus['MP Increase'] + ' HP:' + bonus['HP Increase'] + '\n';
+				// Slots
+				bonusString += 'patch=1,EE,' + bonus['Slot Address'] + ',extended,';
+				if (bonus['Armor Slot Increase'] !== bonus['Vanilla Armor Slot Increase'])
+					bonusCount++;
+				bonusString += bonus['Armor Slot Increase'].toString(16).padStart(2, '0');
+				if (bonus['Accessory Slot Increase'] !== bonus['Vanilla Accessory Slot Increase'])
+					bonusCount++;
+				bonusString += bonus['Accessory Slot Increase'].toString(16).padStart(2, '0');
+				if (bonus['Item Slot Increase'] !== bonus['Vanilla Item Slot Increase'])
+					bonusCount++;
+				bonusString += bonus['Item Slot Increase'].toString(16).padStart(2, '0');
+				if (bonus['Drive Gauge Increase'] !== bonus['Vanilla Drive Gauge Increase'])
+					bonusCount++;
+				bonusString += bonus['Drive Gauge Increase'].toString(16).padStart(2, '0');
+				bonusString += ' // Armor Slot:+' + bonus['Armor Slot Increase'] + ' Accessory Slot:+' + bonus['Accessory Slot Increase'];
+				bonusString += ' Item Slot:+' + bonus['Item Slot Increase'] + ' Drive Gauge:+' + bonus['Drive Gauge Increase'] + '\n';
+				// Rewards
+				bonusString += 'patch=1,EE,' + bonus['Reward Address'] + ',extended,';
+				if (bonus['Replacement Reward Address 2'] !== '')
+					bonusCount++;
+				bonusString += bonus['Replacement Reward Address 2'].padStart(4, '0');
+				if (bonus['Replacement Reward Address 2'] !== '')
+					bonusCount++;
+				bonusString += bonus['Replacement Reward Address 1'].padStart(4, '0');
+				bonusString += ' // Replacement Reward #2:' + bonus['Replacement Reward 2'];
+				bonusString += ' Replacement Reward #1:' + bonus['Replacement Reward 1'] + '\n';
+				if (bonusCount !== 0)
+					finalPnachStrings.push(bonusString);
+				bonusString = '';
+				bonusCount = 0;
+			})
+
+		}
+
+	}
+	finalPnachStrings.push('\n')
 
 	// Printing Chest Replacements
 	finalPnachStrings.push('//Chest Replacements\n')
@@ -520,15 +662,49 @@ function save() {
 		if (currentLevel['Level'] === 99)
 			finalPnachStrings.push('// Cannot Level to 100\n');
 		else {
-			finalPnachStrings.push('patch=1,EE,' + currentLevel['EXP to Next Address'] + ',extended,' + currentLevel['EXP to Next Level'].toString(16).padStart(8, '0'));
-			finalPnachStrings.push(' // Level ' + currentLevel['Level'] + ' at ' + currentLevel['EXP to Next Level'] + ' experience\n');
+			if (currentLevel['EXP to Next Level'] !== 0) {
+				finalPnachStrings.push('patch=1,EE,' + currentLevel['EXP to Next Address'] + ',extended,' + currentLevel['EXP to Next Level'].toString(16).padStart(8, '0'));
+				finalPnachStrings.push(' // Level ' + currentLevel['Level'] + ' at ' + currentLevel['EXP to Next Level'] + ' experience\n');
+			}
 		}
 		// Stats
-		finalPnachStrings.push('patch=1,EE,' + currentLevel['Stat Address'] + ',extended,');
-		finalPnachStrings.push(currentLevel['AP'].toString(16).padStart(2, '0') + currentLevel['Defense'].toString(16).padStart(2, '0'))
-		finalPnachStrings.push(currentLevel['Magic'].toString(16).padStart(2, '0') + currentLevel['Strength'].toString(16).padStart(2, '0'));
-		finalPnachStrings.push(' // AP:' + currentLevel['AP'].toString() + ' Magic:' + currentLevel['Magic'].toString());
-		finalPnachStrings.push(' Defense:' + currentLevel['Defense'].toString() + ' Strength:' + currentLevel['Strength'].toString() + '\n');
+		let cheat = 'patch=1,EE,' + currentLevel['Stat Address'] + ',extended,';
+		let changeCount = 0;
+
+		if (currentLevel['Standard AP'] !== currentLevel['Vanilla AP']) {
+			cheat += currentLevel['Standard AP'].toString(16).padStart(2, '0');
+			changeCount++;
+		}
+		else {
+			cheat += '00';
+		}
+		if (currentLevel['Defense'] !== currentLevel['Vanilla Defense']) {
+			cheat += currentLevel['Defense'].toString(16).padStart(2, '0');
+			changeCount++;
+		}
+		else {
+			cheat += '00';
+		}
+		if (currentLevel['Magic'] !== currentLevel['Vanilla Magic']) {
+			cheat += currentLevel['Magic'].toString(16).padStart(2, '0');
+			changeCount++;
+		}
+		else {
+			cheat += '00';
+		}
+		if (currentLevel['Strength'] !== currentLevel['Vanilla Strength']) {
+			cheat += currentLevel['Strength'].toString(16).padStart(2, '0');
+			changeCount++;
+		}
+		else {
+			cheat += '00';
+		}
+
+		if (changeCount !== 0) {
+			finalPnachStrings.push(cheat);
+			finalPnachStrings.push(' // AP:' + currentLevel['Standard AP'].toString() + ' Magic:' + currentLevel['Magic'].toString());
+			finalPnachStrings.push(' Defense:' + currentLevel['Defense'].toString() + ' Strength:' + currentLevel['Strength'].toString() + '\n');
+		}
 		// Rewards
 		if (currentLevel['Level'] === 1)
 			finalPnachStrings.push('// No Level 1 Dream Weapon Rewards\n');
