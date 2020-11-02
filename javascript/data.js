@@ -6742,7 +6742,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 5,
+	'Vanilla AP': 4,
 	'Vanilla Defense': 3,
 	'Vanilla Magic': 6,
 	'Vanilla Strength': 4
@@ -6768,7 +6768,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 5,
+	'Vanilla AP': 4,
 	'Vanilla Defense': 4,
 	'Vanilla Magic': 6,
 	'Vanilla Strength': 4
@@ -6794,7 +6794,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 8,
+	'Vanilla AP': 6,
 	'Vanilla Defense': 5,
 	'Vanilla Magic': 6,
 	'Vanilla Strength': 4
@@ -6820,7 +6820,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 8,
+	'Vanilla AP': 6,
 	'Vanilla Defense': 6,
 	'Vanilla Magic': 6,
 	'Vanilla Strength': 6
@@ -6846,7 +6846,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Combo Boost',
 	'Vanilla Shield Reward': 'Item Boost',
 	'Vanilla Staff Reward': 'Experience Boost',
-	'Vanilla AP': 8,
+	'Vanilla AP': 6,
 	'Vanilla Defense': 7,
 	'Vanilla Magic': 6,
 	'Vanilla Strength': 6
@@ -6872,7 +6872,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 11,
+	'Vanilla AP': 8,
 	'Vanilla Defense': 7,
 	'Vanilla Magic': 8,
 	'Vanilla Strength': 6
@@ -6898,7 +6898,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Experience Boost',
 	'Vanilla Shield Reward': 'Combo Boost',
 	'Vanilla Staff Reward': 'Item Boost',
-	'Vanilla AP': 11,
+	'Vanilla AP': 8,
 	'Vanilla Defense': 8,
 	'Vanilla Magic': 8,
 	'Vanilla Strength': 6
@@ -6924,7 +6924,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 11,
+	'Vanilla AP': 8,
 	'Vanilla Defense': 8,
 	'Vanilla Magic': 8,
 	'Vanilla Strength': 8
@@ -6950,7 +6950,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 14,
+	'Vanilla AP': 10,
 	'Vanilla Defense': 9,
 	'Vanilla Magic': 8,
 	'Vanilla Strength': 8
@@ -6976,7 +6976,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Magic Lock-On',
 	'Vanilla Shield Reward': 'Magic Lock-On',
 	'Vanilla Staff Reward': 'Magic Lock-On',
-	'Vanilla AP': 14,
+	'Vanilla AP': 10,
 	'Vanilla Defense': 9,
 	'Vanilla Magic': 10,
 	'Vanilla Strength': 8
@@ -7002,7 +7002,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 17,
+	'Vanilla AP': 12,
 	'Vanilla Defense': 10,
 	'Vanilla Magic': 10,
 	'Vanilla Strength': 8
@@ -7028,7 +7028,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 17,
+	'Vanilla AP': 12,
 	'Vanilla Defense': 10,
 	'Vanilla Magic': 10,
 	'Vanilla Strength': 10
@@ -7054,7 +7054,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Reaction Boost',
 	'Vanilla Shield Reward': 'Damage Drive',
 	'Vanilla Staff Reward': 'Fire Boost',
-	'Vanilla AP': 17,
+	'Vanilla AP': 12,
 	'Vanilla Defense': 11,
 	'Vanilla Magic': 10,
 	'Vanilla Strength': 10
@@ -7080,7 +7080,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 20,
+	'Vanilla AP': 14,
 	'Vanilla Defense': 11,
 	'Vanilla Magic': 12,
 	'Vanilla Strength': 10
@@ -7106,7 +7106,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Item Boost',
 	'Vanilla Shield Reward': 'Experience Boost',
 	'Vanilla Staff Reward': 'Combo Boost',
-	'Vanilla AP': 20,
+	'Vanilla AP': 14,
 	'Vanilla Defense': 12,
 	'Vanilla Magic': 12,
 	'Vanilla Strength': 10
@@ -7132,7 +7132,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 20,
+	'Vanilla AP': 14,
 	'Vanilla Defense': 12,
 	'Vanilla Magic': 14,
 	'Vanilla Strength': 12
@@ -7158,7 +7158,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 23,
+	'Vanilla AP': 16,
 	'Vanilla Defense': 13,
 	'Vanilla Magic': 14,
 	'Vanilla Strength': 12
@@ -7184,7 +7184,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Leaf Bracer',
 	'Vanilla Shield Reward': 'Leaf Bracer',
 	'Vanilla Staff Reward': 'Leaf Bracer',
-	'Vanilla AP': 23,
+	'Vanilla AP': 16,
 	'Vanilla Defense': 13,
 	'Vanilla Magic': 16,
 	'Vanilla Strength': 12
@@ -7210,7 +7210,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 26,
+	'Vanilla AP': 18,
 	'Vanilla Defense': 14,
 	'Vanilla Magic': 16,
 	'Vanilla Strength': 12
@@ -7236,7 +7236,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 26,
+	'Vanilla AP': 18,
 	'Vanilla Defense': 14,
 	'Vanilla Magic': 16,
 	'Vanilla Strength': 14
@@ -7262,7 +7262,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Fire Boost',
 	'Vanilla Shield Reward': 'Reaction Boost',
 	'Vanilla Staff Reward': 'Damage Drive',
-	'Vanilla AP': 26,
+	'Vanilla AP': 18,
 	'Vanilla Defense': 15,
 	'Vanilla Magic': 16,
 	'Vanilla Strength': 14
@@ -7288,7 +7288,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 29,
+	'Vanilla AP': 20,
 	'Vanilla Defense': 15,
 	'Vanilla Magic': 18,
 	'Vanilla Strength': 14
@@ -7314,7 +7314,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Drive Boost',
 	'Vanilla Shield Reward': 'Once More',
 	'Vanilla Staff Reward': 'Draw',
-	'Vanilla AP': 29,
+	'Vanilla AP': 20,
 	'Vanilla Defense': 16,
 	'Vanilla Magic': 18,
 	'Vanilla Strength': 14
@@ -7340,7 +7340,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 29,
+	'Vanilla AP': 20,
 	'Vanilla Defense': 16,
 	'Vanilla Magic': 18,
 	'Vanilla Strength': 16
@@ -7366,7 +7366,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 29,
+	'Vanilla AP': 20,
 	'Vanilla Defense': 17,
 	'Vanilla Magic': 18,
 	'Vanilla Strength': 16
@@ -7392,7 +7392,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Draw',
 	'Vanilla Shield Reward': 'Drive Boost',
 	'Vanilla Staff Reward': 'Once More',
-	'Vanilla AP': 29,
+	'Vanilla AP': 20,
 	'Vanilla Defense': 17,
 	'Vanilla Magic': 20,
 	'Vanilla Strength': 16
@@ -7418,7 +7418,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 32,
+	'Vanilla AP': 22,
 	'Vanilla Defense': 18,
 	'Vanilla Magic': 20,
 	'Vanilla Strength': 16
@@ -7444,7 +7444,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 32,
+	'Vanilla AP': 22,
 	'Vanilla Defense': 18,
 	'Vanilla Magic': 20,
 	'Vanilla Strength': 18
@@ -7470,7 +7470,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Combination Boost',
 	'Vanilla Shield Reward': 'Defender',
 	'Vanilla Staff Reward': 'Blizzard Boost',
-	'Vanilla AP': 32,
+	'Vanilla AP': 22,
 	'Vanilla Defense': 19,
 	'Vanilla Magic': 20,
 	'Vanilla Strength': 18
@@ -7496,7 +7496,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 32,
+	'Vanilla AP': 22,
 	'Vanilla Defense': 19,
 	'Vanilla Magic': 22,
 	'Vanilla Strength': 18
@@ -7522,7 +7522,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Damage Drive',
 	'Vanilla Shield Reward': 'Fire Boost',
 	'Vanilla Staff Reward': 'Reaction Boost',
-	'Vanilla AP': 32,
+	'Vanilla AP': 22,
 	'Vanilla Defense': 20,
 	'Vanilla Magic': 22,
 	'Vanilla Strength': 18
@@ -7548,7 +7548,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 32,
+	'Vanilla AP': 22,
 	'Vanilla Defense': 20,
 	'Vanilla Magic': 22,
 	'Vanilla Strength': 20
@@ -7574,7 +7574,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 35,
+	'Vanilla AP': 24,
 	'Vanilla Defense': 21,
 	'Vanilla Magic': 22,
 	'Vanilla Strength': 20
@@ -7600,7 +7600,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Air Combo Boost',
 	'Vanilla Shield Reward': 'Jackpot',
 	'Vanilla Staff Reward': 'Negative Combo',
-	'Vanilla AP': 35,
+	'Vanilla AP': 24,
 	'Vanilla Defense': 21,
 	'Vanilla Magic': 24,
 	'Vanilla Strength': 20
@@ -7626,7 +7626,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 38,
+	'Vanilla AP': 26,
 	'Vanilla Defense': 22,
 	'Vanilla Magic': 24,
 	'Vanilla Strength': 20
@@ -7652,7 +7652,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 38,
+	'Vanilla AP': 26,
 	'Vanilla Defense': 22,
 	'Vanilla Magic': 24,
 	'Vanilla Strength': 22
@@ -7678,7 +7678,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Blizzard Boost',
 	'Vanilla Shield Reward': 'Combination Boost',
 	'Vanilla Staff Reward': 'Defender',
-	'Vanilla AP': 38,
+	'Vanilla AP': 26,
 	'Vanilla Defense': 23,
 	'Vanilla Magic': 24,
 	'Vanilla Strength': 22
@@ -7704,7 +7704,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 41,
+	'Vanilla AP': 28,
 	'Vanilla Defense': 23,
 	'Vanilla Magic': 26,
 	'Vanilla Strength': 22
@@ -7730,7 +7730,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Drive Converter',
 	'Vanilla Shield Reward': 'Damage Control',
 	'Vanilla Staff Reward': 'Thunder Boost',
-	'Vanilla AP': 41,
+	'Vanilla AP': 28,
 	'Vanilla Defense': 24,
 	'Vanilla Magic': 26,
 	'Vanilla Strength': 22
@@ -7756,7 +7756,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 41,
+	'Vanilla AP': 28,
 	'Vanilla Defense': 24,
 	'Vanilla Magic': 26,
 	'Vanilla Strength': 24
@@ -7782,7 +7782,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 41,
+	'Vanilla AP': 28,
 	'Vanilla Defense': 25,
 	'Vanilla Magic': 26,
 	'Vanilla Strength': 24
@@ -7808,7 +7808,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Negative Combo',
 	'Vanilla Shield Reward': 'Air Combo Boost',
 	'Vanilla Staff Reward': 'Jackpot',
-	'Vanilla AP': 41,
+	'Vanilla AP': 28,
 	'Vanilla Defense': 25,
 	'Vanilla Magic': 28,
 	'Vanilla Strength': 24
@@ -7834,7 +7834,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 44,
+	'Vanilla AP': 30,
 	'Vanilla Defense': 26,
 	'Vanilla Magic': 28,
 	'Vanilla Strength': 24
@@ -7860,7 +7860,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 44,
+	'Vanilla AP': 30,
 	'Vanilla Defense': 26,
 	'Vanilla Magic': 28,
 	'Vanilla Strength': 26
@@ -7886,7 +7886,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Once More',
 	'Vanilla Shield Reward': 'Draw',
 	'Vanilla Staff Reward': 'Drive Boost',
-	'Vanilla AP': 44,
+	'Vanilla AP': 30,
 	'Vanilla Defense': 27,
 	'Vanilla Magic': 28,
 	'Vanilla Strength': 26
@@ -7912,7 +7912,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 44,
+	'Vanilla AP': 30,
 	'Vanilla Defense': 27,
 	'Vanilla Magic': 30,
 	'Vanilla Strength': 26
@@ -7938,7 +7938,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Finishing Plus',
 	'Vanilla Shield Reward': 'Second Chance',
 	'Vanilla Staff Reward': 'Berserk Charge',
-	'Vanilla AP': 44,
+	'Vanilla AP': 30,
 	'Vanilla Defense': 28,
 	'Vanilla Magic': 30,
 	'Vanilla Strength': 26
@@ -7964,7 +7964,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 44,
+	'Vanilla AP': 30,
 	'Vanilla Defense': 28,
 	'Vanilla Magic': 30,
 	'Vanilla Strength': 28
@@ -7990,7 +7990,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 47,
+	'Vanilla AP': 32,
 	'Vanilla Defense': 29,
 	'Vanilla Magic': 30,
 	'Vanilla Strength': 28
@@ -8016,7 +8016,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 47,
+	'Vanilla AP': 32,
 	'Vanilla Defense': 29,
 	'Vanilla Magic': 32,
 	'Vanilla Strength': 28
@@ -8042,7 +8042,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Thunder Boost',
 	'Vanilla Shield Reward': 'Drive Converter',
 	'Vanilla Staff Reward': 'Damage Control',
-	'Vanilla AP': 47,
+	'Vanilla AP': 32,
 	'Vanilla Defense': 30,
 	'Vanilla Magic': 32,
 	'Vanilla Strength': 28
@@ -8068,7 +8068,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 47,
+	'Vanilla AP': 32,
 	'Vanilla Defense': 30,
 	'Vanilla Magic': 32,
 	'Vanilla Strength': 30
@@ -8094,7 +8094,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 50,
+	'Vanilla AP': 34,
 	'Vanilla Defense': 31,
 	'Vanilla Magic': 32,
 	'Vanilla Strength': 30
@@ -8120,7 +8120,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 50,
+	'Vanilla AP': 34,
 	'Vanilla Defense': 31,
 	'Vanilla Magic': 34,
 	'Vanilla Strength': 30
@@ -8146,7 +8146,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 53,
+	'Vanilla AP': 36,
 	'Vanilla Defense': 32,
 	'Vanilla Magic': 34,
 	'Vanilla Strength': 30
@@ -8172,7 +8172,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 53,
+	'Vanilla AP': 36,
 	'Vanilla Defense': 32,
 	'Vanilla Magic': 34,
 	'Vanilla Strength': 32
@@ -8198,7 +8198,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Defender',
 	'Vanilla Shield Reward': 'Blizzard Boost',
 	'Vanilla Staff Reward': 'Combination Boost',
-	'Vanilla AP': 53,
+	'Vanilla AP': 36,
 	'Vanilla Defense': 33,
 	'Vanilla Magic': 34,
 	'Vanilla Strength': 32
@@ -8224,7 +8224,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 53,
+	'Vanilla AP': 36,
 	'Vanilla Defense': 33,
 	'Vanilla Magic': 36,
 	'Vanilla Strength': 32
@@ -8250,7 +8250,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 56,
+	'Vanilla AP': 38,
 	'Vanilla Defense': 34,
 	'Vanilla Magic': 36,
 	'Vanilla Strength': 32
@@ -8276,7 +8276,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 56,
+	'Vanilla AP': 38,
 	'Vanilla Defense': 34,
 	'Vanilla Magic': 36,
 	'Vanilla Strength': 34
@@ -8302,7 +8302,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 59,
+	'Vanilla AP': 40,
 	'Vanilla Defense': 35,
 	'Vanilla Magic': 36,
 	'Vanilla Strength': 34
@@ -8328,7 +8328,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 59,
+	'Vanilla AP': 40,
 	'Vanilla Defense': 35,
 	'Vanilla Magic': 38,
 	'Vanilla Strength': 34
@@ -8354,7 +8354,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Berserk Charge',
 	'Vanilla Shield Reward': 'Finishing Plus',
 	'Vanilla Staff Reward': 'Second Chance',
-	'Vanilla AP': 59,
+	'Vanilla AP': 40,
 	'Vanilla Defense': 36,
 	'Vanilla Magic': 38,
 	'Vanilla Strength': 34
@@ -8380,7 +8380,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 59,
+	'Vanilla AP': 40,
 	'Vanilla Defense': 36,
 	'Vanilla Magic': 38,
 	'Vanilla Strength': 36
@@ -8406,7 +8406,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 62,
+	'Vanilla AP': 42,
 	'Vanilla Defense': 37,
 	'Vanilla Magic': 38,
 	'Vanilla Strength': 36
@@ -8432,7 +8432,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 62,
+	'Vanilla AP': 42,
 	'Vanilla Defense': 37,
 	'Vanilla Magic': 40,
 	'Vanilla Strength': 36
@@ -8458,7 +8458,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 65,
+	'Vanilla AP': 44,
 	'Vanilla Defense': 38,
 	'Vanilla Magic': 40,
 	'Vanilla Strength': 36
@@ -8484,7 +8484,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 65,
+	'Vanilla AP': 44,
 	'Vanilla Defense': 38,
 	'Vanilla Magic': 40,
 	'Vanilla Strength': 38
@@ -8510,7 +8510,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 68,
+	'Vanilla AP': 46,
 	'Vanilla Defense': 39,
 	'Vanilla Magic': 40,
 	'Vanilla Strength': 38
@@ -8536,7 +8536,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 68,
+	'Vanilla AP': 46,
 	'Vanilla Defense': 39,
 	'Vanilla Magic': 42,
 	'Vanilla Strength': 38
@@ -8562,7 +8562,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Jackpot',
 	'Vanilla Shield Reward': 'Negative Combo',
 	'Vanilla Staff Reward': 'Air Combo Boost',
-	'Vanilla AP': 68,
+	'Vanilla AP': 46,
 	'Vanilla Defense': 40,
 	'Vanilla Magic': 42,
 	'Vanilla Strength': 38
@@ -8588,7 +8588,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 68,
+	'Vanilla AP': 46,
 	'Vanilla Defense': 40,
 	'Vanilla Magic': 42,
 	'Vanilla Strength': 40
@@ -8614,7 +8614,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 71,
+	'Vanilla AP': 48,
 	'Vanilla Defense': 41,
 	'Vanilla Magic': 42,
 	'Vanilla Strength': 40
@@ -8640,7 +8640,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 71,
+	'Vanilla AP': 48,
 	'Vanilla Defense': 41,
 	'Vanilla Magic': 44,
 	'Vanilla Strength': 40
@@ -8666,7 +8666,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 74,
+	'Vanilla AP': 50,
 	'Vanilla Defense': 42,
 	'Vanilla Magic': 44,
 	'Vanilla Strength': 40
@@ -8692,7 +8692,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 74,
+	'Vanilla AP': 50,
 	'Vanilla Defense': 42,
 	'Vanilla Magic': 44,
 	'Vanilla Strength': 42
@@ -8718,7 +8718,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 77,
+	'Vanilla AP': 52,
 	'Vanilla Defense': 43,
 	'Vanilla Magic': 44,
 	'Vanilla Strength': 42
@@ -8744,7 +8744,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 77,
+	'Vanilla AP': 52,
 	'Vanilla Defense': 43,
 	'Vanilla Magic': 46,
 	'Vanilla Strength': 42
@@ -8770,7 +8770,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 80,
+	'Vanilla AP': 54,
 	'Vanilla Defense': 44,
 	'Vanilla Magic': 46,
 	'Vanilla Strength': 42
@@ -8796,7 +8796,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 80,
+	'Vanilla AP': 54,
 	'Vanilla Defense': 44,
 	'Vanilla Magic': 46,
 	'Vanilla Strength': 44
@@ -8822,7 +8822,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 83,
+	'Vanilla AP': 56,
 	'Vanilla Defense': 45,
 	'Vanilla Magic': 46,
 	'Vanilla Strength': 44
@@ -8848,7 +8848,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 83,
+	'Vanilla AP': 56,
 	'Vanilla Defense': 45,
 	'Vanilla Magic': 48,
 	'Vanilla Strength': 44
@@ -8874,7 +8874,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Second Chance',
 	'Vanilla Shield Reward': 'Berserk Charge',
 	'Vanilla Staff Reward': 'Finishing Plus',
-	'Vanilla AP': 83,
+	'Vanilla AP': 56,
 	'Vanilla Defense': 46,
 	'Vanilla Magic': 48,
 	'Vanilla Strength': 44
@@ -8900,7 +8900,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 83,
+	'Vanilla AP': 56,
 	'Vanilla Defense': 46,
 	'Vanilla Magic': 48,
 	'Vanilla Strength': 46
@@ -8926,7 +8926,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 86,
+	'Vanilla AP': 58,
 	'Vanilla Defense': 47,
 	'Vanilla Magic': 48,
 	'Vanilla Strength': 46
@@ -8952,7 +8952,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 86,
+	'Vanilla AP': 58,
 	'Vanilla Defense': 47,
 	'Vanilla Magic': 50,
 	'Vanilla Strength': 46
@@ -8978,7 +8978,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 89,
+	'Vanilla AP': 60,
 	'Vanilla Defense': 48,
 	'Vanilla Magic': 50,
 	'Vanilla Strength': 46
@@ -9004,7 +9004,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 89,
+	'Vanilla AP': 60,
 	'Vanilla Defense': 48,
 	'Vanilla Magic': 50,
 	'Vanilla Strength': 48
@@ -9030,7 +9030,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 92,
+	'Vanilla AP': 62,
 	'Vanilla Defense': 49,
 	'Vanilla Magic': 50,
 	'Vanilla Strength': 48
@@ -9056,7 +9056,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 92,
+	'Vanilla AP': 62,
 	'Vanilla Defense': 49,
 	'Vanilla Magic': 52,
 	'Vanilla Strength': 48
@@ -9082,7 +9082,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 95,
+	'Vanilla AP': 64,
 	'Vanilla Defense': 50,
 	'Vanilla Magic': 52,
 	'Vanilla Strength': 48
@@ -9108,7 +9108,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 95,
+	'Vanilla AP': 64,
 	'Vanilla Defense': 50,
 	'Vanilla Magic': 52,
 	'Vanilla Strength': 50
@@ -9134,7 +9134,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 98,
+	'Vanilla AP': 66,
 	'Vanilla Defense': 51,
 	'Vanilla Magic': 52,
 	'Vanilla Strength': 50
@@ -9160,7 +9160,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 98,
+	'Vanilla AP': 66,
 	'Vanilla Defense': 51,
 	'Vanilla Magic': 54,
 	'Vanilla Strength': 50
@@ -9186,7 +9186,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 101,
+	'Vanilla AP': 68,
 	'Vanilla Defense': 52,
 	'Vanilla Magic': 54,
 	'Vanilla Strength': 50
@@ -9212,7 +9212,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': '',
 	'Vanilla Shield Reward': '',
 	'Vanilla Staff Reward': '',
-	'Vanilla AP': 101,
+	'Vanilla AP': 68,
 	'Vanilla Defense': 52,
 	'Vanilla Magic': 54,
 	'Vanilla Strength': 52
@@ -9238,7 +9238,7 @@ const levelArray = [{
 	'Vanilla Sword Reward': 'Damage Control',
 	'Vanilla Shield Reward': 'Thunder Boost',
 	'Vanilla Staff Reward': 'Drive Converter',
-	'Vanilla AP': 101,
+	'Vanilla AP': 68,
 	'Vanilla Defense': 53,
 	'Vanilla Magic': 54,
 	'Vanilla Strength': 52

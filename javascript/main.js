@@ -91,7 +91,7 @@ function populateTable(ID) {
 			let worldBonusesArray = bonusArray[character]['All Character Bonuses'][world]['World Bonuses'];
 			table = document.getElementById('bonusTable');
 			newTableBody = document.createElement('tbody');
-			if(worldBonusesArray.length > 0){
+			if (worldBonusesArray.length > 0) {
 				for (let i = 0; i < worldBonusesArray.length; i++) {
 					let row = document.createElement('tr');
 					row.id = 'row' + i;
@@ -241,6 +241,35 @@ function removeOptions(selectElement) {
 function replace() {
 	switch (currentPage) {
 		case 'bonus': {
+			let rt = document.getElementById('rewardTypeSelector');
+			let r = document.getElementById('rewardSelector');
+			let w = document.getElementById('worldSelector');
+			let c = document.getElementById('characterSelector');
+			let locationArray = bonusArray[c.value]['All Character Bonuses'][w.value]['World Bonuses'];
+			let reward = rewardArray[rt.value].Rewards[r.value];
+			let hp = document.getElementById('hp');
+			let mp = document.getElementById('mp');
+			let armor = document.getElementById('armor');
+			let accessory = document.getElementById('accessory');
+			let item = document.getElementById('item');
+			let drive = document.getElementById('drive');
+			let rowCount = document.getElementById('bonusTable').rows.length;
+			for (let i = 0; i < rowCount - 1; i++) {
+				let checked = document.getElementById('check' + i).checked;
+				if (checked) {
+					locationArray[i]['Replacement Reward 1'] = reward['Reward'];
+					locationArray[i]['Replacement Reward Address 1'] = reward['Reward Address'];
+					// locationArray[i]['Replacement Reward 2'] = reward['Reward'];
+					// locationArray[i]['Replacement Reward Address 2'] = reward['Reward Address'];
+					locationArray[i]['HP Increase'] = hp.value;
+					locationArray[i]['MP Increase'] = mp.value;
+					locationArray[i]['Armor Slot Increase'] = armor.value;
+					locationArray[i]['Accessory Slot Increase'] = accessory.value;
+					locationArray[i]['Item Slot Increase'] = item.value;
+					locationArray[i]['Drive Gauge Increase'] = drive.value;
+				}
+			}
+			populateTable(0);
 			break;
 		}
 		case 'chests': {
@@ -359,6 +388,26 @@ function replace() {
 function goldExperienceRequiem() {
 	switch (currentPage) {
 		case 'bonus': {
+			let w = document.getElementById('worldSelector');
+			let c = document.getElementById('characterSelector');
+			let locationArray = bonusArray[c.value]['All Character Bonuses'][w.value]['World Bonuses'];
+			let rowCount = document.getElementById('bonusTable').rows.length;
+			for (let i = 0; i < rowCount - 1; i++) {
+				let checked = document.getElementById('check' + i).checked;
+				if (checked) {
+					locationArray[i]['Replacement Reward 1'] = locationArray[i]['Vanilla Reward 1'];
+					locationArray[i]['Replacement Reward Address 1'] = '';
+					// locationArray[i]['Replacement Reward 2'] = locationArray[i]['Vanilla Reward 2'];
+					// locationArray[i]['Replacement Reward Address 2'] = '';
+					locationArray[i]['HP Increase'] = locationArray[i]['Vanilla HP Increase'];
+					locationArray[i]['MP Increase'] = locationArray[i]['Vanilla MP Increase'];
+					locationArray[i]['Armor Slot Increase'] = locationArray[i]['Vanilla Armor Slot Increase'];
+					locationArray[i]['Accessory Slot Increase'] = locationArray[i]['Vanilla Accessory Slot Increase'];
+					locationArray[i]['Item Slot Increase'] = locationArray[i]['Vanilla Item Slot Increase'];
+					locationArray[i]['Drive Gauge Increase'] = locationArray[i]['Vanilla Drive Gauge Increase'];
+				}
+			}
+			populateTable(0);
 			break;
 		}
 		case 'chests': {
@@ -454,6 +503,61 @@ function save() {
 	let finalPnachStrings = [];
 
 	// Printing Bonus Replacements
+	finalPnachStrings.push('//Bonus Level Replacements\n')
+	for (let i = 0; i < characterArray.length; i++) {
+		finalPnachStrings.push('// ' + characterArray[i] + '\n');
+		for (let j = 0; j < worldArray.length; j++) {
+			let bonusCount = 0;
+			let bonusString = '';
+			finalPnachStrings.push('// ' + worldArray[j] + '\n');
+			bonusArray[i]['All Character Bonuses'][j]['World Bonuses'].forEach(bonus => {
+				// Fight
+				finalPnachStrings.push('// ' + bonus['Fight'] + '\n');
+				// Stats
+				bonusString += 'patch=1,EE,' + bonus['Stat Address'] + ',extended,0000';
+				if (bonus['MP Increase'] !== bonus['Vanilla MP Increase'])
+					bonusCount++;
+				bonusString += bonus['MP Increase'].toString(16).padStart(2, '0');
+				if (bonus['HP Increase'] !== bonus['Vanilla HP Increase'])
+					bonusCount++;
+				bonusString += bonus['HP Increase'].toString(16).padStart(2, '0');
+				bonusString += ' // MP:' + bonus['MP Increase'] + ' HP:' + bonus['HP Increase'] + '\n';
+				// Slots
+				bonusString += 'patch=1,EE,' + bonus['Slot Address'] + ',extended,';
+				if (bonus['Armor Slot Increase'] !== bonus['Vanilla Armor Slot Increase'])
+					bonusCount++;
+				bonusString += bonus['Armor Slot Increase'].toString(16).padStart(2, '0');
+				if (bonus['Accessory Slot Increase'] !== bonus['Vanilla Accessory Slot Increase'])
+					bonusCount++;
+				bonusString += bonus['Accessory Slot Increase'].toString(16).padStart(2, '0');
+				if (bonus['Item Slot Increase'] !== bonus['Vanilla Item Slot Increase'])
+					bonusCount++;
+				bonusString += bonus['Item Slot Increase'].toString(16).padStart(2, '0');
+				if (bonus['Drive Gauge Increase'] !== bonus['Vanilla Drive Gauge Increase'])
+					bonusCount++;
+				bonusString += bonus['Drive Gauge Increase'].toString(16).padStart(2, '0');
+				bonusString += ' // Armor Slot:+' + bonus['Armor Slot Increase'] + ' Accessory Slot:+' + bonus['Accessory Slot Increase'];
+				bonusString += ' Item Slot:+' + bonus['Item Slot Increase'] + ' Drive Gauge:+' + bonus['Drive Gauge Increase'] + '\n';
+				// Rewards
+				bonusString += 'patch=1,EE,' + bonus['Reward Address'] + ',extended,';
+				if (bonus['Replacement Reward Address 2'] !== '')
+					bonusCount++;
+				bonusString += bonus['Replacement Reward Address 2'].padStart(4, '0');
+				if (bonus['Replacement Reward Address 2'] !== '')
+					bonusCount++;
+				bonusString += bonus['Replacement Reward Address 1'].padStart(4, '0');
+				bonusString += ' // Replacement Reward #2:' + bonus['Replacement Reward 2'];
+				bonusString += ' Replacement Reward #1:' + bonus['Replacement Reward 1'] + '\n';
+				if (bonusCount !== 0)
+					finalPnachStrings.push(bonusString);
+				bonusString = '';
+				bonusCount = 0;
+			})
+
+		}
+
+	}
+	finalPnachStrings.push('\n')
 
 	// Printing Chest Replacements
 	finalPnachStrings.push('//Chest Replacements\n')
@@ -567,8 +671,8 @@ function save() {
 		let cheat = 'patch=1,EE,' + currentLevel['Stat Address'] + ',extended,';
 		let changeCount = 0;
 
-		if (currentLevel['AP'] !== currentLevel['Vanilla AP']) {
-			cheat += currentLevel['AP'].toString(16).padStart(2, '0');
+		if (currentLevel['Standard AP'] !== currentLevel['Vanilla AP']) {
+			cheat += currentLevel['Standard AP'].toString(16).padStart(2, '0');
 			changeCount++;
 		}
 		else {
@@ -596,10 +700,9 @@ function save() {
 			cheat += '00';
 		}
 
-		if(changeCount !== 0)
-		{
+		if (changeCount !== 0) {
 			finalPnachStrings.push(cheat);
-			finalPnachStrings.push(' // AP:' + currentLevel['AP'].toString() + ' Magic:' + currentLevel['Magic'].toString());
+			finalPnachStrings.push(' // AP:' + currentLevel['Standard AP'].toString() + ' Magic:' + currentLevel['Magic'].toString());
 			finalPnachStrings.push(' Defense:' + currentLevel['Defense'].toString() + ' Strength:' + currentLevel['Strength'].toString() + '\n');
 		}
 		// Rewards
