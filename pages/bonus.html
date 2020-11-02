@@ -21,6 +21,77 @@
 		<a href="../pages/levels.html">Levels</a>
 		<a href="../pages/other.html">Other</a>
 	</nav>
+	<section class='selectors'>
+		<select name="worldSelector" id="worldSelector" onchange="populateTable(this.value)"></select>
+		<select name="characterSelector" id="characterSelector" onchange="populateTable(this.value)"></select>
+		<button name='replaceButton' id='replaceButton' onclick="replace()">Replace</button>
+		<button name='defaultButton' id='defaultButton' onclick="goldExperienceRequiem()">Default</button>
+		<button name='saveButton' id='saveButton' onclick="save()">Save</button>
+	</section>
+	<section class='rewardTable'>
+		<table name="bonusTable" id="bonusTable">
+			<thead>
+				<tr>
+					<th name='replaceCheckbox' id='replaceCheckbox'></th>
+					<th>
+						Fight
+					</th>
+					<th>
+						Replacement Reward 1
+					</th>
+					<th>
+						Replacement Reward 2
+					</th>
+					<th>
+						HP Increase
+					</th>
+					<th>
+						MP Increase
+					</th>
+					<th>
+						Armor Slot Increase
+					</th>
+					<th>
+						Accessory Slot Increase
+					</th>
+					<th>
+						Item Slot Increase
+					</th>
+					<th>
+						Drive Gauge Increas
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<section>
+			<div>
+				<select name="rewardTypeSelector" id="rewardTypeSelector" onchange="populateRewardTypeSelector(this.value)"></select>
+				<select name="rewardSelector" id="rewardSelector"></select>
+			</div>
+			<form>
+				<label for="hp">HP Increase:</label><br>
+				<input type="number" id="hp" name="hp">
+				<br>
+				<label for="mp">MP Increase:</label><br>
+				<input type="number" id="mp" name="mp">
+				<br>
+				<label for="armor">Armor Slot Increase:</label><br>
+				<input type="number" id="armor" name="armor">
+				<br>
+				<label for="accessory">Accessory Slot Increase:</label><br>
+				<input type="number" id="accessory" name="accessory">
+				<br>
+				<label for="item">Item Slot Increase:</label><br>
+				<input type="number" id="item" name="item">
+				<br>
+				<label for="drive">Drive Gauge Increase:</label><br>
+				<input type="number" id="drive" name="drive">
+				<br>
+			</form>
+		</section>
+	</section>
 </body>
 
 </html>

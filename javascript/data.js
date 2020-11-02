@@ -9379,8 +9379,7 @@ const bonusArray = [{
 		}]
 	}, {
 		'World': 'Atlantica',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': 'Beast\'s Castle',
 		'World Bonuses': [{
@@ -10025,12 +10024,10 @@ const bonusArray = [{
 		}]
 	}, {
 		'World': 'Olympus Cups',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': '100 Acre Wood',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': 'Port Royal',
 		'World Bonuses': [{
@@ -10796,8 +10793,7 @@ const bonusArray = [{
 		}]
 	}, {
 		'World': 'Atlantica',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': 'Beast\'s Castle',
 		'World Bonuses': [{
@@ -11281,12 +11277,10 @@ const bonusArray = [{
 		}]
 	}, {
 		'World': 'Olympus Cups',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': '100 Acre Wood',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': 'Port Royal',
 		'World Bonuses': [{
@@ -11479,8 +11473,7 @@ const bonusArray = [{
 		}]
 	}, {
 		'World': 'Simulated Twilight Town',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': 'Space Paranoids',
 		'World Bonuses': [{
@@ -11823,8 +11816,7 @@ const bonusArray = [{
 		}]
 	}, {
 		'World': 'Atlantica',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': 'Beast\'s Castle',
 		'World Bonuses': [{
@@ -12308,12 +12300,10 @@ const bonusArray = [{
 		}]
 	}, {
 		'World': 'Olympus Cups',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': '100 Acre Wood',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': 'Port Royal',
 		'World Bonuses': [{
@@ -12506,8 +12496,7 @@ const bonusArray = [{
 		}]
 	}, {
 		'World': 'Simulated Twilight Town',
-		'World Bonuses': [{
-		}]
+		'World Bonuses': []
 	}, {
 		'World': 'Space Paranoids',
 		'World Bonuses': [{
@@ -12752,6 +12741,18 @@ const bonusArray = [{
 		}]
 	}]
 }]
+
+const bonusPropertiesArray = [
+	'Fight',
+	'Replacement Reward 1',
+	'Replacement Reward 2',
+	'HP Increase',
+	'MP Increase',
+	'Armor Slot Increase',
+	'Accessory Slot Increase',
+	'Item Slot Increase',
+	'Drive Gauge Increase'
+]
 
 const rewardArray = [{
 	'Reward Type': 'Abilities',
@@ -14157,4 +14158,10 @@ const equipmentTypeArray = [
 	'Ally Weapon',
 	'Armor',
 	'Accessory'
+]
+
+const characterArray = [
+	'Sora',
+	'Donald',
+	'Goofy'
 ]

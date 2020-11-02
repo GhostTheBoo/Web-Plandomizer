@@ -3,6 +3,10 @@ function initialize() {
 	console.log(currentPage);
 	switch (currentPage) {
 		case 'bonus': {
+			addCharacters();
+			addWorlds();
+			addRewardTypes();
+			populateTable(0);
 			break;
 		}
 		case 'chests': {
@@ -43,6 +47,17 @@ function initialize() {
 	}
 }
 
+// create character list
+function addCharacters() {
+	let select = document.getElementById('characterSelector');
+	for (let i = 0; i < characterArray.length; i++) {
+		let option = document.createElement('option');
+		option.text = characterArray[i];
+		option.value = i;
+		select.add(option);
+	}
+}
+
 // create world list
 function addWorlds() {
 	let select = document.getElementById('worldSelector');
@@ -71,6 +86,27 @@ function populateTable(ID) {
 	let newTableBody;
 	switch (currentPage) {
 		case 'bonus': {
+			let world = document.getElementById('worldSelector').value;
+			let character = document.getElementById('characterSelector').value;
+			let worldBonusesArray = bonusArray[character]['All Character Bonuses'][world]['World Bonuses'];
+			table = document.getElementById('bonusTable');
+			newTableBody = document.createElement('tbody');
+			if(worldBonusesArray.length > 0){
+				for (let i = 0; i < worldBonusesArray.length; i++) {
+					let row = document.createElement('tr');
+					row.id = 'row' + i;
+					let cell = document.createElement('input');
+					cell.type = 'checkbox';
+					cell.id = 'check' + i;
+					row.appendChild(cell);
+					bonusPropertiesArray.forEach(property => {
+						let cell = document.createElement('td');
+						cell.innerHTML = worldBonusesArray[i][property];
+						row.appendChild(cell);
+					})
+					newTableBody.appendChild(row);
+				}
+			}
 			break;
 		}
 		case 'chests': {
