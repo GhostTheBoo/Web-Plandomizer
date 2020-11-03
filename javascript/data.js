@@ -1971,13 +1971,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Lamp Charm',
+		Location: 'Beating Agrabah 1',
 		'Original Reward': 'Lamp Charm',
 		'Original Address': '11CE079E',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Wishing Lamp',
+		Location: 'Beating Agrabah 2',
 		'Original Reward': 'Wishing Lamp',
 		'Original Address': '11CE08B2',
 		'Replacement Reward': '',
@@ -2004,7 +2004,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Mysterious Abyss',
+		Location: 'Beating Atlantica (Mysterious Abyss)',
 		'Original Reward': 'Mysterious Abyss',
 		'Original Address': '11CE08E2',
 		'Replacement Reward': '',
@@ -2016,7 +2016,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Orichalcum+',
+		Location: 'Beating Atlantica (Orichalcum+)',
 		'Original Reward': 'Orichalcum+',
 		'Original Address': '11CE08FA',
 		'Replacement Reward': '',
@@ -2025,13 +2025,13 @@ var popupArray = [{
 }, {
 	World: 'Beast\'s Castle',
 	Popups: [{
-		Location: 'Cure',
+		Location: 'Beating Beast\'s Castle 1',
 		'Original Reward': 'Cure',
 		'Original Address': '11CE06F6',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Rumbling Rose',
+		Location: 'Encouraging Beast',
 		'Original Reward': 'Rumbling Rose',
 		'Original Address': '11CE0852',
 		'Replacement Reward': '',
@@ -2094,7 +2094,7 @@ var popupArray = [{
 }, {
 	World: 'Halloween Town',
 	Popups: [{
-		Location: 'Magnet',
+		Location: 'Beating Halloween Town 1',
 		'Original Reward': 'Magnet',
 		'Original Address': '11CE07AA',
 		'Replacement Reward': '',
@@ -2112,7 +2112,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Decisive Pumpkin',
+		Location: 'Beating Halloween Town 2',
 		'Original Reward': 'Decisive Pumpkin',
 		'Original Address': '11CE08D6',
 		'Replacement Reward': '',
@@ -2145,7 +2145,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Blizzard',
+		Location: 'First Visit to Merlin\'s',
 		'Original Reward': 'Blizzard',
 		'Original Address': '11CE06A2',
 		'Replacement Reward': '',
@@ -2157,13 +2157,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Baseball Charm',
+		Location: '100 Acre Woods First Visit',
 		'Original Reward': 'Baseball Charm',
 		'Original Address': '11CE0702',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Master Form',
+		Location: 'Finding the DTD Password',
 		'Original Reward': 'Master Form',
 		'Original Address': '11CE080A',
 		'Replacement Reward': '',
@@ -2193,25 +2193,25 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Sleeping Lion',
+		Location: 'Ansem\'s Study during MCP Takeover',
 		'Original Reward': 'Sleeping Lion',
 		'Original Address': '11CE0936',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Fenrir',
+		Location: 'Approaching Sephiroh after talking to Cloud',
 		'Original Reward': 'Fenrir',
 		'Original Address': '11CE0942',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Proof of Peace',
+		Location: 'Mushroom XIII (Proof of Peace)',
 		'Original Reward': 'Proof of Peace',
 		'Original Address': '11CE0B3A',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Winner\'s Proof',
+		Location: 'Mushroom XIII (Winner\'s Proof)',
 		'Original Reward': 'Winner\'s Proof',
 		'Original Address': '11CE0B2E',
 		'Replacement Reward': '',
@@ -2244,7 +2244,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Hidden Dragon',
+		Location: 'Beating Land of Dragons 1',
 		'Original Reward': 'Hidden Dragon',
 		'Original Address': '11CE06EA',
 		'Replacement Reward': '',
@@ -2277,7 +2277,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Hero\'s Crest',
+		Location: 'Beating Olympus Coliseum 1',
 		'Original Reward': 'Hero\'s Crest',
 		'Original Address': '11CE0726',
 		'Replacement Reward': '',
@@ -2289,7 +2289,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Guardian Soul',
+		Location: 'Beating Olympus Coliseum 2',
 		'Original Reward': 'Guardian Soul',
 		'Original Address': '11CE088E',
 		'Replacement Reward': '',
@@ -2367,7 +2367,7 @@ var popupArray = [{
 }, {
 	World: '100 Acre Wood',
 	Popups: [{
-		Location: 'Sweet Memories',
+		Location: 'Finish the Spooky Cave',
 		'Original Reward': 'Sweet Memories',
 		'Original Address': '11CE0906',
 		'Replacement Reward': '',
@@ -2379,13 +2379,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Cure',
+		Location: 'Beating 100 Acre Woods (Cure)',
 		'Original Reward': 'Cure',
 		'Original Address': '11CE091E',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Orichalcum+',
+		Location: 'Beating 100 Acre Woods (Orichalcum+)',
 		'Original Reward': 'Orichalcum+',
 		'Original Address': '11CE092A',
 		'Replacement Reward': '',
@@ -2400,7 +2400,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Follow the Wind',
+		Location: 'Beating Port Royal 1',
 		'Original Reward': 'Follow the Wind',
 		'Original Address': '11CE0786',
 		'Replacement Reward': '',
@@ -2433,13 +2433,13 @@ var popupArray = [{
 }, {
 	World: 'Pride Lands',
 	Popups: [{
-		Location: 'Circle of Life',
+		Location: 'Cheer Up Simba',
 		'Original Reward': 'Circle of Life',
 		'Original Address': '11CE07B6',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Fire',
+		Location: 'Beating Pride Lands 1',
 		'Original Reward': 'Fire',
 		'Original Address': '11CE07C2',
 		'Replacement Reward': '',
@@ -2466,13 +2466,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Champion Belt',
+		Location: 'Setzer Victory',
 		'Original Reward': 'Champion Belt',
 		'Original Address': '11CE0612',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Medal',
+		Location: 'Setzer Loss',
 		'Original Reward': 'Medal',
 		'Original Address': '11CE061E',
 		'Replacement Reward': '',
@@ -2505,7 +2505,7 @@ var popupArray = [{
 }, {
 	World: 'Space Paranoids',
 	Popups: [{
-		Location: 'Photon Debugger',
+		Location: 'Beating Space Paranoids 1',
 		'Original Reward': 'Photon Debugger',
 		'Original Address': '11CE0816',
 		'Replacement Reward': '',
@@ -2532,13 +2532,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Monochrome',
+		Location: 'Beating Timeless River (Monochrome)',
 		'Original Reward': 'Monochrome',
 		'Original Address': '11CE0732',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Wisdom Form',
+		Location: 'Beating Timeless River (Wisdom Form)',
 		'Original Reward': 'Wisdom Form',
 		'Original Address': '11CE0762',
 		'Replacement Reward': '',
@@ -2559,13 +2559,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Star Seeker',
+		Location: 'New Outfit (Star Seeker)',
 		'Original Reward': 'Star Seeker',
 		'Original Address': '11CE0672',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Valor Form',
+		Location: 'New Outfit (Valor Form)',
 		'Original Reward': 'Valor Form',
 		'Original Address': '11CE067E',
 		'Replacement Reward': '',
@@ -2577,19 +2577,19 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Oathkeeper',
+		Location: 'Beating Twilight Town 1 (Oathkeeper)',
 		'Original Reward': 'Oathkeeper',
 		'Original Address': '11CE07F2',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Limit Form',
+		Location: 'Beating Twilight Town 1 (Limit Form)',
 		'Original Reward': 'Limit Form',
 		'Original Address': '11CE07FE',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Bond of Flame',
+		Location: 'After Betwixt and Between fight',
 		'Original Reward': 'Bond of Flame',
 		'Original Address': '11CE0966',
 		'Replacement Reward': '',
@@ -2616,13 +2616,13 @@ var popupArray = [{
 }, {
 	World: 'The World That Never Was',
 	Popups: [{
-		Location: 'Roxas',
+		Location: 'Defeating Roxas',
 		'Original Reward': 'Two Become One',
 		'Original Address': '11CE0972',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Hall of Empty Melodies 2F',
+		Location: 'Riku joins the party',
 		'Original Reward': 'Oblivion',
 		'Original Address': '11CE097E',
 		'Replacement Reward': '',
@@ -12754,6 +12754,301 @@ const bonusPropertiesArray = [
 	'Drive Gauge Increase'
 ]
 
+const driveFormArray = [{
+	'Drive Form': 'Valor',
+	'Drive Levels': [{
+		'Level': 'Valor LV2',
+		'Original Ability': 'Auto Valor',
+		'Replacement Reward': '',
+		'Original EXP to Level': 80,
+		'New EXP to Level': 80,
+		'EXP Address': '11D1A228',
+		'Original Address': '11D1A22E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Valor LV3',
+		'Original Ability': 'High Jump LV 1',
+		'Replacement Reward': '',
+		'Original EXP to Level': 160,
+		'New EXP to Level': 160,
+		'EXP Address': '11D1A230',
+		'Original Address': '11D1A236',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Valor LV4',
+		'Original Ability': 'Combo Plus',
+		'Replacement Reward': '',
+		'Original EXP to Level': 280,
+		'New EXP to Level': 280,
+		'EXP Address': '11D1A238',
+		'Original Address': '11D1A23E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Valor LV5',
+		'Original Ability': 'High Jump LV 2',
+		'Replacement Reward': '',
+		'Original EXP to Level': 448,
+		'New EXP to Level': 448,
+		'EXP Address': '11D1A240',
+		'Original Address': '11D1A246',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Valor LV6',
+		'Original Ability': 'Combo Plus',
+		'Replacement Reward': '',
+		'Original EXP to Level': 560,
+		'New EXP to Level': 560,
+		'EXP Address': '11D1A248',
+		'Original Address': '11D1A24E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Valor LV7',
+		'Original Ability': 'High Jump LV 3',
+		'Replacement Reward': '',
+		'Original EXP to Level': 672,
+		'New EXP to Level': 672,
+		'EXP Address': '11D1A250',
+		'Original Address': '11D1A256',
+		'Replacement Reward Address': '',
+	}]
+}, {
+	'Drive Form': 'Wisdom',
+	'Drive Levels': [{
+		'Level': 'Wisdom LV2',
+		'Original Ability': 'Auto Wisdom',
+		'Replacement Reward': '',
+		'Original EXP to Level': 20,
+		'New EXP to Level': 20,
+		'EXP Address': '11D1A260',
+		'Original Address': '11D1A266',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Wisdom LV3',
+		'Original Ability': 'Quick Run LV 1',
+		'Replacement Reward': '',
+		'Original EXP to Level': 60,
+		'New EXP to Level': 60,
+		'EXP Address': '11D1A268',
+		'Original Address': '11D1A26E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Wisdom LV4',
+		'Original Ability': 'MP Rage',
+		'Replacement Reward': '',
+		'Original EXP to Level': 72,
+		'New EXP to Level': 72,
+		'EXP Address': '11D1A270',
+		'Original Address': '11D1A276',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Wisdom LV5',
+		'Original Ability': 'Quick Run LV 2',
+		'Replacement Reward': '',
+		'Original EXP to Level': 90,
+		'New EXP to Level': 90,
+		'EXP Address': '11D1A278',
+		'Original Address': '11D1A27E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Wisdom LV6',
+		'Original Ability': 'MP Haste',
+		'Replacement Reward': '',
+		'Original EXP to Level': 108,
+		'New EXP to Level': 108,
+		'EXP Address': '11D1A280',
+		'Original Address': '11D1A286',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Wisdom LV7',
+		'Original Ability': 'Quick Run LV 3',
+		'Replacement Reward': '',
+		'Original EXP to Level': 150,
+		'New EXP to Level': 150,
+		'EXP Address': '11D1A288',
+		'Original Address': '11D1A28E',
+		'Replacement Reward Address': '',
+	}]
+}, {
+	'Drive Form': 'Limit',
+	'Drive Levels': [{
+		'Level': 'Limit LV2',
+		'Original Ability': 'Auto Limit',
+		'Replacement Reward': '',
+		'Original EXP to Level': 3,
+		'New EXP to Level': 3,
+		'EXP Address': '11D1A298',
+		'Original Address': '11D1A29E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Limit LV3',
+		'Original Ability': 'Dodge Roll LV 1',
+		'Replacement Reward': '',
+		'Original EXP to Level': 6,
+		'New EXP to Level': 6,
+		'EXP Address': '11D1A2A0',
+		'Original Address': '11D1A2A6',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Limit LV4',
+		'Original Ability': 'Draw',
+		'Replacement Reward': '',
+		'Original EXP to Level': 12,
+		'New EXP to Level': 12,
+		'EXP Address': '11D1A2A8',
+		'Original Address': '11D1A2AE',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Limit LV5',
+		'Original Ability': 'Dodge Roll LV 2',
+		'Replacement Reward': '',
+		'Original EXP to Level': 19,
+		'New EXP to Level': 19,
+		'EXP Address': '11D1A2B0',
+		'Original Address': '11D1A2B6',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Limit LV6',
+		'Original Ability': 'Lucky Lucky',
+		'Replacement Reward': '',
+		'Original EXP to Level': 23,
+		'New EXP to Level': 23,
+		'EXP Address': '11D1A2B8',
+		'Original Address': '11D1A2BE',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Limit LV7',
+		'Original Ability': 'Dodge Roll LV 3',
+		'Replacement Reward': '',
+		'Original EXP to Level': 36,
+		'New EXP to Level': 36,
+		'EXP Address': '11D1A2C0',
+		'Original Address': '11D1A2C6',
+		'Replacement Reward Address': '',
+	}]
+}, {
+	'Drive Form': 'Master',
+	'Drive Levels': [{
+		'Level': 'Master LV2',
+		'Original Ability': 'Auto Master',
+		'Replacement Reward': '',
+		'Original EXP to Level': 60,
+		'New EXP to Level': 60,
+		'EXP Address': '11D1A2D0',
+		'Original Address': '11D1A2D6',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Master LV3',
+		'Original Ability': 'Aerial Dodge LV 1',
+		'Replacement Reward': '',
+		'Original EXP to Level': 180,
+		'New EXP to Level': 180,
+		'EXP Address': '11D1A2D8',
+		'Original Address': '11D1A2DE',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Master LV4',
+		'Original Ability': 'Air Combo Plus',
+		'Replacement Reward': '',
+		'Original EXP to Level': 216,
+		'New EXP to Level': 216,
+		'EXP Address': '11D1A2E0',
+		'Original Address': '11D1A2E6',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Master LV5',
+		'Original Ability': 'Aerial Dodge LV 2',
+		'Replacement Reward': '',
+		'Original EXP to Level': 270,
+		'New EXP to Level': 270,
+		'EXP Address': '11D1A2E8',
+		'Original Address': '11D1A2EE',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Master LV6',
+		'Original Ability': 'Air Combo Plus',
+		'Replacement Reward': '',
+		'Original EXP to Level': 324,
+		'New EXP to Level': 324,
+		'EXP Address': '11D1A2F0',
+		'Original Address': '11D1A2F6',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Master LV7',
+		'Original Ability': 'Aerial Dodge LV 3',
+		'Replacement Reward': '',
+		'Original EXP to Level': 450,
+		'New EXP to Level': 450,
+		'EXP Address': '11D1A2F8',
+		'Original Address': '11D1A2FE',
+		'Replacement Reward Address': '',
+	}]
+}, {
+	'Drive Form': 'Final',
+	'Drive Levels': [{
+		'Level': 'Final LV2',
+		'Original Ability': 'Auto Final',
+		'Replacement Reward': '',
+		'Original EXP to Level': 12,
+		'New EXP to Level': 12,
+		'EXP Address': '11D1A308',
+		'Original Address': '11D1A30E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Final LV3',
+		'Original Ability': 'Glide LV 1',
+		'Replacement Reward': '',
+		'Original EXP to Level': 24,
+		'New EXP to Level': 24,
+		'EXP Address': '11D1A310',
+		'Original Address': '11D1A316',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Final LV4',
+		'Original Ability': 'Form Boost',
+		'Replacement Reward': '',
+		'Original EXP to Level': 48,
+		'New EXP to Level': 48,
+		'EXP Address': '11D1A318',
+		'Original Address': '11D1A31E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Final LV5',
+		'Original Ability': 'Glide LV 2',
+		'Replacement Reward': '',
+		'Original EXP to Level': 76,
+		'New EXP to Level': 76,
+		'EXP Address': '11D1A320',
+		'Original Address': '11D1A326',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Final LV6',
+		'Original Ability': 'Form Boost',
+		'Replacement Reward': '',
+		'Original EXP to Level': 133,
+		'New EXP to Level': 133,
+		'EXP Address': '11D1A328',
+		'Original Address': '11D1A32E',
+		'Replacement Reward Address': '',
+	}, {
+		'Level': 'Final LV7',
+		'Original Ability': 'Glide LV 3',
+		'Replacement Reward': '',
+		'Original EXP to Level': 157,
+		'New EXP to Level': 157,
+		'EXP Address': '11D1A330',
+		'Original Address': '11D1A336',
+		'Replacement Reward Address': '',
+	}]
+}]
+
+const driveFormPropertiesArray = [
+	'Level',
+	'Original Ability',
+	'Replacement Reward',
+	'Original EXP to Level',
+	'New EXP to Level'
+]
+
 const rewardArray = [{
 	'Reward Type': 'Abilities',
 	'Rewards': [{
@@ -14158,6 +14453,14 @@ const equipmentTypeArray = [
 	'Ally Weapon',
 	'Armor',
 	'Accessory'
+]
+
+const formTypeArray = [
+	'Valor',
+	'Wisdom',
+	'Limit',
+	'Master',
+	'Final'
 ]
 
 const characterArray = [
