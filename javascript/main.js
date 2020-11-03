@@ -712,6 +712,26 @@ function save() {
 	finalPnachStrings.push('\n')
 
 	// Printing Form Replacements
+	finalPnachStrings.push('//Drive Form Replacements\n')
+	for (let i = 0; i < formTypeArray.length; i++) {
+		finalPnachStrings.push('// ' + formTypeArray[i] + '\n')
+		for (let j = 0; j < driveFormArray[i]['Drive Levels'].length; j++) {
+			let form = driveFormArray[i]['Drive Levels'][j];
+			let s = '';
+			if (form['Replacement Reward Address'] !== '') {
+				s = 'patch=1,EE,' + form['Original Address'] + ',extended,0000' + form['Replacement Reward Address'];
+				s += ' // ' + form['Level'] + ', ' + form['Original Ability'] + ' is now ' + form['Replacement Reward'] + '\n';
+				finalPnachStrings.push(s);
+			}
+			s = '';
+			if (form['New EXP to Level'] !== form['Original EXP to Level']) {
+				let s = 'patch=1,EE,' + form['EXP Address'] + ',extended,' + form['New EXP to Level'].toString(16).padStart(8, 0);
+				s += ' // ' + form['New EXP to Level'] + ' experience is required to reach ' + form['Level'] + '\n';
+				finalPnachStrings.push(s);
+			}
+		}
+	}
+	finalPnachStrings.push('\n')
 
 	// Printing Level Replacements
 	finalPnachStrings.push('//Level Replacements\n')

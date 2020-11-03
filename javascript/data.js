@@ -1971,13 +1971,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Lamp Charm',
+		Location: 'Beating Agrabah 1',
 		'Original Reward': 'Lamp Charm',
 		'Original Address': '11CE079E',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Wishing Lamp',
+		Location: 'Beating Agrabah 2',
 		'Original Reward': 'Wishing Lamp',
 		'Original Address': '11CE08B2',
 		'Replacement Reward': '',
@@ -2004,7 +2004,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Mysterious Abyss',
+		Location: 'Beating Atlantica (Mysterious Abyss)',
 		'Original Reward': 'Mysterious Abyss',
 		'Original Address': '11CE08E2',
 		'Replacement Reward': '',
@@ -2016,7 +2016,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Orichalcum+',
+		Location: 'Beating Atlantica (Orichalcum+)',
 		'Original Reward': 'Orichalcum+',
 		'Original Address': '11CE08FA',
 		'Replacement Reward': '',
@@ -2025,13 +2025,13 @@ var popupArray = [{
 }, {
 	World: 'Beast\'s Castle',
 	Popups: [{
-		Location: 'Cure',
+		Location: 'Beating Beast\'s Castle 1',
 		'Original Reward': 'Cure',
 		'Original Address': '11CE06F6',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Rumbling Rose',
+		Location: 'Encouraging Beast',
 		'Original Reward': 'Rumbling Rose',
 		'Original Address': '11CE0852',
 		'Replacement Reward': '',
@@ -2094,7 +2094,7 @@ var popupArray = [{
 }, {
 	World: 'Halloween Town',
 	Popups: [{
-		Location: 'Magnet',
+		Location: 'Beating Halloween Town 1',
 		'Original Reward': 'Magnet',
 		'Original Address': '11CE07AA',
 		'Replacement Reward': '',
@@ -2112,7 +2112,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Decisive Pumpkin',
+		Location: 'Beating Halloween Town 2',
 		'Original Reward': 'Decisive Pumpkin',
 		'Original Address': '11CE08D6',
 		'Replacement Reward': '',
@@ -2145,7 +2145,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Blizzard',
+		Location: 'First Visit to Merlin\'s',
 		'Original Reward': 'Blizzard',
 		'Original Address': '11CE06A2',
 		'Replacement Reward': '',
@@ -2157,13 +2157,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Baseball Charm',
+		Location: '100 Acre Woods First Visit',
 		'Original Reward': 'Baseball Charm',
 		'Original Address': '11CE0702',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Master Form',
+		Location: 'Finding the DTD Password',
 		'Original Reward': 'Master Form',
 		'Original Address': '11CE080A',
 		'Replacement Reward': '',
@@ -2193,25 +2193,25 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Sleeping Lion',
+		Location: 'Ansem\'s Study during MCP Takeover',
 		'Original Reward': 'Sleeping Lion',
 		'Original Address': '11CE0936',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Fenrir',
+		Location: 'Approaching Sephiroh after talking to Cloud',
 		'Original Reward': 'Fenrir',
 		'Original Address': '11CE0942',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Proof of Peace',
+		Location: 'Mushroom XIII (Proof of Peace)',
 		'Original Reward': 'Proof of Peace',
 		'Original Address': '11CE0B3A',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Winner\'s Proof',
+		Location: 'Mushroom XIII (Winner\'s Proof)',
 		'Original Reward': 'Winner\'s Proof',
 		'Original Address': '11CE0B2E',
 		'Replacement Reward': '',
@@ -2244,7 +2244,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Hidden Dragon',
+		Location: 'Beating Land of Dragons 1',
 		'Original Reward': 'Hidden Dragon',
 		'Original Address': '11CE06EA',
 		'Replacement Reward': '',
@@ -2277,7 +2277,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Hero\'s Crest',
+		Location: 'Beating Olympus Coliseum 1',
 		'Original Reward': 'Hero\'s Crest',
 		'Original Address': '11CE0726',
 		'Replacement Reward': '',
@@ -2289,7 +2289,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Guardian Soul',
+		Location: 'Beating Olympus Coliseum 2',
 		'Original Reward': 'Guardian Soul',
 		'Original Address': '11CE088E',
 		'Replacement Reward': '',
@@ -2367,7 +2367,7 @@ var popupArray = [{
 }, {
 	World: '100 Acre Wood',
 	Popups: [{
-		Location: 'Sweet Memories',
+		Location: 'Finish the Spooky Cave',
 		'Original Reward': 'Sweet Memories',
 		'Original Address': '11CE0906',
 		'Replacement Reward': '',
@@ -2379,13 +2379,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Cure',
+		Location: 'Beating 100 Acre Woods (Cure)',
 		'Original Reward': 'Cure',
 		'Original Address': '11CE091E',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Orichalcum+',
+		Location: 'Beating 100 Acre Woods (Orichalcum+)',
 		'Original Reward': 'Orichalcum+',
 		'Original Address': '11CE092A',
 		'Replacement Reward': '',
@@ -2400,7 +2400,7 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Follow the Wind',
+		Location: 'Beating Port Royal 1',
 		'Original Reward': 'Follow the Wind',
 		'Original Address': '11CE0786',
 		'Replacement Reward': '',
@@ -2433,13 +2433,13 @@ var popupArray = [{
 }, {
 	World: 'Pride Lands',
 	Popups: [{
-		Location: 'Circle of Life',
+		Location: 'Cheer Up Simba',
 		'Original Reward': 'Circle of Life',
 		'Original Address': '11CE07B6',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Fire',
+		Location: 'Beating Pride Lands 1',
 		'Original Reward': 'Fire',
 		'Original Address': '11CE07C2',
 		'Replacement Reward': '',
@@ -2466,13 +2466,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Champion Belt',
+		Location: 'Setzer Victory',
 		'Original Reward': 'Champion Belt',
 		'Original Address': '11CE0612',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Medal',
+		Location: 'Setzer Loss',
 		'Original Reward': 'Medal',
 		'Original Address': '11CE061E',
 		'Replacement Reward': '',
@@ -2505,7 +2505,7 @@ var popupArray = [{
 }, {
 	World: 'Space Paranoids',
 	Popups: [{
-		Location: 'Photon Debugger',
+		Location: 'Beating Space Paranoids 1',
 		'Original Reward': 'Photon Debugger',
 		'Original Address': '11CE0816',
 		'Replacement Reward': '',
@@ -2532,13 +2532,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Monochrome',
+		Location: 'Beating Timeless River (Monochrome)',
 		'Original Reward': 'Monochrome',
 		'Original Address': '11CE0732',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Wisdom Form',
+		Location: 'Beating Timeless River (Wisdom Form)',
 		'Original Reward': 'Wisdom Form',
 		'Original Address': '11CE0762',
 		'Replacement Reward': '',
@@ -2559,13 +2559,13 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Star Seeker',
+		Location: 'New Outfit (Star Seeker)',
 		'Original Reward': 'Star Seeker',
 		'Original Address': '11CE0672',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Valor Form',
+		Location: 'New Outfit (Valor Form)',
 		'Original Reward': 'Valor Form',
 		'Original Address': '11CE067E',
 		'Replacement Reward': '',
@@ -2577,19 +2577,19 @@ var popupArray = [{
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Oathkeeper',
+		Location: 'Beating Twilight Town 1 (Oathkeeper)',
 		'Original Reward': 'Oathkeeper',
 		'Original Address': '11CE07F2',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Limit Form',
+		Location: 'Beating Twilight Town 1 (Limit Form)',
 		'Original Reward': 'Limit Form',
 		'Original Address': '11CE07FE',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Bond of Flame',
+		Location: 'After Betwixt and Between fight',
 		'Original Reward': 'Bond of Flame',
 		'Original Address': '11CE0966',
 		'Replacement Reward': '',
@@ -2616,13 +2616,13 @@ var popupArray = [{
 }, {
 	World: 'The World That Never Was',
 	Popups: [{
-		Location: 'Roxas',
+		Location: 'Defeating Roxas',
 		'Original Reward': 'Two Become One',
 		'Original Address': '11CE0972',
 		'Replacement Reward': '',
 		'Replacement Address': ''
 	}, {
-		Location: 'Hall of Empty Melodies 2F',
+		Location: 'Riku joins the party',
 		'Original Reward': 'Oblivion',
 		'Original Address': '11CE097E',
 		'Replacement Reward': '',
