@@ -14455,6 +14455,14 @@ const equipmentTypeArray = [
 	'Accessory'
 ]
 
+const formTypeArray = [
+	'Valor',
+	'Wisdom',
+	'Limit',
+	'Master',
+	'Final'
+]
+
 const characterArray = [
 	'Sora',
 	'Donald',
