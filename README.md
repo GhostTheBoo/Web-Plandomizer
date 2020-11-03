@@ -82,5 +82,9 @@ checks for more than 2 replacements
 
 FORMS
 --
+general formatting
+
+multipliers for form exp
+
 OTHER
 --
