@@ -33,6 +33,9 @@ function initialize() {
 			break;
 		}
 		case 'other': {
+			addRewardTypes();
+			populateTable(0);
+			addCheats();
 			break;
 		}
 		case 'popups': {
@@ -91,6 +94,23 @@ function addFormTypes() {
 		option.text = formTypeArray[i];
 		option.value = i;
 		select.add(option);
+	}
+}
+
+// create cheat list
+function addCheats() {
+	for (let i = 0; i < cheatArray.length; i++) {
+		let label = document.createElement('label');
+		let description = document.createTextNode(cheatArray[i]['Name']);
+		let checkbox = document.createElement('input');
+		checkbox.type = 'checkbox';
+		checkbox.id = 'cheatCheck' + i;
+		checkbox.value = i;
+
+		label.appendChild(checkbox);
+		label.appendChild(description);
+		document.getElementById('cheatCheckboxes').appendChild(label);
+		document.getElementById('cheatCheckboxes').appendChild(document.createElement('br'));
 	}
 }
 
@@ -206,6 +226,22 @@ function populateTable(ID) {
 			break;
 		}
 		case 'other': {
+			table = document.getElementById('criticalTable');
+			newTableBody = document.createElement('tbody');
+			for (let i = 0; i < criticalArray.length; i++) {
+				let row = document.createElement('tr');
+				row.id = 'row' + i;
+				let cell = document.createElement('input');
+				cell.type = 'checkbox';
+				cell.id = 'check' + i;
+				row.appendChild(cell);
+				criticalPropertiesArray.forEach(property => {
+					let cell = document.createElement('td');
+					cell.innerHTML = criticalArray[i][property];
+					row.appendChild(cell);
+				})
+				newTableBody.appendChild(row);
+			}
 			break;
 		}
 		case 'popups': {
@@ -408,6 +444,18 @@ function replace() {
 			break;
 		}
 		case 'other': {
+			let rt = document.getElementById('rewardTypeSelector');
+			let r = document.getElementById('rewardSelector');
+			let rowCount = document.getElementById('criticalTable').rows.length;
+			let reward = rewardArray[rt.value].Rewards[r.value];
+			for (let i = 0; i < rowCount - 1; i++) {
+				let checked = document.getElementById('check' + i).checked;
+				if (checked) {
+					criticalArray[i]['Replacement Reward'] = reward['Reward'];
+					criticalArray[i]['Replacement Address'] = reward['Reward Address'];
+				}
+			}
+			populateTable(0);
 			break;
 		}
 		case 'popups': {
@@ -429,6 +477,13 @@ function replace() {
 		default: {
 			break;
 		}
+	}
+}
+
+// enable selected cheats
+function enableCheats() {
+	for (let i = 0; i < cheatArray.length; i++) {
+		cheatArray[i]['Used'] = document.getElementById('cheatCheck' + i).checked;
 	}
 }
 
@@ -536,6 +591,15 @@ function goldExperienceRequiem() {
 			break;
 		}
 		case 'other': {
+			let rowCount = document.getElementById('criticalTable').rows.length;
+			for (let i = 0; i < rowCount - 1; i++) {
+				let checked = document.getElementById('check' + i).checked;
+				if (checked) {
+					criticalArray[i]['Replacement Reward'] = '';
+					criticalArray[i]['Replacement Address'] = '';
+				}
+			}
+			populateTable(0);
 			break;
 		}
 		case 'popups': {
@@ -617,7 +681,7 @@ function save() {
 		}
 
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Chest Replacements
 	finalPnachStrings.push('//Chest Replacements\n')
@@ -632,7 +696,7 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Equipment Replacements
 	finalPnachStrings.push('//Equipment Replacements\n')
@@ -709,7 +773,7 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Form Replacements
 	finalPnachStrings.push('//Drive Form Replacements\n')
@@ -731,7 +795,7 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Level Replacements
 	finalPnachStrings.push('//Level Replacements\n')
@@ -803,9 +867,30 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
-	// Printing Other Replacements
+	// Printing Critical Extras Replacements
+	finalPnachStrings.push('//Critical Extras Replacements\n')
+	for (let i = 0; i < criticalArray.length; i++) {
+		if (criticalArray[i]['Replacement Address'] !== '') {
+			let s = 'patch=1,EE,' + criticalArray[i]['Original Address'] + ',extended,0000' + criticalArray[i]['Replacement Address'];
+			s += ' // ' + criticalArray[i]['Original Ability'] + ' is now ' + criticalArray[i]['Replacement Reward'] + '\n';
+			finalPnachStrings.push(s);
+		}
+	}
+	finalPnachStrings.push('\n');
+
+	// Printing Cheats
+	finalPnachStrings.push('//Cheats\n')
+	for (let i = 0; i < cheatArray.length; i++) {
+		if (cheatArray[i]['Used']){
+			finalPnachStrings.push('//' + cheatArray[i]['Name']);
+			finalPnachStrings.push(cheatArray[i]['Code']);
+			finalPnachStrings.push('\n');
+			finalPnachStrings.push('\n');
+		}
+	}
+	finalPnachStrings.push('\n');
 
 	// Printing Popup Replacements
 	finalPnachStrings.push('//Popup Replacements\n')
