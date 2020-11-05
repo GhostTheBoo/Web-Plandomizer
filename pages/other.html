@@ -21,6 +21,31 @@
 		<a href="../pages/levels.html">Levels</a>
 		<a href="../pages/other.html">Other</a>
 	</nav>
+	<section class='selectors'>
+		<select name="rewardTypeSelector" id="rewardTypeSelector"
+			onchange="populateRewardTypeSelector(this.value)"></select>
+		<select name="rewardSelector" id="rewardSelector"></select>
+		<button name='replaceButton' id='replaceButton' onclick="replace()">Replace</button>
+		<button name='defaultButton' id='defaultButton' onclick="goldExperienceRequiem()">Default</button>
+		<button name='saveButton' id='saveButton' onclick="save()">Save</button>
+	</section>
+	<section class='rewardTable'>
+		<table name="criticalTable" id="criticalTable">
+			<thead>
+				<tr>
+					<th name='replaceCheckbox' id='replaceCheckbox'></th>
+					<th>
+						Original Ability
+					</th>
+					<th>
+						Replacement Ability
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</section>
 </body>
 
 </html>
