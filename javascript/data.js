@@ -13049,6 +13049,43 @@ const driveFormPropertiesArray = [
 	'New EXP to Level'
 ]
 
+const criticalArray = [{
+	'Original Ability': 'Reaction Boost',
+	'Original Address': '11D18DDE',
+	'Replacement Reward': '',
+	'Replacement Address': '',
+}, {
+	'Original Ability': 'Finishing Plus',
+	'Original Address': '11D18DDC',
+	'Replacement Reward': '',
+	'Replacement Address': '',
+}, {
+	'Original Ability': 'Draw',
+	'Original Address': '11D18DE8',
+	'Replacement Reward': '',
+	'Replacement Address': '',
+}, {
+	'Original Ability': 'Lucky Lucky',
+	'Original Address': '11D18DE4',
+	'Replacement Reward': '',
+	'Replacement Address': '',
+}, {
+	'Original Ability': 'Lucky Lucky',
+	'Original Address': '11D18DE6',
+	'Replacement Reward': '',
+	'Replacement Address': '',
+}, {
+	'Original Ability': 'MP Hastera',
+	'Original Address': '11D18DE0',
+	'Replacement Reward': '',
+	'Replacement Address': '',
+}, {
+	'Original Ability': 'No Experience',
+	'Original Address': '11D18DE2',
+	'Replacement Reward': '',
+	'Replacement Address': '',
+}]
+
 const rewardArray = [{
 	'Reward Type': 'Abilities',
 	'Rewards': [{
