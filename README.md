@@ -88,3 +88,11 @@ multipliers for form exp
 
 OTHER
 --
+
+starting hp/mp/drive
+
+starting gear
+
+general formatting
+
+better flow for cheat selection
