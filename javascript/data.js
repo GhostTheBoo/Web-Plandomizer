@@ -13601,7 +13601,7 @@ const rewardArray = [{
 		'Reward': 'Mega-Ether',
 		'Reward Address': '0006'
 	}, {
-		'Reward': 'Mega-Elixir',
+		'Reward': 'Megalixir',
 		'Reward Address': '0007'
 	}, {
 		'Reward': 'Tent',
