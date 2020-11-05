@@ -35,6 +35,7 @@ function initialize() {
 		case 'other': {
 			addRewardTypes();
 			populateTable(0);
+			addCheats();
 			break;
 		}
 		case 'popups': {
@@ -93,6 +94,23 @@ function addFormTypes() {
 		option.text = formTypeArray[i];
 		option.value = i;
 		select.add(option);
+	}
+}
+
+// create cheat list
+function addCheats() {
+	for (let i = 0; i < cheatArray.length; i++) {
+		let label = document.createElement('label');
+		let description = document.createTextNode(cheatArray[i]['Name']);
+		let checkbox = document.createElement('input');
+		checkbox.type = 'checkbox';
+		checkbox.id = 'cheatCheck' + i;
+		checkbox.value = i;
+
+		label.appendChild(checkbox);
+		label.appendChild(description);
+		document.getElementById('cheatCheckboxes').appendChild(label);
+		document.getElementById('cheatCheckboxes').appendChild(document.createElement('br'));
 	}
 }
 
@@ -462,6 +480,13 @@ function replace() {
 	}
 }
 
+// enable selected cheats
+function enableCheats() {
+	for (let i = 0; i < cheatArray.length; i++) {
+		cheatArray[i]['Used'] = document.getElementById('cheatCheck' + i).checked;
+	}
+}
+
 // set replaced rewards to null
 function goldExperienceRequiem() {
 	switch (currentPage) {
@@ -656,7 +681,7 @@ function save() {
 		}
 
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Chest Replacements
 	finalPnachStrings.push('//Chest Replacements\n')
@@ -671,7 +696,7 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Equipment Replacements
 	finalPnachStrings.push('//Equipment Replacements\n')
@@ -748,7 +773,7 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Form Replacements
 	finalPnachStrings.push('//Drive Form Replacements\n')
@@ -770,7 +795,7 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Level Replacements
 	finalPnachStrings.push('//Level Replacements\n')
@@ -842,7 +867,7 @@ function save() {
 			}
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
 
 	// Printing Critical Extras Replacements
 	finalPnachStrings.push('//Critical Extras Replacements\n')
@@ -853,7 +878,19 @@ function save() {
 			finalPnachStrings.push(s);
 		}
 	}
-	finalPnachStrings.push('\n')
+	finalPnachStrings.push('\n');
+
+	// Printing Cheats
+	finalPnachStrings.push('//Cheats\n')
+	for (let i = 0; i < cheatArray.length; i++) {
+		if (cheatArray[i]['Used']){
+			finalPnachStrings.push('//' + cheatArray[i]['Name']);
+			finalPnachStrings.push(cheatArray[i]['Code']);
+			finalPnachStrings.push('\n');
+			finalPnachStrings.push('\n');
+		}
+	}
+	finalPnachStrings.push('\n');
 
 	// Printing Popup Replacements
 	finalPnachStrings.push('//Popup Replacements\n')
